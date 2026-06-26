@@ -1,0 +1,122 @@
+[
+  {
+    "id": "recipe_001",
+    "name": "秘制红烧肉",
+    "method": "煲/炖",
+    "cityId": "HongKong",
+    "category": "cantonese",
+    "description": "这是你公公当年最爱吃的一道菜。红烧肉别急着吃，焖一会儿更入味；你小时候总爱先夹最亮的那一块。",
+    "ingredients": [
+      {
+        "ingredientId": "pork",
+        "amount": ""
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": ""
+      },
+      {
+        "ingredientId": "scallion",
+        "amount": ""
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": ""
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": ""
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": ""
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": ""
+      },
+      {
+        "ingredientId": "star_anise",
+        "amount": ""
+      }
+    ],
+    "steps": [
+      "五花肉切成方块，冷水下锅，加姜片和料酒焯水。",
+      "瓦煲中少油，放入冰糖小火炒出焦糖色。",
+      "倒入五花肉翻匀上色，加入葱姜、八角、生抽和老抽。",
+      "加入没过肉块的热水，小火煲炖约 60 分钟。",
+      "开盖转中火收汁，直到汤汁浓稠裹住肉块。"
+    ],
+    "tips": "阿婆独门秘籍：炒糖色要用小火，颜色刚变琥珀就下肉；最后收汁时再留一点冰糖，色泽红亮还带点甜滋滋。"
+  },
+  {
+    "id": "recipe_003",
+    "name": "姜葱白切鸡",
+    "method": "煲/炖",
+    "cityId": "HongKong",
+    "category": "cantonese",
+    "description": "白切鸡讲究的是鸡味本身。阿婆说，鸡要刚刚熟，皮要爽，肉要滑，蘸一点姜葱油就够了。",
+    "ingredients": [
+      {
+        "ingredientId": "chicken",
+        "amount": ""
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": ""
+      },
+      {
+        "ingredientId": "scallion",
+        "amount": ""
+      },
+      {
+        "ingredientId": "salt",
+        "amount": ""
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": ""
+      }
+    ],
+    "steps": [
+      "整鸡洗净，锅中烧水，加入姜片和葱结。",
+      "水开后转小火，把鸡浸入热水中慢慢浸熟。",
+      "取出后过冷水，让鸡皮更爽滑。",
+      "姜葱剁碎，加盐，淋入热油做成姜葱油。",
+      "鸡斩件装盘，配姜葱油上桌。"
+    ],
+    "tips": "阿婆独门秘籍：白切鸡不是大火煮熟，而是小火浸熟；火太猛，肉就柴了。"
+  },
+  {
+    "id": "cantonese_steamed_fish",
+    "name": "广式清蒸鱼",
+    "method": "蒸",
+    "cityId": "Guangzhou",
+    "category": "cantonese",
+    "description": "一道讲究鲜味、火候和豉油香气的广东家常菜。",
+    "ingredients": [
+      {
+        "ingredientId": "fresh_fish",
+        "amount": "1条"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": "3片"
+      },
+      {
+        "ingredientId": "scallion",
+        "amount": "2根"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": "2勺"
+      }
+    ],
+    "steps": [
+      "鱼处理干净后擦干水分。",
+      "铺上姜片和葱段。",
+      "大火蒸熟后淋热油和蒸鱼豉油。"
+    ],
+    "tips": ""
+  }
+]

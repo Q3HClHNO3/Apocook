@@ -1,0 +1,194 @@
+{
+  "cities": {
+    "Guangzhou": {
+      "cityId": "guangzhou",
+      "displayName": "Guangzhou",
+      "title": "Guangzhou 行星聚焦漫游",
+      "center": [
+        23.1291,
+        113.2644
+      ],
+      "zoom": 13,
+      "stops": [
+        {
+          "id": "gz_xiajiao_01",
+          "ingredientId": "xiajiao",
+          "lat": 23.1152,
+          "lng": 113.236,
+          "appearTime": "morning"
+        },
+        {
+          "id": "gz_chenpi_01",
+          "ingredientId": "chenpi",
+          "lat": 23.1291,
+          "lng": 113.2644,
+          "appearTime": "afternoon"
+        },
+        {
+          "id": "gz_fresh_fish_01",
+          "ingredientId": "fresh_fish",
+          "lat": 23.1152,
+          "lng": 113.236,
+          "appearTime": "morning"
+        },
+        {
+          "id": "gz_scallion_01",
+          "ingredientId": "scallion",
+          "lat": 23.1291,
+          "lng": 113.2644,
+          "appearTime": "afternoon"
+        }
+      ]
+    },
+    "HongKong": {
+      "cityId": "hongkong",
+      "displayName": "HongKong",
+      "title": "HongKong 行星聚焦漫游",
+      "center": [
+        22.3193,
+        114.1694
+      ],
+      "zoom": 14,
+      "stops": [
+        {
+          "id": "hk_boluoyou_01",
+          "ingredientId": "boluoyou",
+          "lat": 22.3193,
+          "lng": 114.1694,
+          "appearTime": "morning"
+        },
+        {
+          "id": "hk_mplus_01",
+          "ingredientId": "mplus",
+          "lat": 22.3021,
+          "lng": 114.1602,
+          "appearTime": "afternoon"
+        },
+        {
+          "id": "hk_ginger_01",
+          "ingredientId": "ginger",
+          "lat": 22.3193,
+          "lng": 114.1694,
+          "appearTime": "morning"
+        },
+        {
+          "id": "hk_soy_sauce_01",
+          "ingredientId": "soy_sauce",
+          "lat": 22.3021,
+          "lng": 114.1602,
+          "appearTime": "afternoon"
+        }
+      ]
+    },
+    "London": {
+      "cityId": "london",
+      "displayName": "London",
+      "title": "London 行星聚焦漫游",
+      "center": [
+        51.5055,
+        -0.0754
+      ],
+      "zoom": 14,
+      "stops": [
+        {
+          "id": "ld_cheddar_01",
+          "ingredientId": "cheddar",
+          "lat": 51.5055,
+          "lng": -0.0754,
+          "appearTime": "morning"
+        },
+        {
+          "id": "ld_st_pauls_01",
+          "ingredientId": "st_pauls",
+          "lat": 51.5138,
+          "lng": -0.0984,
+          "appearTime": "afternoon"
+        },
+        {
+          "id": "ld_tate_modern_01",
+          "ingredientId": "tate_modern",
+          "lat": 51.5076,
+          "lng": -0.0994,
+          "appearTime": "afternoon"
+        }
+      ]
+    },
+    "Amsterdam": {
+      "cityId": "amsterdam",
+      "displayName": "Amsterdam",
+      "title": "Amsterdam 行星聚焦漫游",
+      "center": [
+        52.3676,
+        4.9041
+      ],
+      "zoom": 13,
+      "stops": []
+    },
+    "Sydney": {
+      "cityId": "sydney",
+      "displayName": "Sydney",
+      "title": "Sydney 行星聚焦漫游",
+      "center": [
+        -33.8688,
+        151.2093
+      ],
+      "zoom": 13,
+      "stops": []
+    },
+    "Paris": {
+      "cityId": "paris",
+      "displayName": "Paris",
+      "title": "Paris 行星聚焦漫游",
+      "center": [
+        48.8566,
+        2.3522
+      ],
+      "zoom": 13,
+      "stops": []
+    },
+    "Milan": {
+      "cityId": "milan",
+      "displayName": "Milan",
+      "title": "Milan 行星聚焦漫游",
+      "center": [
+        45.4642,
+        9.19
+      ],
+      "zoom": 13,
+      "stops": []
+    },
+    "Tokyo": {
+      "cityId": "tokyo",
+      "displayName": "Tokyo",
+      "title": "Tokyo 行星聚焦漫游",
+      "center": [
+        35.6762,
+        139.6503
+      ],
+      "zoom": 13,
+      "stops": []
+    },
+    "NewYork": {
+      "cityId": "newyork",
+      "displayName": "New York",
+      "title": "New York 行星聚焦漫游",
+      "center": [
+        40.7128,
+        -74.006
+      ],
+      "zoom": 13,
+      "stops": []
+    },
+    "Singapore": {
+      "cityId": "singapore",
+      "displayName": "Singapore",
+      "title": "Singapore 行星聚焦漫游",
+      "center": [
+        1.3521,
+        103.8198
+      ],
+      "zoom": 13,
+      "stops": []
+    }
+  }
+}
