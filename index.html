@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#070b12" />
+  <title>Click on globe</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles/portal.css" />
+</head>
+<body>
+  <main class="portal" aria-label="Click on globe portal">
+    <div class="stars" aria-hidden="true"></div>
+    <div class="warp" aria-hidden="true"></div>
+    <i class="star-glow star-one" aria-hidden="true"></i>
+    <i class="star-glow star-two" aria-hidden="true"></i>
+    <i class="star-glow star-three" aria-hidden="true"></i>
+    <i class="star-glow star-four" aria-hidden="true"></i>
+    <div class="moon" aria-hidden="true"></div>
+
+    <header class="greeting" aria-live="polite">
+      <p class="brand">Click on globe</p>
+      <h1 id="greetingText">今天想干嘛？<span>What's the plan for today?</span></h1>
+    </header>
+
+    <section class="globe-stage" aria-label="Globe View">
+      <div class="globe-glow" aria-hidden="true"></div>
+      <div class="orbit" aria-hidden="true"></div>
+      <div class="globe" aria-hidden="true">
+        <div class="land land-a"></div>
+        <div class="land land-b"></div>
+        <div class="land land-c"></div>
+        <div class="land land-d"></div>
+        <div class="land land-e"></div>
+        <div class="cloud cloud-a"></div>
+        <div class="cloud cloud-b"></div>
+        <div class="cloud cloud-c"></div>
+        <div class="cloud cloud-d"></div>
+        <div class="tiny-tree tree-a"></div>
+        <div class="tiny-tree tree-b"></div>
+        <div class="tiny-tree tree-c"></div>
+        <div class="tiny-tree tree-d"></div>
+        <div class="ship"></div>
+      </div>
+
+      <button class="plane" type="button" aria-label="飞机 / FlightGallery" data-href="FlightGallery-Airplane/FlightGallery.html">
+        <span class="plane-trail" aria-hidden="true"></span>
+        <span class="plane-tail" aria-hidden="true"></span>
+        <span class="plane-body" aria-hidden="true"></span>
+        <span class="plane-wing" aria-hidden="true"></span>
+        <span class="plane-wing back" aria-hidden="true"></span>
+        <span class="plane-marker" aria-hidden="true"></span>
+        <span class="plane-label">飞机 / FlightGallery</span>
+      </button>
+
+      <button class="marker marker-home" type="button" aria-label="家 / Home" data-href="ApoCHEF-Kitchen/kitchen.html">
+        <span class="marker-label">家 / Home</span>
+      </button>
+
+      <button class="marker marker-airport" type="button" aria-label="目的地 / Destination" data-href="SearchMap-City/flightBoard.html">
+        <span class="marker-label">目的地 / Destination</span>
+      </button>
+    </section>
+
+    <p class="hint">点击地球上的坐标光标，从宇宙降落到一个小世界。</p>
+  </main>
+
+  <script src="scripts/portal.js"></script>
+</body>
+</html>
