@@ -701,9 +701,11 @@
 
       function normalizeCityKey(value) {
         return String(value || "")
+          .trim()
           .toLowerCase()
           .replace(/\s+/g, "")
-          .replace(/-/g, "");
+          .replace(/-/g, "")
+          .replace(/_/g, "");
       }
 
       async function loadCityRoutes() {
@@ -792,6 +794,23 @@
 
       function createHotspots(cityKey, city) {
         return (city.stops || []).map((stop) => {
+          if (stop.kind === "landmark") {
+            return {
+              ...stop,
+              cityKey,
+              id: stop.landmarkId || stop.id,
+              stopId: stop.id,
+              kind: "landmark",
+              typeName: stop.typeName || "城市打卡",
+              emoji: stop.emoji || "📍",
+              name: stop.name || stop.landmarkId || stop.id,
+              desc: stop.desc || "",
+              story: stop.story || "",
+              lat: stop.lat,
+              lng: stop.lng
+            };
+          }
+
           const ingredient = readIngredientData(stop.ingredientId);
 
           return {
@@ -799,13 +818,16 @@
             cityKey,
             id: stop.ingredientId,
             stopId: stop.id,
+            kind: "ingredient",
             ingredientId: stop.ingredientId,
             type: ingredient.type || "food",
             typeName: ingredient.typeName || "地道食材",
             emoji: ingredient.emoji || "🍽️",
             name: ingredient.name || stop.ingredientId,
             desc: ingredient.desc || ingredient.description || "",
-            story: ingredient.story || ""
+            story: ingredient.story || "",
+            lat: stop.lat,
+            lng: stop.lng
           };
         });
       }
@@ -858,7 +880,7 @@
         const luggage = readLuggage();
 
         hotspots.forEach((hotspot) => {
-          if (luggage.includes(hotspot.ingredientId)) return;
+          if (hotspot.kind === "ingredient" && luggage.includes(hotspot.ingredientId)) return;
 
           const marker = L.marker([hotspot.lat, hotspot.lng], {
             icon: makeIngredientIcon(hotspot),
@@ -961,6 +983,11 @@
         const targetLatLng = L.latLng(hotspot.lat, hotspot.lng);
 
         moveChickenSmoothly(targetLatLng, () => {
+          if (hotspot.kind === "landmark") {
+            openHotspotModal(hotspot);
+            return;
+          }
+
           setChickenPecking(true);
           activePeckTimer = window.setTimeout(() => {
             setChickenPecking(false);
@@ -973,8 +1000,14 @@
         modalType.textContent = hotspot.typeName;
         modalTitle.textContent = hotspot.name;
         modalDescription.textContent = hotspot.story ? `${hotspot.desc}\n\n${hotspot.story}` : hotspot.desc;
-        collectBtn.dataset.ingredientId = hotspot.ingredientId;
-        collectBtn.dataset.stopId = hotspot.stopId;
+        if (hotspot.kind === "landmark") {
+          delete collectBtn.dataset.ingredientId;
+          delete collectBtn.dataset.stopId;
+        } else {
+          collectBtn.dataset.ingredientId = hotspot.ingredientId;
+          collectBtn.dataset.stopId = hotspot.stopId;
+        }
+        collectBtn.style.display = hotspot.kind === "landmark" ? "none" : "";
         modal.classList.add("is-open");
         closeModal.focus({ preventScroll: true });
       }
@@ -984,6 +1017,8 @@
       }
 
       function collectActiveIngredient() {
+        if (activeHotspot?.kind !== "ingredient") return;
+
         const ingredientId = collectBtn.dataset.ingredientId || activeHotspot?.ingredientId;
         const stopId = collectBtn.dataset.stopId || activeHotspot?.stopId;
         if (!ingredientId) return;

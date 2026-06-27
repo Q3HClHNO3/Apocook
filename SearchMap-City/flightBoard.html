@@ -707,108 +707,7 @@
   </div>
 
   <script>
-    const flightsData = [
-      {
-        id: "london",
-        time: "08:20",
-        city: { en: "London", zh: "伦敦" },
-        flight: "BA168",
-        gate: "A3",
-        status: { en: "Gate Closing", zh: "登机将关" },
-        statusType: "closing",
-        sources: ["black_pepper", "pepper"]
-      },
-      {
-        id: "amsterdam",
-        time: "09:05",
-        city: { en: "Amsterdam", zh: "阿姆斯特丹" },
-        flight: "KL896",
-        gate: "B20",
-        status: { en: "Boarding", zh: "正在登机" },
-        statusType: "boarding",
-        sources: ["cheese", "herring"]
-      },
-      {
-        id: "sydney",
-        time: "09:45",
-        city: { en: "Sydney", zh: "悉尼" },
-        flight: "QF130",
-        gate: "C8",
-        status: { en: "Gate Open", zh: "登机口开" },
-        statusType: "open",
-        sources: ["sea_salt", "lemon"]
-      },
-      {
-        id: "paris",
-        time: "10:10",
-        city: { en: "Paris", zh: "巴黎" },
-        flight: "AF111",
-        gate: "A12",
-        status: { en: "Boarding", zh: "正在登机" },
-        statusType: "boarding",
-        sources: ["butter", "cream"]
-      },
-      {
-        id: "milan",
-        time: "10:35",
-        city: { en: "Milan", zh: "米兰" },
-        flight: "AZ759",
-        gate: "D6",
-        status: { en: "Gate Open", zh: "登机口开" },
-        statusType: "open",
-        sources: ["basil", "tomato"]
-      },
-      {
-        id: "hongkong",
-        time: "11:00",
-        city: { en: "HongKong", zh: "香港" },
-        flight: "CX365",
-        gate: "B7",
-        status: { en: "Boarding", zh: "正在登机" },
-        statusType: "boarding",
-        sources: ["soy_sauce", "ginger"]
-      },
-      {
-        id: "guangzhou",
-        time: "11:25",
-        city: { en: "Guangzhou", zh: "广州" },
-        flight: "CZ352",
-        gate: "E15",
-        status: { en: "Gate Open", zh: "登机口开" },
-        statusType: "open",
-        sources: ["white_pepper", "scallion"]
-      },
-      {
-        id: "tokyo",
-        time: "12:05",
-        city: { en: "Tokyo", zh: "东京" },
-        flight: "JL026",
-        gate: "C18",
-        status: { en: "Scheduled", zh: "计划中" },
-        statusType: "scheduled",
-        sources: ["miso", "wasabi"]
-      },
-      {
-        id: "newyork",
-        time: "13:30",
-        city: { en: "New York", zh: "纽约" },
-        flight: "UA087",
-        gate: "F4",
-        status: { en: "Gate Closing", zh: "登机将关" },
-        statusType: "closing",
-        sources: ["maple", "coffee"]
-      },
-      {
-        id: "singapore",
-        time: "14:15",
-        city: { en: "Singapore", zh: "新加坡" },
-        flight: "SQ833",
-        gate: "D22",
-        status: { en: "Gate Open", zh: "登机口开" },
-        statusType: "open",
-        sources: ["curry_leaf", "coconut"]
-      }
-    ];
+    let flightsData = [];
 
     const flightsList = document.querySelector("#flightsList");
     const toast = document.querySelector("#toast");
@@ -875,16 +774,6 @@
 
       row.addEventListener("click", () => {
         const currentCityEnglishName = flight.city.en;
-        if (flight.id === "hongkong") {
-          console.log("Flight row clicked:", {
-            id: flight.id,
-            city: currentCityEnglishName,
-            url: "citymap.html?city=HongKong"
-          });
-          window.location.href = "citymap.html?city=HongKong";
-          return;
-        }
-
         const cityMapUrl = "./citymap.html?city=" + encodeURIComponent(currentCityEnglishName);
 
         console.log("Flight row clicked:", {
@@ -935,6 +824,19 @@
       toastTimer = window.setTimeout(() => {
         toast.classList.remove("show");
       }, 2200);
+    }
+
+    async function loadFlights() {
+      try {
+        const response = await fetch("../data/flights.json", { cache: "no-store" });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+        flightsData = Array.isArray(data) ? data : [];
+      } catch (error) {
+        console.error("无法加载 data/flights.json", error);
+        flightsData = [];
+        showToast("机场大屏暂时没有航班数据。");
+      }
     }
 
     function readLuggage() {
@@ -1040,6 +942,7 @@
 
     document.addEventListener("DOMContentLoaded", async () => {
       await window.whenDatabaseReady;
+      await loadFlights();
       renderFlights();
       initLuggageViewer();
       window.setInterval(switchLanguage, 3000);
