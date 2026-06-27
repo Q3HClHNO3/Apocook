@@ -1,0 +1,398 @@
+{
+  "fresh_sea_bass": {
+    "id": "fresh_sea_bass",
+    "name": "鲜活鲈鱼",
+    "emoji": "🐟",
+    "type": "food",
+    "typeName": "地道食材",
+    "desc": "清蒸鱼的主角，讲究鲜活、肉嫩和刚好脱骨。",
+    "originCity": "Guangzhou"
+  },
+  "ginger": {
+    "id": "ginger",
+    "name": "生姜",
+    "emoji": "🫚",
+    "type": "food",
+    "typeName": "基础香料",
+    "desc": "去腥提香，是广式清蒸、煲汤和焖菜里反复出现的基础香气。",
+    "originCity": "Guangzhou"
+  },
+  "scallion": {
+    "id": "scallion",
+    "name": "葱",
+    "emoji": "🌿",
+    "type": "food",
+    "typeName": "基础香料",
+    "desc": "葱段、葱白、葱尾都能激发香气，是广式蒸鱼、捞面和家常菜的重要配角。",
+    "originCity": "Guangzhou"
+  },
+  "red_shallot": {
+    "id": "red_shallot",
+    "name": "红葱头",
+    "emoji": "🧅",
+    "type": "food",
+    "typeName": "基础香料",
+    "desc": "香气浓郁，适合腌肉、蒸鱼和焖牛腩。",
+    "originCity": "Guangzhou"
+  },
+  "seasoned_soy_sauce_for_seafood": {
+    "id": "seasoned_soy_sauce_for_seafood",
+    "name": "蒸鱼豉油",
+    "emoji": "🧂",
+    "type": "food",
+    "typeName": "调味料",
+    "desc": "清蒸鱼最后沿盘边淋入的灵魂调味，提供咸鲜和豉香。",
+    "originCity": "Guangzhou"
+  },
+  "peanut_oil": {
+    "id": "peanut_oil",
+    "name": "花生油",
+    "emoji": "🥜",
+    "type": "food",
+    "typeName": "调味油",
+    "desc": "广式家常菜里常用的油香来源，热油一淋能激发姜葱香。",
+    "originCity": "Guangzhou"
+  },
+  "pork_bone": {
+    "id": "pork_bone",
+    "name": "猪大骨",
+    "emoji": "🦴",
+    "type": "food",
+    "typeName": "汤料",
+    "desc": "老火汤的厚味来源，焯水后慢煲能带出清润肉香。",
+    "originCity": "Guangzhou"
+  },
+  "dried_night_blooming_cereus": {
+    "id": "dried_night_blooming_cereus",
+    "name": "干霸王花",
+    "emoji": "🌼",
+    "type": "food",
+    "typeName": "汤料",
+    "desc": "霸王花猪骨汤的代表性汤料，带来清润的广州汤水气质。",
+    "originCity": "Guangzhou"
+  },
+  "candied_date": {
+    "id": "candied_date",
+    "name": "蜜枣",
+    "emoji": "🍯",
+    "type": "food",
+    "typeName": "汤料",
+    "desc": "为老火汤增加温润甜味，让汤水更圆润。",
+    "originCity": "Guangzhou"
+  },
+  "chenpi": {
+    "id": "chenpi",
+    "name": "陈皮",
+    "emoji": "🍊",
+    "type": "food",
+    "typeName": "地道食材",
+    "desc": "煲汤中带来柑香，但需要刮去内囊白络避免发苦。",
+    "originCity": "Guangzhou"
+  },
+  "apricot_kernel": {
+    "id": "apricot_kernel",
+    "name": "南北杏",
+    "emoji": "🌰",
+    "type": "food",
+    "typeName": "汤料",
+    "desc": "常见广式汤料，用于增加清润的汤水层次。",
+    "originCity": "Guangzhou"
+  },
+  "salt": {
+    "id": "salt",
+    "name": "盐",
+    "emoji": "🧂",
+    "type": "food",
+    "typeName": "调味料",
+    "desc": "基础调味，用于汤水、白灼和小炒的最后提味。",
+    "originCity": "Guangzhou"
+  },
+  "jook_sing_noodles": {
+    "id": "jook_sing_noodles",
+    "name": "全蛋竹升面",
+    "emoji": "🍜",
+    "type": "food",
+    "typeName": "主食",
+    "desc": "广式碱水面，讲究爽口弹牙，是豉油皇捞面的基础。",
+    "originCity": "Guangzhou"
+  },
+  "yellow_chives": {
+    "id": "yellow_chives",
+    "name": "韭黄",
+    "emoji": "🌱",
+    "type": "food",
+    "typeName": "蔬菜",
+    "desc": "捞面里的香气蔬菜，快炒后带出清甜。",
+    "originCity": "Guangzhou"
+  },
+  "mung_bean_sprouts": {
+    "id": "mung_bean_sprouts",
+    "name": "绿豆芽",
+    "emoji": "🌱",
+    "type": "food",
+    "typeName": "蔬菜",
+    "desc": "摘去头尾后可做成银芽，为捞面增加爽脆口感。",
+    "originCity": "Guangzhou"
+  },
+  "light_soy_sauce": {
+    "id": "light_soy_sauce",
+    "name": "生抽",
+    "emoji": "🧂",
+    "type": "food",
+    "typeName": "调味料",
+    "desc": "提供咸鲜底味，广式小炒、白灼、煎酿和烧味都会用到。",
+    "originCity": "Guangzhou"
+  },
+  "dark_soy_sauce": {
+    "id": "dark_soy_sauce",
+    "name": "老抽",
+    "emoji": "🥫",
+    "type": "food",
+    "typeName": "调味料",
+    "desc": "主要用于上色，让捞面更有酱香色泽。",
+    "originCity": "Guangzhou"
+  },
+  "sugar": {
+    "id": "sugar",
+    "name": "白糖",
+    "emoji": "🍬",
+    "type": "food",
+    "typeName": "调味料",
+    "desc": "广式家常菜里常用于平衡酸度、吊出蔬菜清甜和调和酱汁。",
+    "originCity": "Guangzhou"
+  },
+  "lard": {
+    "id": "lard",
+    "name": "熟猪油",
+    "emoji": "🥄",
+    "type": "food",
+    "typeName": "调味油",
+    "desc": "豉油皇捞面的香气关键，让面条更润更香。",
+    "originCity": "Guangzhou"
+  },
+  "choi_sum": {
+    "id": "choi_sum",
+    "name": "广东菜心",
+    "emoji": "🥬",
+    "type": "food",
+    "typeName": "蔬菜",
+    "desc": "广州饭桌常见青菜，白灼或猛火生炒都能吃出清甜。",
+    "originCity": "Guangzhou"
+  },
+  "tomato": {
+    "id": "tomato",
+    "name": "沙瓤番茄",
+    "emoji": "🍅",
+    "type": "food",
+    "typeName": "蔬菜",
+    "desc": "炒出番茄沙和红汁后，是广式微甜番茄蛋的酸甜底味。",
+    "originCity": "Guangzhou"
+  },
+  "free_range_egg": {
+    "id": "free_range_egg",
+    "name": "本地土鸡蛋",
+    "emoji": "🥚",
+    "type": "food",
+    "typeName": "蛋类",
+    "desc": "炒至刚凝固最嫩，能吸满番茄汁。",
+    "originCity": "Guangzhou"
+  },
+  "gai_lan": {
+    "id": "gai_lan",
+    "name": "嫩芥兰",
+    "emoji": "🥬",
+    "type": "food",
+    "typeName": "蔬菜",
+    "desc": "可替代菜心用于猛火生炒，带出微微焦香和镬气。",
+    "originCity": "Guangzhou"
+  },
+  "garlic": {
+    "id": "garlic",
+    "name": "蒜瓣",
+    "emoji": "🧄",
+    "type": "food",
+    "typeName": "基础香料",
+    "desc": "拍碎后爆香，是生炒青菜和豉汁排骨的重要香气来源。",
+    "originCity": "Guangzhou"
+  },
+  "firm_tofu": {
+    "id": "firm_tofu",
+    "name": "板豆腐",
+    "emoji": "◻️",
+    "type": "food",
+    "typeName": "豆制品",
+    "desc": "煎酿豆腐的主体，质地要能承托肉馅但仍保留豆香。",
+    "originCity": "Guangzhou"
+  },
+  "pork_shoulder": {
+    "id": "pork_shoulder",
+    "name": "猪前腿肉",
+    "emoji": "🥩",
+    "type": "food",
+    "typeName": "肉类",
+    "desc": "三肥七瘦剁成肉糜，适合酿入豆腐。",
+    "originCity": "Guangzhou"
+  },
+  "dried_shrimp": {
+    "id": "dried_shrimp",
+    "name": "虾米",
+    "emoji": "🦐",
+    "type": "food",
+    "typeName": "干货",
+    "desc": "切碎后加入肉馅，增加鲜味和广式干货香。",
+    "originCity": "Guangzhou"
+  },
+  "oyster_sauce": {
+    "id": "oyster_sauce",
+    "name": "蚝油",
+    "emoji": "🦪",
+    "type": "food",
+    "typeName": "调味料",
+    "desc": "煎酿豆腐芡汁里的鲜甜酱香来源。",
+    "originCity": "Guangzhou"
+  },
+  "cornstarch": {
+    "id": "cornstarch",
+    "name": "生粉",
+    "emoji": "🥣",
+    "type": "food",
+    "typeName": "调味辅料",
+    "desc": "用于锁住肉汁、帮助肉馅和豆腐黏合，也能调芡。",
+    "originCity": "Guangzhou"
+  },
+  "pork_collar": {
+    "id": "pork_collar",
+    "name": "猪梅头肉",
+    "emoji": "🥩",
+    "type": "food",
+    "typeName": "肉类",
+    "desc": "肥瘦相间、软嫩多汁，是家庭版蜜汁叉烧的理想部位。",
+    "originCity": "Guangzhou"
+  },
+  "char_siu_sauce": {
+    "id": "char_siu_sauce",
+    "name": "广式叉烧酱",
+    "emoji": "🥫",
+    "type": "food",
+    "typeName": "调味料",
+    "desc": "蜜汁叉烧的核心酱料，带甜香和烧味风味。",
+    "originCity": "Guangzhou"
+  },
+  "maltose": {
+    "id": "maltose",
+    "name": "麦芽糖",
+    "emoji": "🍯",
+    "type": "food",
+    "typeName": "调味料",
+    "desc": "收汁时让叉烧表面变得黏稠亮晶晶。",
+    "originCity": "Guangzhou"
+  },
+  "honey": {
+    "id": "honey",
+    "name": "蜂蜜",
+    "emoji": "🍯",
+    "type": "food",
+    "typeName": "调味料",
+    "desc": "可替代麦芽糖，用于叉烧收汁上色和增加甜香。",
+    "originCity": "Guangzhou"
+  },
+  "cooking_wine": {
+    "id": "cooking_wine",
+    "name": "料酒",
+    "emoji": "🍶",
+    "type": "food",
+    "typeName": "调味料",
+    "desc": "焯肉和腌肉时去腥增香。",
+    "originCity": "Guangzhou"
+  },
+  "pork_ribs": {
+    "id": "pork_ribs",
+    "name": "精排骨",
+    "emoji": "🍖",
+    "type": "food",
+    "typeName": "肉类",
+    "desc": "剁小块后冲洗去血水，适合做茶楼风味豉汁蒸排骨。",
+    "originCity": "Guangzhou"
+  },
+  "yangjiang_fermented_black_beans": {
+    "id": "yangjiang_fermented_black_beans",
+    "name": "阳江豆豉",
+    "emoji": "🫘",
+    "type": "food",
+    "typeName": "调味干货",
+    "desc": "拍碎炒香后与蒜蓉结合，是豉汁排骨的灵魂。",
+    "originCity": "Guangzhou"
+  },
+  "white_pepper": {
+    "id": "white_pepper",
+    "name": "白胡椒粉",
+    "emoji": "⚪",
+    "type": "food",
+    "typeName": "调味料",
+    "desc": "少量加入排骨腌料中去腥提香。",
+    "originCity": "Guangzhou"
+  },
+  "taro": {
+    "id": "taro",
+    "name": "芋头",
+    "emoji": "🍠",
+    "type": "food",
+    "typeName": "根茎类",
+    "desc": "铺在排骨盘底，吸满豆豉肉汁后特别香。",
+    "originCity": "Guangzhou"
+  },
+  "pumpkin": {
+    "id": "pumpkin",
+    "name": "本地小南瓜",
+    "emoji": "🎃",
+    "type": "food",
+    "typeName": "蔬菜",
+    "desc": "可铺在豉汁排骨盘底，吸收肉汁并增加清甜。",
+    "originCity": "Guangzhou"
+  },
+  "beef_brisket": {
+    "id": "beef_brisket",
+    "name": "新鲜牛腩",
+    "emoji": "🥩",
+    "type": "food",
+    "typeName": "肉类",
+    "desc": "焖煮后软烂入味，是柱侯牛腩煲的主角。",
+    "originCity": "Guangzhou"
+  },
+  "daikon_radish": {
+    "id": "daikon_radish",
+    "name": "白萝卜",
+    "emoji": "⚪",
+    "type": "food",
+    "typeName": "根茎类",
+    "desc": "切大块焖透后吸饱牛腩鲜味和柱侯酱香。",
+    "originCity": "Guangzhou"
+  },
+  "chu_hou_paste": {
+    "id": "chu_hou_paste",
+    "name": "广式柱侯酱",
+    "emoji": "🥫",
+    "type": "food",
+    "typeName": "调味酱",
+    "desc": "焖牛腩的核心酱料，带出浓厚粤式酱香。",
+    "originCity": "Guangzhou"
+  },
+  "star_anise": {
+    "id": "star_anise",
+    "name": "八角",
+    "emoji": "⭐",
+    "type": "food",
+    "typeName": "香料",
+    "desc": "焖牛腩时少量加入，提供温暖香气。",
+    "originCity": "Guangzhou"
+  },
+  "rock_sugar": {
+    "id": "rock_sugar",
+    "name": "冰糖",
+    "emoji": "🧊",
+    "type": "food",
+    "typeName": "调味料",
+    "desc": "焖菜中用于平衡酱香和增加柔和甜味。",
+    "originCity": "Guangzhou"
+  }
+}

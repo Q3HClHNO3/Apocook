@@ -1,0 +1,490 @@
+[
+  {
+    "id": "cantonese_steamed_fish",
+    "name": "广式清蒸鱼",
+    "cityId": "Guangzhou",
+    "category": [
+      "粤菜",
+      "家常菜",
+      "蒸菜"
+    ],
+    "description": "乖孙，在广州吃鱼，最紧要是买活鱼。清蒸最能吃出鱼的鲜味，火候、蒸鱼豉油和花生油都要讲究。",
+    "ingredients": [
+      {
+        "ingredientId": "fresh_sea_bass",
+        "amount": "1条"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "scallion",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "red_shallot",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "seasoned_soy_sauce_for_seafood",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "peanut_oil",
+        "amount": "2大勺"
+      }
+    ],
+    "steps": [
+      "鱼清洗干净，用厨房纸吸干水分，在鱼身两面各划几刀。",
+      "盘底和鱼肚子放姜片、红葱头，水开后猛火蒸7-8分钟，熄火虚蒸2分钟。",
+      "倒掉盘中的蒸鱼水，去掉旧姜葱。",
+      "铺新的细姜丝、红葱丝和葱尾丝，淋滚烫花生油激香，最后沿盘边淋入蒸鱼豉油。"
+    ],
+    "story": "阿婆常说，清蒸鱼看鱼肉有没有刚好脱骨。花生油香配豉油，用来捞饭能吃两碗。"
+  },
+  {
+    "id": "dried_night_blooming_cereus_pork_bone_soup",
+    "name": "霸王花猪骨汤",
+    "cityId": "Guangzhou",
+    "category": [
+      "粤菜",
+      "汤水"
+    ],
+    "description": "广州湿热天气里很适合的一锅清润汤水，讲究清水、慢火和瓦煲的温润。",
+    "ingredients": [
+      {
+        "ingredientId": "pork_bone",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "dried_night_blooming_cereus",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "candied_date",
+        "amount": "2颗"
+      },
+      {
+        "ingredientId": "chenpi",
+        "amount": "一小块"
+      },
+      {
+        "ingredientId": "apricot_kernel",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": "少许"
+      }
+    ],
+    "steps": [
+      "干霸王花用温水泡发，洗净剪开；陈皮泡软后刮去内囊白络。",
+      "猪骨冷水下锅焯水，煮出浮沫后捞出并用温水冲净。",
+      "瓦煲一次性加足清水，放入猪骨、姜片、陈皮、蜜枣和南北杏，大火烧开。",
+      "烧开后倒入霸王花，转小火煲1.5到2小时，出锅前5分钟加盐。"
+    ],
+    "story": "在广州，一看到天气变了，厨房里就会响起瓦煲汤沸声。一碗老火靓汤喝下去，整个人都温润了。"
+  },
+  {
+    "id": "supreme_soy_sauce_tossed_noodles",
+    "name": "豉油皇捞面",
+    "cityId": "Guangzhou",
+    "category": [
+      "粤菜",
+      "传统面食",
+      "主食"
+    ],
+    "description": "一碗下班晚也能快速做的广式捞面，重点是竹升面的弹牙、猪油的香和豉油的干爽。",
+    "ingredients": [
+      {
+        "ingredientId": "jook_sing_noodles",
+        "amount": "1份"
+      },
+      {
+        "ingredientId": "yellow_chives",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "scallion",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "mung_bean_sprouts",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "light_soy_sauce",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "dark_soy_sauce",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "lard",
+        "amount": "适量"
+      }
+    ],
+    "steps": [
+      "韭黄切段，绿豆芽摘头尾；生抽、老抽和少量白糖调成豉油汁。",
+      "竹升面下沸水煮1-2分钟，捞出过冷水并沥干。",
+      "热锅下猪油，先炒葱段、绿豆芽和韭黄至断生。",
+      "倒入面条，用筷子抖散翻炒，边炒边淋豉油，炒到面条根根上色、干爽出锅。"
+    ],
+    "story": "广式捞面讲究“干爽”和“弹牙”。只要猪油和豉油用得对，最朴素的面也会很香。"
+  },
+  {
+    "id": "blanched_choi_sum",
+    "name": "白灼本地菜心",
+    "cityId": "Guangzhou",
+    "category": [
+      "粤菜",
+      "家常菜",
+      "白灼"
+    ],
+    "description": "广州饭桌上清清亮亮的一碟青菜，检验的是本地迟菜心的清甜和白灼火候。",
+    "ingredients": [
+      {
+        "ingredientId": "choi_sum",
+        "amount": "1把"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "light_soy_sauce",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "peanut_oil",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": "少许"
+      }
+    ],
+    "steps": [
+      "菜心洗净，太粗的菜梗纵向剖开。",
+      "锅中多加水，大火烧开，加入花生油和盐让青菜保持翠绿。",
+      "先烫菜心根部10秒，再整根放入焯烫约1分钟，捞出控干码盘。",
+      "撒姜丝，淋热花生油，最后在盘边淋一圈生抽。"
+    ],
+    "story": "在广州，白灼最能检验一棵菜好不好。好的菜心咬下去有汁水，带天然清甜。"
+  },
+  {
+    "id": "cantonese_sweet_sour_tomato_egg",
+    "name": "酸甜番茄炒蛋（广式微甜版）",
+    "cityId": "Guangzhou",
+    "category": [
+      "粤菜",
+      "家常菜",
+      "小炒"
+    ],
+    "description": "广式微甜版番茄蛋，蛋要滑，番茄要炒出红油酸汤，再用一点白糖提鲜。",
+    "ingredients": [
+      {
+        "ingredientId": "tomato",
+        "amount": "2-3个"
+      },
+      {
+        "ingredientId": "free_range_egg",
+        "amount": "3个"
+      },
+      {
+        "ingredientId": "scallion",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "peanut_oil",
+        "amount": "适量"
+      }
+    ],
+    "steps": [
+      "鸡蛋加少许盐和几滴水打散，热锅热油炒至刚凝固即盛出。",
+      "锅中加油，下番茄块中火翻炒并压出番茄沙和红汁。",
+      "加入少量白糖和盐调味，平衡酸度。",
+      "倒入鸡蛋快速翻匀，让鸡蛋吸满番茄汁，撒葱花后关火。"
+    ],
+    "story": "金黄嫩红的番茄蛋最适合浇饭，是阿婆记忆里小孩胃口不好时最管用的一道家常菜。"
+  },
+  {
+    "id": "wok_fried_garlic_choi_sum_or_gai_lan",
+    "name": "生炒拍蒜迟菜心 / 芥兰",
+    "cityId": "Guangzhou",
+    "category": [
+      "粤菜",
+      "家常菜",
+      "猛火小炒"
+    ],
+    "description": "用猛火生炒本地青菜，拍蒜爆香后带出镬气和微微焦香。",
+    "ingredients": [
+      {
+        "ingredientId": "choi_sum",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "gai_lan",
+        "amount": "可替换"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": "多一些"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": "一点点"
+      },
+      {
+        "ingredientId": "peanut_oil",
+        "amount": "适量"
+      }
+    ],
+    "steps": [
+      "青菜洗净并彻底沥干；蒜瓣用刀拍碎。",
+      "烧热炒锅，倒入花生油，下拍蒜煸至金黄出香。",
+      "转最大火，青菜一口气倒入锅中快速翻炒。",
+      "炒到青菜变软呈深绿色时，加入盐和少量糖，炒匀立刻出锅。"
+    ],
+    "story": "炒青菜讲究镬气。锅够热、手脚够快，蒜香菜就是全家的抢手货。"
+  },
+  {
+    "id": "shunde_pan_fried_stuffed_tofu",
+    "name": "顺德煎酿豆腐",
+    "cityId": "Guangzhou",
+    "category": [
+      "粤菜",
+      "传统菜",
+      "煎酿"
+    ],
+    "description": "把肉馅酿进嫩豆腐里，小火煎到金黄，吃的是肉汁和豆香。",
+    "ingredients": [
+      {
+        "ingredientId": "firm_tofu",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "pork_shoulder",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "dried_shrimp",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "light_soy_sauce",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "cornstarch",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "scallion",
+        "amount": "适量"
+      }
+    ],
+    "steps": [
+      "猪肉剁成肉糜，加入虾米碎、生抽、生粉和水，顺一个方向搅拌上劲。",
+      "豆腐切厚方块，中间挖小凹槽并撒少许生粉。",
+      "把肉馅填入豆腐凹槽，抹平。",
+      "平底锅放油，肉面朝下煎至金黄，再翻面煎豆腐底；淋入生抽、蚝油、生粉和水调成的芡汁，焖2分钟后撒葱花收汁。"
+    ],
+    "story": "做酿豆腐要有耐心，翻面要轻手轻脚。心急吃不了热豆腐，定下心来才漂亮。"
+  },
+  {
+    "id": "honey_char_siu_pan_fried",
+    "name": "经典蜜汁叉烧（平底锅家庭版）",
+    "cityId": "Guangzhou",
+    "category": [
+      "粤菜",
+      "烧味",
+      "家常版"
+    ],
+    "description": "家庭平底锅版蜜汁叉烧，选梅头肉，做出软嫩多汁、外焦里嫩的甜香。",
+    "ingredients": [
+      {
+        "ingredientId": "pork_collar",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "char_siu_sauce",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "maltose",
+        "amount": "2大勺"
+      },
+      {
+        "ingredientId": "honey",
+        "amount": "可替换"
+      },
+      {
+        "ingredientId": "light_soy_sauce",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "red_shallot",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": "适量"
+      }
+    ],
+    "steps": [
+      "梅头肉切长条，加入叉烧酱、生抽、料酒、姜片和红葱头，抓揉后冷藏腌制一晚。",
+      "平底锅放少许油，中小火把腌好的肉煎至两面变色微焦。",
+      "倒入腌汁和半碗清水，盖盖小火焖20-25分钟，中途翻面。",
+      "揭盖大火收汁，加入麦芽糖或蜂蜜，不停翻面浇汁至表面亮晶晶，放凉后切片。"
+    ],
+    "story": "过节或考试拿好成绩时，阿婆会做蜜汁叉烧。看小孩吃得满嘴蜜汁，守锅半天也值得。"
+  },
+  {
+    "id": "steamed_pork_ribs_with_black_bean_sauce",
+    "name": "广式豉汁蒸排骨",
+    "cityId": "Guangzhou",
+    "category": [
+      "粤菜",
+      "茶点",
+      "蒸菜"
+    ],
+    "description": "茶楼风味的豉汁蒸排骨，重点是洗透血水、抓透生粉，蒸出来嫩白滑溜。",
+    "ingredients": [
+      {
+        "ingredientId": "pork_ribs",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "yangjiang_fermented_black_beans",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "cornstarch",
+        "amount": "多一些"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "light_soy_sauce",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "peanut_oil",
+        "amount": "一勺"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": "一点点"
+      },
+      {
+        "ingredientId": "taro",
+        "amount": "可选"
+      },
+      {
+        "ingredientId": "pumpkin",
+        "amount": "可选"
+      }
+    ],
+    "steps": [
+      "排骨剁小块后反复冲洗、浸泡约15分钟，直到发白无血水，捞出彻底沥干。",
+      "豆豉拍碎，蒜剁成蒜蓉，与豆豉一起小火炒香。",
+      "排骨加入生抽、白糖、胡椒粉和蒜蓉豆豉抓匀，加入足量生粉抓至黏稠，最后淋花生油。",
+      "盘底可铺芋头或小南瓜，排骨平铺不重叠，水开后猛火蒸12-15分钟。"
+    ],
+    "story": "夏天不想大炒时，拌好排骨往蒸锅里一放就是大菜。吸满豆豉肉汁的芋头比排骨还香。"
+  },
+  {
+    "id": "chu_hou_beef_brisket_claypot",
+    "name": "砂锅柱侯焖牛腩",
+    "cityId": "Guangzhou",
+    "category": [
+      "粤菜",
+      "经典焖菜",
+      "家常"
+    ],
+    "description": "用佛山柱侯酱焖牛腩，配白萝卜，砂锅咕嘟到软烂入味。",
+    "ingredients": [
+      {
+        "ingredientId": "beef_brisket",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "daikon_radish",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "chu_hou_paste",
+        "amount": "2-3勺"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "red_shallot",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "star_anise",
+        "amount": "1个"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": "几粒"
+      },
+      {
+        "ingredientId": "light_soy_sauce",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": "适量"
+      }
+    ],
+    "steps": [
+      "牛腩切大块，冷水加料酒焯水，洗净沥干；白萝卜切滚刀块。",
+      "砂锅或炒锅放油，下老姜块、红葱头爆香，倒入牛腩翻炒到表面微黄。",
+      "加入柱侯酱炒匀，让酱汁裹满牛腩，淋入生抽和料酒。",
+      "倒入足量开水，放八角和冰糖，烧开后小火焖1.5小时。",
+      "牛腩软烂后加入白萝卜，继续焖20-30分钟，萝卜透明入味后收浓汁。"
+    ],
+    "story": "柱侯酱的香味会先在楼道里出现。焖透的萝卜吸饱牛腩鲜味和酱香，比肉还甜。"
+  }
+]

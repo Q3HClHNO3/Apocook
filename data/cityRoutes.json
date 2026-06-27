@@ -1,0 +1,456 @@
+{
+  "cities": {
+    "Guangzhou": {
+      "cityId": "guangzhou",
+      "displayName": "Guangzhou",
+      "title": "Guangzhou 行星聚焦漫游",
+      "center": [
+        23.1291,
+        113.2644
+      ],
+      "zoom": 13,
+      "stops": [
+        {
+          "id": "gz_fresh_sea_bass_01",
+          "kind": "ingredient",
+          "ingredientId": "fresh_sea_bass",
+          "lat": 23.1101,
+          "lng": 113.2399,
+          "appearTime": "morning",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_ginger_01",
+          "kind": "ingredient",
+          "ingredientId": "ginger",
+          "lat": 23.1111,
+          "lng": 113.2489,
+          "appearTime": "afternoon",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_scallion_01",
+          "kind": "ingredient",
+          "ingredientId": "scallion",
+          "lat": 23.1121,
+          "lng": 113.2559,
+          "appearTime": "evening",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_red_shallot_01",
+          "kind": "ingredient",
+          "ingredientId": "red_shallot",
+          "lat": 23.1101,
+          "lng": 113.2649,
+          "appearTime": "morning",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_seasoned_soy_sauce_for_seafood_01",
+          "kind": "ingredient",
+          "ingredientId": "seasoned_soy_sauce_for_seafood",
+          "lat": 23.1111,
+          "lng": 113.2719,
+          "appearTime": "afternoon",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_peanut_oil_01",
+          "kind": "ingredient",
+          "ingredientId": "peanut_oil",
+          "lat": 23.1121,
+          "lng": 113.2809,
+          "appearTime": "evening",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_pork_bone_01",
+          "kind": "ingredient",
+          "ingredientId": "pork_bone",
+          "lat": 23.1101,
+          "lng": 113.2879,
+          "appearTime": "morning",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_dried_night_blooming_cereus_01",
+          "kind": "ingredient",
+          "ingredientId": "dried_night_blooming_cereus",
+          "lat": 23.1171,
+          "lng": 113.2409,
+          "appearTime": "afternoon",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_candied_date_01",
+          "kind": "ingredient",
+          "ingredientId": "candied_date",
+          "lat": 23.1181,
+          "lng": 113.2479,
+          "appearTime": "evening",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_chenpi_01",
+          "kind": "ingredient",
+          "ingredientId": "chenpi",
+          "lat": 23.1161,
+          "lng": 113.2569,
+          "appearTime": "morning",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_apricot_kernel_01",
+          "kind": "ingredient",
+          "ingredientId": "apricot_kernel",
+          "lat": 23.1171,
+          "lng": 113.2639,
+          "appearTime": "afternoon",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_salt_01",
+          "kind": "ingredient",
+          "ingredientId": "salt",
+          "lat": 23.1181,
+          "lng": 113.2729,
+          "appearTime": "evening",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_jook_sing_noodles_01",
+          "kind": "ingredient",
+          "ingredientId": "jook_sing_noodles",
+          "lat": 23.1161,
+          "lng": 113.2799,
+          "appearTime": "morning",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_yellow_chives_01",
+          "kind": "ingredient",
+          "ingredientId": "yellow_chives",
+          "lat": 23.1171,
+          "lng": 113.2889,
+          "appearTime": "afternoon",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_mung_bean_sprouts_01",
+          "kind": "ingredient",
+          "ingredientId": "mung_bean_sprouts",
+          "lat": 23.1241,
+          "lng": 113.2399,
+          "appearTime": "evening",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_light_soy_sauce_01",
+          "kind": "ingredient",
+          "ingredientId": "light_soy_sauce",
+          "lat": 23.1221,
+          "lng": 113.2489,
+          "appearTime": "morning",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_dark_soy_sauce_01",
+          "kind": "ingredient",
+          "ingredientId": "dark_soy_sauce",
+          "lat": 23.1231,
+          "lng": 113.2559,
+          "appearTime": "afternoon",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_sugar_01",
+          "kind": "ingredient",
+          "ingredientId": "sugar",
+          "lat": 23.1241,
+          "lng": 113.2649,
+          "appearTime": "evening",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_lard_01",
+          "kind": "ingredient",
+          "ingredientId": "lard",
+          "lat": 23.1221,
+          "lng": 113.2719,
+          "appearTime": "morning",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_choi_sum_01",
+          "kind": "ingredient",
+          "ingredientId": "choi_sum",
+          "lat": 23.1231,
+          "lng": 113.2809,
+          "appearTime": "afternoon",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_tomato_01",
+          "kind": "ingredient",
+          "ingredientId": "tomato",
+          "lat": 23.1241,
+          "lng": 113.2879,
+          "appearTime": "evening",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_free_range_egg_01",
+          "kind": "ingredient",
+          "ingredientId": "free_range_egg",
+          "lat": 23.1281,
+          "lng": 113.2409,
+          "appearTime": "morning",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_gai_lan_01",
+          "kind": "ingredient",
+          "ingredientId": "gai_lan",
+          "lat": 23.1291,
+          "lng": 113.2479,
+          "appearTime": "afternoon",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_garlic_01",
+          "kind": "ingredient",
+          "ingredientId": "garlic",
+          "lat": 23.1301,
+          "lng": 113.2569,
+          "appearTime": "evening",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_firm_tofu_01",
+          "kind": "ingredient",
+          "ingredientId": "firm_tofu",
+          "lat": 23.1281,
+          "lng": 113.2639,
+          "appearTime": "morning",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_pork_shoulder_01",
+          "kind": "ingredient",
+          "ingredientId": "pork_shoulder",
+          "lat": 23.1291,
+          "lng": 113.2729,
+          "appearTime": "afternoon",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_dried_shrimp_01",
+          "kind": "ingredient",
+          "ingredientId": "dried_shrimp",
+          "lat": 23.1301,
+          "lng": 113.2799,
+          "appearTime": "evening",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_oyster_sauce_01",
+          "kind": "ingredient",
+          "ingredientId": "oyster_sauce",
+          "lat": 23.1281,
+          "lng": 113.2889,
+          "appearTime": "morning",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_cornstarch_01",
+          "kind": "ingredient",
+          "ingredientId": "cornstarch",
+          "lat": 23.1351,
+          "lng": 113.2399,
+          "appearTime": "afternoon",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_pork_collar_01",
+          "kind": "ingredient",
+          "ingredientId": "pork_collar",
+          "lat": 23.1361,
+          "lng": 113.2489,
+          "appearTime": "evening",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_char_siu_sauce_01",
+          "kind": "ingredient",
+          "ingredientId": "char_siu_sauce",
+          "lat": 23.1341,
+          "lng": 113.2559,
+          "appearTime": "morning",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_maltose_01",
+          "kind": "ingredient",
+          "ingredientId": "maltose",
+          "lat": 23.1351,
+          "lng": 113.2649,
+          "appearTime": "afternoon",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_honey_01",
+          "kind": "ingredient",
+          "ingredientId": "honey",
+          "lat": 23.1361,
+          "lng": 113.2719,
+          "appearTime": "evening",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_cooking_wine_01",
+          "kind": "ingredient",
+          "ingredientId": "cooking_wine",
+          "lat": 23.1341,
+          "lng": 113.2809,
+          "appearTime": "morning",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_pork_ribs_01",
+          "kind": "ingredient",
+          "ingredientId": "pork_ribs",
+          "lat": 23.1351,
+          "lng": 113.2879,
+          "appearTime": "afternoon",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_yangjiang_fermented_black_beans_01",
+          "kind": "ingredient",
+          "ingredientId": "yangjiang_fermented_black_beans",
+          "lat": 23.1421,
+          "lng": 113.2409,
+          "appearTime": "evening",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_white_pepper_01",
+          "kind": "ingredient",
+          "ingredientId": "white_pepper",
+          "lat": 23.1401,
+          "lng": 113.2479,
+          "appearTime": "morning",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_taro_01",
+          "kind": "ingredient",
+          "ingredientId": "taro",
+          "lat": 23.1411,
+          "lng": 113.2569,
+          "appearTime": "afternoon",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_pumpkin_01",
+          "kind": "ingredient",
+          "ingredientId": "pumpkin",
+          "lat": 23.1421,
+          "lng": 113.2639,
+          "appearTime": "evening",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_beef_brisket_01",
+          "kind": "ingredient",
+          "ingredientId": "beef_brisket",
+          "lat": 23.1401,
+          "lng": 113.2729,
+          "appearTime": "morning",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_daikon_radish_01",
+          "kind": "ingredient",
+          "ingredientId": "daikon_radish",
+          "lat": 23.1411,
+          "lng": 113.2799,
+          "appearTime": "afternoon",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_chu_hou_paste_01",
+          "kind": "ingredient",
+          "ingredientId": "chu_hou_paste",
+          "lat": 23.1421,
+          "lng": 113.2889,
+          "appearTime": "evening",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_star_anise_01",
+          "kind": "ingredient",
+          "ingredientId": "star_anise",
+          "lat": 23.1461,
+          "lng": 113.2399,
+          "appearTime": "morning",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        },
+        {
+          "id": "gz_rock_sugar_01",
+          "kind": "ingredient",
+          "ingredientId": "rock_sugar",
+          "lat": 23.1471,
+          "lng": 113.2489,
+          "appearTime": "afternoon",
+          "coordinateStatus": "estimated",
+          "locationHint": "Guang州城市食材点位（待后续替换为真实市场/街区坐标）"
+        }
+      ]
+    }
+  }
+}
