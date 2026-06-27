@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>广州真实地图漫游</title>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="../database.js"></script>
+    <script src="../scripts/utils.js"></script>
+    <script src="../scripts/storage.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="citymap.css" />
+  </head>
+  <body>
+    <main class="city-app" aria-label="真实城市交互地图">
+      <div id="map-container" aria-label="真实城市地图"></div>
+      <a class="return-btn" href="flightBoard.html" aria-label="返回机场大屏">← 返回机场大屏</a>
+      <button class="luggage-toggle" id="luggageToggle" type="button" aria-label="查看阿婆的行李箱">
+        🧳
+        <span class="luggage-badge" id="luggageBadge">0</span>
+      </button>
+      <section class="map-title" aria-live="polite">
+        <h1 id="mapTitle">广州真实地图漫游</h1>
+        <p>点击地图上的食材，走地鸡会跑过去啄一口，再把故事带给你。</p>
+      </section>
+    </main>
+
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <article class="glass-card">
+        <div class="card-top">
+          <span class="type-badge" id="modalType">地道食材</span>
+          <button class="close-btn" id="closeModal" type="button" aria-label="关闭弹窗">×</button>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title" id="modalTitle">Title</h2>
+          <p class="card-description" id="modalDescription">Description</p>
+          <button class="collect-btn" id="collectBtn" type="button">放进行李箱</button>
+        </div>
+      </article>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">食材已放进行李箱！</div>
+
+    <div class="luggage-modal" id="luggageModal" role="dialog" aria-modal="true" aria-labelledby="luggageTitle">
+      <section class="luggage-panel">
+        <div class="luggage-head">
+          <div>
+            <p class="luggage-eyebrow">MY LUGGAGE</p>
+            <h2 class="luggage-title" id="luggageTitle">阿婆的行李箱</h2>
+          </div>
+          <button class="close-btn" id="closeLuggage" type="button" aria-label="关闭行李箱">×</button>
+        </div>
+        <button class="shopping-note" id="mapShoppingNoteToggle" type="button" aria-expanded="false">
+          <span class="shopping-note-icon">🧾</span>
+          <span class="shopping-note-copy">
+            <strong>阿婆采购清单</strong>
+            <span id="mapShoppingNoteText">今天还没有采购任务。</span>
+          </span>
+        </button>
+        <div class="shopping-note-detail" id="mapShoppingNoteDetail" hidden>
+          <ul id="mapShoppingMissingList"></ul>
+        </div>
+        <div class="luggage-bulk-row">
+          <button class="eat-all-btn" id="eatAllBtn" type="button">全部吃掉</button>
+        </div>
+        <ul class="luggage-list" id="luggageList"></ul>
+        <div class="luggage-actions">
+          <button class="return-kitchen-btn" id="returnKitchenBtn" type="button">结束旅行，打包回阿婆厨房</button>
+        </div>
+      </section>
+    </div>
+
+    <script src="citymap.js"></script>
+  </body>
+</html>

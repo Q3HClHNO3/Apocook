@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#d9edf6" />
+  <title>FlightGallery | In-Flight Narrative Gallery</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <script src="../database.js"></script>
+  <script src="../scripts/storage.js"></script>
+  <link rel="stylesheet" href="FlightGallery.css" />
+</head>
+<body>
+  <main class="stage">
+    <section class="cabin" id="cabin">
+      <div class="cabin-art" id="cabinArt" aria-hidden="true">
+        <div class="cabin-wash"></div>
+        <div class="seat left"></div>
+        <div class="seat right"></div>
+        <div class="armrest"></div>
+        <div class="tray"></div>
+        <div class="glasses"></div>
+        <div class="can"></div>
+      </div>
+
+      <div class="content">
+        <header class="topbar">
+          <div>
+            <p class="brand">FlightGallery</p>
+            <h1>In-Flight Narrative Gallery</h1>
+          </div>
+          <div class="flight-chip">
+            <span id="airportCode">IST</span>
+            <strong id="flightMood">夜航转晨光</strong>
+          </div>
+        </header>
+
+        <div class="gallery-layout">
+          <section class="window-zone" aria-label="飞机舷窗摄影画廊">
+            <div class="window-frame" id="windowFrame">
+              <div class="window-halo"></div>
+              <div class="window-ring"></div>
+              <button class="arrow prev" type="button" id="previousDestination" aria-label="上一个目的地">‹</button>
+              <button class="arrow next" type="button" id="nextDestination" aria-label="下一个目的地">›</button>
+              <div class="window-mask" id="windowMask">
+                <img id="galleryImage" alt="城市建筑摄影" />
+                <div class="window-shade"></div>
+                <div class="window-gloss"></div>
+                <div class="photo-dots" id="photoDots" aria-label="照片切换"></div>
+              </div>
+            </div>
+            <p class="hint">拖动舷窗、按左右箭头，或点击座位节点切换目的地</p>
+          </section>
+
+          <aside class="info-panel" id="infoPanel">
+            <p class="kicker">Window Node</p>
+            <h2 class="city-name" id="cityLabel">伊斯坦布尔</h2>
+            <p class="city-en" id="cityEnglish">Istanbul</p>
+            <div class="guide-list" id="guideList"></div>
+            <div class="decision">
+              <span>Flight Decision</span>
+              <p id="flightDecision"></p>
+            </div>
+          </aside>
+        </div>
+
+        <nav class="rail" id="destinationRail" aria-label="目的地节点"></nav>
+      </div>
+    </section>
+  </main>
+
+  <button class="luggage-toggle" id="flightLuggageToggle" type="button" aria-label="查看阿婆的飞行行李箱">
+    🧳
+    <span class="luggage-badge" id="flightLuggageBadge">0</span>
+  </button>
+
+  <div class="luggage-modal" id="flightLuggageModal" role="dialog" aria-modal="true" aria-labelledby="flightLuggageTitle">
+    <section class="luggage-panel">
+      <div class="luggage-head">
+        <div>
+          <p class="luggage-eyebrow">IN-FLIGHT TROPHY BAG</p>
+          <h2 class="luggage-title" id="flightLuggageTitle">阿婆的飞行行李箱</h2>
+        </div>
+        <button class="close-btn" id="closeFlightLuggage" type="button" aria-label="关闭飞行行李箱">×</button>
+      </div>
+
+      <button class="shopping-note" id="flightShoppingNoteToggle" type="button" aria-expanded="false">
+        <span class="shopping-note-icon">🧾</span>
+        <span class="shopping-note-copy">
+          <strong>阿婆采购清单</strong>
+          <span id="flightShoppingNoteText">今天还没有采购任务。</span>
+        </span>
+      </button>
+      <div class="shopping-note-detail" id="flightShoppingNoteDetail" hidden>
+        <ul id="flightShoppingMissingList"></ul>
+      </div>
+
+      <ul class="luggage-list" id="flightLuggageList"></ul>
+
+      <div class="luggage-actions">
+        <button class="eat-all-btn" id="flightEatAllBtn" type="button">全部吃掉</button>
+        <button class="return-kitchen-btn" id="flightReturnKitchenBtn" type="button">结束旅行，打包回阿婆厨房</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="FlightGallery.js"></script>
+</body>
+</html>

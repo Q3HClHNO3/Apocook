@@ -1,0 +1,670 @@
+    :root {
+      --space: #070b12;
+      --light: rgba(255, 255, 255, 0.9);
+      --blue: #67c9f4;
+      --blue-deep: #2c88c4;
+      --green: #91bf68;
+      --green-deep: #4d8d57;
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+      --rush: cubic-bezier(0.16, 0.98, 0.22, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html,
+    body {
+      min-height: 100%;
+      margin: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      min-height: 100svh;
+      overflow: hidden;
+      color: var(--light);
+      background: var(--space);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI",
+        "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    }
+
+    button {
+      border: 0;
+      font: inherit;
+    }
+
+    .portal {
+      position: relative;
+      display: block;
+      min-height: 100vh;
+      min-height: 100svh;
+      overflow: hidden;
+      padding: max(24px, env(safe-area-inset-top)) 18px max(24px, env(safe-area-inset-bottom));
+      background:
+        linear-gradient(180deg, rgba(2, 19, 48, 0.16), rgba(2, 19, 48, 0.1)),
+        url("../assets/portal-globe-bg.png") center / cover no-repeat,
+        #06223f;
+      isolation: isolate;
+    }
+
+    .portal::before {
+      content: none;
+    }
+
+    .portal::after {
+      content: none;
+    }
+
+    .stars {
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      pointer-events: none;
+      background-image:
+        radial-gradient(circle, rgba(255, 255, 255, 0.9) 0 1px, transparent 1.4px),
+        radial-gradient(circle, rgba(124, 211, 255, 0.65) 0 1px, transparent 1.5px),
+        radial-gradient(circle, rgba(255, 229, 166, 0.72) 0 1px, transparent 1.4px);
+      background-position: 18% 22%, 72% 16%, 56% 72%;
+      background-size: 132px 148px, 202px 190px, 256px 214px;
+      opacity: 0.12;
+    }
+
+    .star-glow {
+      position: absolute;
+      width: var(--size);
+      height: var(--size);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.92);
+      box-shadow: 0 0 24px rgba(128, 216, 255, 0.5);
+      animation: twinkle var(--speed) ease-in-out infinite alternate;
+    }
+
+    .star-glow::before,
+    .star-glow::after {
+      content: "";
+      position: absolute;
+      inset: 50% auto auto 50%;
+      width: calc(var(--size) * 7);
+      height: 1px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.72);
+      transform: translate(-50%, -50%);
+    }
+
+    .star-glow::after {
+      width: 1px;
+      height: calc(var(--size) * 7);
+    }
+
+    .star-one { --size: 3px; --speed: 2.8s; left: 14%; top: 31%; }
+    .star-two { --size: 4px; --speed: 3.4s; right: 42%; top: 17%; }
+    .star-three { --size: 3px; --speed: 2.6s; left: 22%; top: 58%; }
+    .star-four { --size: 5px; --speed: 4s; right: 23%; top: 46%; }
+
+    .moon {
+      display: none;
+    }
+
+    .greeting {
+      width: min(92vw, 780px);
+      position: relative;
+      z-index: 5;
+      margin: 0 auto;
+      text-align: center;
+      transition: opacity 420ms ease, transform 520ms var(--ease), filter 420ms ease;
+      animation: riseIn 760ms var(--ease) both;
+    }
+
+    .brand {
+      margin: 0 0 10px;
+      color: rgba(231, 244, 255, 0.78);
+      font-size: clamp(12px, 2.6vw, 14px);
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .greeting h1 {
+      margin: 0;
+      font-size: clamp(28px, 5vw, 52px);
+      line-height: 1.08;
+      font-weight: 760;
+      letter-spacing: 0;
+      text-shadow: 0 18px 50px rgba(2, 20, 55, 0.52);
+    }
+
+    .greeting h1 span {
+      display: block;
+      margin-top: 8px;
+      color: rgba(238, 246, 250, 0.78);
+      font-size: clamp(16px, 3.5vw, 26px);
+      font-weight: 500;
+    }
+
+    .globe-stage {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 4;
+      width: 100%;
+      height: 100%;
+      min-height: 100svh;
+      transition: transform 900ms var(--rush), opacity 760ms ease, filter 760ms ease;
+      will-change: transform, opacity, filter;
+      animation: riseIn 820ms var(--ease) 120ms both;
+    }
+
+    .orbit {
+      display: none;
+    }
+
+    .globe-glow {
+      display: none;
+    }
+
+    .globe {
+      display: none;
+    }
+
+    .globe::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background:
+        radial-gradient(ellipse at 48% 24%, rgba(255, 196, 240, 0.34), transparent 27%),
+        repeating-radial-gradient(ellipse at 50% 10%, rgba(255, 255, 255, 0.08) 0 1px, transparent 1px 7px);
+      mix-blend-mode: soft-light;
+    }
+
+    .globe::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: inherit;
+      box-shadow: inset 0 18px 40px rgba(255, 255, 255, 0.35);
+    }
+
+    .land,
+    .cloud,
+    .marker,
+    .tiny-tree,
+    .ship {
+      position: absolute;
+    }
+
+    .land { display: none; }
+
+    .land-a {
+      left: 12%;
+      top: 27%;
+      width: 27%;
+      height: 47%;
+      transform: rotate(14deg);
+      clip-path: polygon(34% 0, 62% 8%, 76% 24%, 65% 39%, 80% 51%, 62% 64%, 58% 82%, 43% 100%, 30% 82%, 38% 62%, 20% 50%, 27% 35%, 8% 22%);
+    }
+
+    .land-b {
+      left: 43%;
+      top: 23%;
+      width: 35%;
+      height: 24%;
+      transform: rotate(8deg);
+      clip-path: polygon(3% 47%, 17% 19%, 36% 18%, 48% 4%, 68% 16%, 96% 18%, 90% 44%, 76% 52%, 77% 74%, 51% 69%, 34% 88%, 20% 64%);
+    }
+
+    .land-c {
+      left: 49%;
+      top: 43%;
+      width: 22%;
+      height: 31%;
+      transform: rotate(-7deg);
+      clip-path: polygon(28% 0, 62% 6%, 82% 28%, 71% 49%, 83% 69%, 56% 100%, 31% 86%, 20% 55%, 4% 36%);
+    }
+
+    .land-d {
+      left: 64%;
+      top: 31%;
+      width: 27%;
+      height: 32%;
+      transform: rotate(10deg);
+      clip-path: polygon(4% 28%, 23% 4%, 55% 8%, 92% 24%, 81% 43%, 98% 61%, 70% 75%, 62% 100%, 42% 74%, 15% 71%);
+    }
+
+    .land-e {
+      left: 73%;
+      top: 68%;
+      width: 17%;
+      height: 12%;
+      transform: rotate(-10deg);
+      clip-path: polygon(7% 55%, 25% 18%, 62% 10%, 96% 43%, 72% 86%, 31% 82%);
+    }
+
+    .cloud { display: none; }
+
+    .cloud::before,
+    .cloud::after {
+      content: "";
+      position: absolute;
+      bottom: 18%;
+      border-radius: 50%;
+      background: inherit;
+    }
+
+    .cloud::before {
+      left: 15%;
+      width: 35%;
+      height: 110%;
+    }
+
+    .cloud::after {
+      right: 18%;
+      width: 28%;
+      height: 92%;
+    }
+
+    .cloud-a { --w: 14%; left: 13%; top: 56%; }
+    .cloud-b { --w: 10%; right: 17%; top: 49%; }
+    .cloud-c { --w: 11%; left: 45%; bottom: 12%; }
+    .cloud-d { --w: 9%; right: 32%; top: 28%; }
+
+    .tiny-tree { display: none; }
+
+    .tree-a { left: 25%; top: 40%; }
+    .tree-b { left: 57%; top: 34%; transform: scale(1.12); }
+    .tree-c { left: 77%; top: 44%; }
+    .tree-d { left: 55%; top: 62%; transform: scale(0.9); }
+
+    .ship { display: none; }
+
+    .plane {
+      position: absolute;
+      left: clamp(118px, 12.5vw, 195px);
+      bottom: clamp(248px, 31svh, 330px);
+      z-index: 7;
+      width: clamp(128px, 12vw, 178px);
+      height: clamp(62px, 6.4vw, 88px);
+      padding: 0;
+      border: 0;
+      color: #effbff;
+      background: rgba(255, 255, 255, 0.001);
+      cursor: pointer;
+      transform: rotate(-18deg);
+      transform-origin: center;
+      touch-action: manipulation;
+      transition: transform 220ms ease, filter 220ms ease;
+      animation: planeFloat 4.2s ease-in-out infinite;
+    }
+
+    .plane:hover,
+    .plane:focus-visible {
+      filter: drop-shadow(0 0 18px rgba(177, 236, 255, 0.78));
+      transform: rotate(-18deg) translateY(-4px) scale(1.04);
+      outline: 0;
+    }
+
+    .plane-trail {
+      display: none;
+    }
+
+    .plane-body,
+    .plane-wing,
+    .plane-tail { display: none; }
+
+    .plane-marker {
+      position: absolute;
+      left: 58%;
+      top: 40%;
+      z-index: 2;
+      display: grid;
+      place-items: center;
+      width: clamp(38px, 5vw, 50px);
+      height: clamp(38px, 5vw, 50px);
+      border-radius: 50%;
+      transform: translate(-50%, -50%) rotate(18deg);
+      pointer-events: none;
+    }
+
+    .plane-marker::before,
+    .plane-marker::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    .plane-marker::before {
+      width: 11px;
+      height: 11px;
+      background: #f9fdff;
+      box-shadow:
+        0 0 0 7px rgba(103, 201, 244, 0.18),
+        0 0 26px rgba(103, 201, 244, 0.94),
+        0 0 48px rgba(255, 255, 255, 0.58);
+      animation: pulse 1.8s ease-in-out infinite;
+    }
+
+    .plane-marker::after {
+      width: 27px;
+      height: 27px;
+      border: 1px solid rgba(255, 255, 255, 0.64);
+      animation: ring 1.8s ease-out infinite;
+    }
+
+    .plane-label {
+      position: absolute;
+      left: 50%;
+      top: calc(100% + 8px);
+      min-width: max-content;
+      padding: 7px 10px;
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      border-radius: 8px;
+      color: #f8fdff;
+      background: rgba(8, 15, 25, 0.68);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.24);
+      backdrop-filter: blur(12px);
+      font-size: clamp(12px, 2.7vw, 14px);
+      line-height: 1.25;
+      opacity: 0;
+      transform: translate(-50%, 8px) rotate(18deg);
+      transition: opacity 180ms ease, transform 180ms ease;
+      pointer-events: none;
+    }
+
+    .plane:hover .plane-label,
+    .plane:focus-visible .plane-label,
+    .plane.is-peek .plane-label {
+      opacity: 1;
+      transform: translate(-50%, 0) rotate(18deg);
+    }
+
+    .marker {
+      z-index: 4;
+      display: grid;
+      place-items: center;
+      width: clamp(42px, 7vw, 58px);
+      height: clamp(42px, 7vw, 58px);
+      padding: 0;
+      border-radius: 50%;
+      color: #fff;
+      background: transparent;
+      cursor: pointer;
+      transform: translate(-50%, -50%);
+      touch-action: manipulation;
+    }
+
+    .marker::before,
+    .marker::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    .marker::before {
+      width: 12px;
+      height: 12px;
+      background: #f9fdff;
+      box-shadow:
+        0 0 0 7px rgba(103, 201, 244, 0.16),
+        0 0 26px rgba(103, 201, 244, 0.92),
+        0 0 48px rgba(255, 255, 255, 0.55);
+      animation: pulse 1.8s ease-in-out infinite;
+    }
+
+    .marker::after {
+      width: 28px;
+      height: 28px;
+      border: 1px solid rgba(255, 255, 255, 0.62);
+      animation: ring 1.8s ease-out infinite;
+    }
+
+    .marker-label {
+      position: absolute;
+      left: 50%;
+      top: calc(100% + 8px);
+      min-width: max-content;
+      padding: 7px 10px;
+      border: 1px solid rgba(255, 255, 255, 0.26);
+      border-radius: 8px;
+      color: #f8fdff;
+      background: rgba(8, 15, 25, 0.68);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.24);
+      backdrop-filter: blur(12px);
+      font-size: clamp(12px, 2.7vw, 14px);
+      line-height: 1.25;
+      opacity: 0;
+      transform: translate(-50%, 8px);
+      transition: opacity 180ms ease, transform 180ms ease;
+      pointer-events: none;
+    }
+
+    .marker:hover .marker-label,
+    .marker:focus-visible .marker-label,
+    .marker.is-peek .marker-label {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+
+    .marker-home {
+      left: 56%;
+      top: 80%;
+    }
+
+    .marker-airport {
+      left: 72%;
+      top: 76%;
+    }
+
+    .hint {
+      margin: 0;
+      position: absolute;
+      left: 50%;
+      bottom: max(20px, env(safe-area-inset-bottom));
+      z-index: 8;
+      color: rgba(230, 244, 255, 0.68);
+      font-size: clamp(12px, 2.7vw, 14px);
+      text-align: center;
+      transform: translateX(-50%);
+      transition: opacity 420ms ease, transform 520ms var(--ease), filter 420ms ease;
+      animation: hintRiseIn 820ms var(--ease) 260ms both;
+    }
+
+    .portal.is-descending .globe-stage {
+      opacity: 0;
+      transform: scale(4);
+      filter: blur(13px);
+    }
+
+    .portal.is-descending .plane {
+      opacity: 0;
+      transform: rotate(-18deg) translate(70px, -70px) scale(1.6);
+      transition: opacity 760ms ease, transform 760ms var(--rush), filter 760ms ease;
+      filter: blur(8px);
+    }
+
+    .portal.is-descending .greeting,
+    .portal.is-descending .hint {
+      opacity: 0;
+      transform: translate(-50%, -14px) scale(0.96);
+      filter: blur(8px);
+    }
+
+    .portal.is-descending .greeting {
+      transform: translateY(-14px) scale(0.96);
+    }
+
+    .portal.is-descending .stars {
+      opacity: 0.18;
+    }
+
+    .warp {
+      position: fixed;
+      inset: 0;
+      z-index: 10;
+      pointer-events: none;
+      opacity: 0;
+      background:
+        radial-gradient(circle at 50% 50%, transparent 0 8%, rgba(255, 255, 255, 0.24) 8.5% 9%, transparent 9.5%),
+        radial-gradient(circle at 50% 50%, rgba(115, 211, 255, 0.36), transparent 42%),
+        rgba(255, 255, 255, 0);
+      transform: scale(0.7);
+      transition: opacity 600ms ease, transform 780ms var(--rush);
+    }
+
+    .portal.is-descending .warp {
+      opacity: 1;
+      transform: scale(1.55);
+    }
+
+    @media (max-width: 760px) {
+      .portal {
+        padding-left: 12px;
+        padding-right: 12px;
+        background-position: 0% 0%, 16% center, 0% 0%;
+      }
+
+      .moon {
+        position: absolute;
+        right: clamp(8px, 3vw, 22px);
+        top: clamp(300px, 43svh, 390px);
+        z-index: 1;
+        display: block;
+        width: clamp(58px, 15vw, 86px);
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background:
+          radial-gradient(circle at 33% 27%, rgba(255, 255, 255, 0.96), transparent 30%),
+          #fff8c8;
+        box-shadow:
+          0 0 22px rgba(255, 241, 184, 0.92),
+          0 0 56px rgba(255, 204, 168, 0.42);
+        pointer-events: none;
+      }
+
+      .globe-stage {
+        min-height: 100svh;
+      }
+
+      .plane {
+        left: 9vw;
+        bottom: 31svh;
+        width: 116px;
+        height: 58px;
+      }
+
+      .marker-home {
+        left: 56%;
+        top: 80%;
+      }
+
+      .marker-airport {
+        left: 73%;
+        top: 76%;
+      }
+
+      .hint {
+        max-width: 22rem;
+      }
+    }
+
+    @media (max-width: 390px) {
+      .greeting h1 {
+        font-size: 28px;
+      }
+
+      .globe-stage {
+        min-height: 340px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    @keyframes riseIn {
+      from {
+        opacity: 0;
+        transform: translateY(16px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes hintRiseIn {
+      from {
+        opacity: 0;
+        transform: translate(-50%, 16px);
+      }
+      to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+      }
+    }
+
+    @keyframes breathe {
+      from {
+        transform: scale(0.985);
+        opacity: 0.76;
+      }
+      to {
+        transform: scale(1.018);
+        opacity: 1;
+      }
+    }
+
+    @keyframes twinkle {
+      from {
+        transform: translateY(-4px) scale(0.88);
+        opacity: 0.45;
+      }
+      to {
+        transform: translateY(5px) scale(1.08);
+        opacity: 0.95;
+      }
+    }
+
+    @keyframes orbitDrift {
+      to {
+        transform: rotate(342deg);
+      }
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(0.9);
+      }
+      50% {
+        transform: scale(1.25);
+      }
+    }
+
+    @keyframes ring {
+      from {
+        transform: scale(0.76);
+        opacity: 0.9;
+      }
+      to {
+        transform: scale(1.6);
+        opacity: 0;
+      }
+    }
+
+    @keyframes planeFloat {
+      0%, 100% {
+        translate: 0 0;
+      }
+      50% {
+        translate: 10px -8px;
+      }
+    }
