@@ -11,13 +11,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Install coscli
+        run: |
+          wget -q https://github.com/tencentyun/coscli/releases/download/v0.13.0-beta/coscli-linux -O coscli
+          chmod +x coscli
+
       - name: Upload to COS
-        uses: TencentCloud/cos-action@v1
-        with:
-          secret_id: ${{ secrets.TENCENT_SECRET_ID }}
-          secret_key: ${{ secrets.TENCENT_SECRET_KEY }}
-          cos_bucket: ${{ secrets.COS_BUCKET }}
-          cos_region: ap-guangzhou
-          local_path: .
-          remote_path: /
-          clean: true
+        env:
+          SECRET_ID: ${{ secrets.TENCENT_SECRET_ID }}
+          SECRET_KEY: ${{ secrets.TENCENT_SECRET_KEY }}
+          BUCKET: ${{ secrets.COS_BUCKET }}
+        run: |
+          ./coscli sync . cos://$BUCKET/ \
+            --secret-id $SECRET_ID \
+            --secret-key $SECRET_KEY \
+            --endpoint cos.ap-guangzhou.myqcloud.com \
+            --delete \
+            --exclude ".git/.*" \
+            --exclude ".github/.*"
