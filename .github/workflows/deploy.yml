@@ -26,6 +26,5 @@ jobs:
             --secret-id $SECRET_ID \
             --secret-key $SECRET_KEY \
             --endpoint cos.ap-guangzhou.myqcloud.com \
-            --delete \
             --exclude ".git/.*" \
             --exclude ".github/.*"
