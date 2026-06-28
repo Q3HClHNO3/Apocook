@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>我的阿婆厨房</title>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <script src="../database.js"></script>
+    <script src="../scripts/utils.js"></script>
+    <script src="../scripts/storage.js"></script>
+    <link rel="stylesheet" href="kitchen.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <div class="brand">
+          <span class="brand-mark">APO CHEF · 廣府小廚</span>
+          <h1>我的阿婆厨房</h1>
+          <p class="hint">先去冰箱拣餸，再选一件厨具，听阿婆慢慢教你煮。</p>
+        </div>
+        <aside class="today-menu-note today-menu-paper-strip" id="todayMenuNote" aria-live="polite">
+          <div class="today-menu-note-title paper-strip-title">今日餐单</div>
+          <ul id="todayMenuNoteList"></ul>
+        </aside>
+        <div class="header-actions" aria-label="页面导航">
+          <a href="../index.html" class="go-travel-btn" title="返回首页大气层">返回大气层</a>
+          <a href="../SearchMap-City/flightBoard.html" class="go-travel-btn" title="直接前往国际机场出发大厅">直接出发</a>
+        </div>
+        <div class="progress" aria-label="流程进度">
+          <span class="dot is-active" data-dot="kitchen"></span>
+          <span class="dot" data-dot="fridge"></span>
+          <span class="dot" data-dot="serve"></span>
+        </div>
+      </header>
+
+      <div class="stage-shell">
+        <section id="main-layer" class="layer is-active" aria-label="主厨房透视场景">
+          <div class="main-stage">
+            <div class="kitchen-canvas">
+              <img id="main-scene-img" class="scene-img" alt="高质感复古港式厨房透视全景" />
+              <div class="film-grain"></div>
+              <p id="scene-toast" class="scene-toast">先点右侧冰箱，把食材放进小篮子。</p>
+
+              <!-- Hotspot: 阿婆的冰箱 / 食材多选. -->
+              <button class="zone zone-fridge" type="button" data-label="阿婆冰箱 / 食材多选" aria-label="打开右侧阿婆冰箱"></button>
+
+              <!-- Hotspot: 墙面小板, opens the recipe book overview. -->
+              <button class="zone zone-recipe-board" type="button" data-label="阿婆菜谱总览" aria-label="打开阿婆菜谱总览"></button>
+
+              <!-- Hotspot: 燃气灶铁镬, method = 炒/煎/炸. -->
+              <button class="zone zone-wok" type="button" data-label="铁镬 / 炒/煎/炸" data-method="炒/煎/炸" aria-label="选择铁镬炒煎炸"></button>
+
+              <!-- Hotspot: 瓦煲, method = 煲/炖. -->
+              <button class="zone zone-claypot" type="button" data-label="瓦煲 / 煲/炖" data-method="煲/炖" aria-label="选择瓦煲煲炖"></button>
+
+              <!-- Hotspot: 蒸笼, method = 蒸. -->
+              <button class="zone zone-steamer" type="button" data-label="蒸笼 / 蒸" data-method="蒸" aria-label="选择蒸笼蒸"></button>
+
+              <!-- Hotspot: 微波炉, method = 叮. -->
+              <button class="zone zone-microwave" type="button" data-label="微波炉 / 叮" data-method="叮" aria-label="选择微波炉叮"></button>
+
+              <!-- Hotspot: 小烤箱, method = 烤. -->
+              <button class="zone zone-oven" type="button" data-label="小烤箱 / 烤" data-method="烤" aria-label="选择小烤箱烤"></button>
+
+              <!-- Hotspot: 空气炸锅, method = 空气炸. -->
+              <button class="zone zone-airfryer" type="button" data-label="空气炸锅 / 空气炸" data-method="空气炸" aria-label="选择空气炸锅空气炸"></button>
+
+              <!-- Hotspot: 电饭煲, method = 煮饭/一锅出. -->
+              <button class="zone zone-ricecooker" type="button" data-label="电饭煲 / 煮饭/一锅出" data-method="煮饭/一锅出" aria-label="选择电饭煲煮饭一锅出"></button>
+            </div>
+
+            <div class="control-console" aria-label="阿婆厨房控制台">
+              <div class="console-group">
+                <span class="console-label">菜篮子已选食材</span>
+                <div id="basket-icons" class="basket-icons">
+                  <span class="empty-basket">还没拿菜。先去右侧冰箱看看。</span>
+                </div>
+              </div>
+              <div class="console-group">
+                <span class="console-label">已选厨具</span>
+                <div id="selected-tool" class="selected-tool">还没选厨具</div>
+              </div>
+              <button id="fire-button" class="fire-button" type="button" disabled>阿婆开火！</button>
+            </div>
+          </div>
+        </section>
+
+        <section id="fridge-layer" class="layer" aria-label="冰箱内部食材场景">
+          <div class="image-stage fridge-stage">
+            <img id="fridge-scene-img" class="scene-img" alt="蜡笔手绘冰箱食材格口" />
+            <div class="film-grain"></div>
+
+            <div id="fridge-zones" class="fridge-zones" aria-label="冰箱食材分区"></div>
+
+            <div class="fridge-toolbar">
+              <p id="fridge-note">点击食材图片，放入阿婆的小篮子。</p>
+              <button id="close-fridge" class="primary" type="button">关上冰箱，返回厨房</button>
+            </div>
+
+            <button id="origin-tooltip" class="origin-tooltip" type="button" aria-hidden="true"></button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div id="recipe-book-modal" class="modal recipe-book-modal" role="dialog" aria-modal="true" aria-labelledby="recipe-book-title">
+      <button class="modal-backdrop" type="button" aria-label="关闭菜谱总览"></button>
+      <article class="modal-card recipe-book-card">
+        <button class="close recipe-book-close" type="button" aria-label="关闭">×</button>
+        <p class="modal-kicker">阿婆的小本本</p>
+        <h2 id="recipe-book-title" class="modal-title">阿婆菜谱总览</h2>
+        <p class="recipe-book-hint">点开一道菜，看看阿婆怎么做。</p>
+        <div id="recipe-book-list" class="recipe-book-list"></div>
+      </article>
+    </div>
+
+    <div id="result-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-backdrop" type="button" aria-label="关闭弹窗"></button>
+      <article class="modal-card">
+        <button class="close" type="button" aria-label="关闭">×</button>
+        <p id="modal-kicker" class="modal-kicker">阿婆上菜</p>
+        <h2 id="modal-title" class="modal-title"></h2>
+        <div id="modal-meta" class="recipe-meta"></div>
+        <div class="recipe-actions">
+          <button id="set-today-menu-btn" class="set-menu-btn" type="button">
+            加入今日餐单
+          </button>
+          <button id="back-to-recipe-book-btn" class="secondary-menu-btn" type="button">
+            返回菜谱总览，继续拣菜
+          </button>
+        </div>
+        <section class="block">
+          <h3>独门秘籍</h3>
+          <p id="modal-secret"></p>
+        </section>
+        <section class="block">
+          <h3>阿婆的唠叨</h3>
+          <p id="modal-gossip"></p>
+        </section>
+        <section id="steps-block" class="block">
+          <h3>做法步骤</h3>
+          <ol id="modal-steps"></ol>
+        </section>
+      </article>
+    </div>
+
+    <script src="kitchen.js"></script>
+  </body>
+</html>

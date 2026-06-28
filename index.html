@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#070b12" />
+  <title>Click on globe</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles/portal.css" />
+</head>
+<body>
+  <main class="portal" aria-label="Click on globe portal">
+    <div class="warp" aria-hidden="true"></div>
+
+    <section class="portal-hero home-portal-animation" data-fit="cover" aria-label="Globe View">
+      <div class="portal-stage">
+        <picture class="portal-fallback" aria-hidden="true">
+          <img src="assets/portal/0.portal-all.png" alt="" loading="eager" decoding="async" />
+        </picture>
+
+        <img class="portal-layer portal-bg" src="assets/portal/portal-bg.png" alt="" loading="eager" decoding="async" />
+
+        <div class="portal-layer-wrap portal-left-hand-earth">
+          <img class="portal-layer portal-earth" src="assets/portal/left-hand-bowl-earth.png" alt="" loading="eager" decoding="async" />
+        </div>
+
+        <div class="portal-layer-wrap portal-right-hand-wrap" aria-hidden="true">
+          <img class="portal-layer portal-right-hand" src="assets/portal/right-hand-chopsticks.png" alt="" loading="eager" decoding="async" />
+        </div>
+
+        <div class="portal-sparkles" aria-hidden="true"></div>
+        <div class="portal-trails" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <button class="portal-zone portal-zone-earth portal-earth-hit" type="button" aria-label="前往城市探索机场大屏" data-zone="earth" data-href="SearchMap-City/flightBoard.html"></button>
+        <button class="portal-zone portal-zone-bowl" type="button" aria-label="回到阿婆厨房" data-zone="bowl" data-href="ApoCHEF-Kitchen/kitchen.html"></button>
+      </div>
+
+      <header class="portal-text greeting" aria-live="polite">
+        <p class="brand">Click on globe</p>
+        <h1 id="greetingText">今天想干嘛？<span>What's the plan for today?</span></h1>
+      </header>
+    </section>
+
+    <p class="hint">筷子指向地球去探索城市，点碗和满桌美食回阿婆厨房。</p>
+  </main>
+
+  <script src="scripts/portal.js"></script>
+</body>
+</html>

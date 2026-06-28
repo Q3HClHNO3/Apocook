@@ -1,0 +1,524 @@
+:root {
+  --space: #070b12;
+  --light: rgba(255, 255, 255, 0.92);
+  --blue: #67c9f4;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --rush: cubic-bezier(0.16, 0.98, 0.22, 1);
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+  overflow: hidden;
+  color: var(--light);
+  background: #54baf3;
+  cursor: none;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI",
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+button {
+  border: 0;
+  font: inherit;
+  cursor: none;
+}
+
+.portal {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  min-height: 100svh;
+  overflow: hidden;
+  padding: 0;
+  isolation: isolate;
+  background: #54baf3;
+}
+
+.portal-hero {
+  --portal-speed: 2.9s;
+  --portal-stage-size: max(100vw, 100svh);
+  position: relative;
+  z-index: 4;
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  min-height: 100svh;
+  overflow: hidden;
+  transition: transform 900ms var(--rush), opacity 760ms ease, filter 760ms ease;
+  will-change: transform, opacity, filter;
+}
+
+.portal-hero:hover {
+  --portal-speed: 2.45s;
+}
+
+.portal-hero[data-fit="cover"] {
+  --portal-stage-size: max(100vw, 100svh);
+}
+
+.portal-hero[data-fit="contain"] {
+  --portal-stage-size: min(100vw, 100svh);
+  background: #54baf3;
+}
+
+.portal-stage {
+  --pointer-x: 50%;
+  --pointer-y: 50%;
+  --tilt-x: 0;
+  --tilt-y: 0;
+  --chopstick-angle: 0deg;
+  --chopstick-reach: 1;
+  position: relative;
+  width: var(--portal-stage-size);
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  isolation: isolate;
+  flex: none;
+  transition: opacity 0.58s ease, filter 0.58s ease, transform 0.58s var(--rush);
+  will-change: opacity, filter, transform;
+  cursor: none;
+}
+
+.portal-fallback,
+.portal-layer-wrap,
+.portal-layer,
+.portal-fallback img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.portal-fallback,
+.portal-layer-wrap {
+  pointer-events: none;
+}
+
+.portal-layer,
+.portal-fallback img {
+  object-fit: cover;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  will-change: transform, opacity;
+}
+
+.portal-fallback {
+  z-index: 1;
+  opacity: 0;
+}
+
+.portal-bg {
+  z-index: 2;
+  transform-origin: var(--zoom-origin-x, 50%) var(--zoom-origin-y, 50%);
+  transition: transform 280ms var(--ease), filter 280ms ease, opacity 260ms ease;
+  will-change: transform, opacity, filter;
+}
+
+.portal-left-hand-earth {
+  z-index: 7;
+  transform-origin: 43% 69%;
+  animation: portalBowlSway var(--portal-speed) ease-in-out infinite;
+  transition: transform 260ms var(--ease), filter 260ms ease;
+  will-change: transform;
+}
+
+.portal-left-hand-earth.is-spinning {
+  animation: portalEarthPop 640ms var(--rush) both, portalBowlSway var(--portal-speed) ease-in-out 640ms infinite;
+}
+
+.portal-right-hand-wrap {
+  z-index: 9;
+  transform-origin: 78% 34%;
+  animation: portalChopstickBreath 2.8s ease-in-out infinite;
+  transform: rotate(var(--chopstick-angle)) scaleX(var(--chopstick-reach));
+  transition: filter 180ms ease;
+  will-change: transform;
+}
+
+.portal-right-hand {
+  transform-origin: 78% 34%;
+  filter: drop-shadow(0 12px 22px rgba(20, 56, 90, 0.14));
+}
+
+.portal-sparkles {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle, rgba(255, 255, 255, 0.95) 0 1px, transparent 1.7px),
+    radial-gradient(circle, rgba(255, 244, 185, 0.8) 0 1px, transparent 1.8px),
+    radial-gradient(circle, rgba(123, 218, 255, 0.7) 0 1px, transparent 1.7px);
+  background-position: 18% 27%, 54% 20%, 73% 76%;
+  background-size: 180px 190px, 230px 210px, 270px 250px;
+  opacity: 0.2;
+  animation: portalTwinkle 3.4s ease-in-out infinite alternate;
+}
+
+.portal-trails {
+  position: absolute;
+  inset: 0;
+  z-index: 11;
+  pointer-events: none;
+  transform-origin: 50% 49%;
+  animation: portalTrailGroup var(--portal-speed) ease-in-out infinite;
+  transition: opacity 240ms ease, filter 240ms ease;
+}
+
+.portal-trails span,
+.portal-trails::before,
+.portal-trails::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  top: 32%;
+  width: 47%;
+  height: 31%;
+  border: 2px solid rgba(255, 255, 255, 0.58);
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  opacity: 0;
+  transform: rotate(-12deg) scale(0.9);
+  animation: portalTrailPulse var(--portal-speed) ease-in-out infinite;
+}
+
+.portal-trails span:nth-child(2) {
+  left: 22%;
+  top: 27%;
+  width: 43%;
+  height: 25%;
+  border-color: rgba(107, 216, 255, 0.58);
+  border-right-color: transparent;
+  animation-delay: -0.75s;
+}
+
+.portal-trails span:nth-child(3) {
+  left: 35%;
+  top: 41%;
+  width: 35%;
+  height: 22%;
+  border-color: rgba(255, 234, 150, 0.56);
+  border-top-color: transparent;
+  animation-delay: -1.5s;
+}
+
+.portal-trails::after {
+  left: 33%;
+  top: 29%;
+  width: 28%;
+  height: 18%;
+  border-color: rgba(255, 255, 255, 0.46);
+  border-left-color: transparent;
+  animation-delay: -2.05s;
+}
+
+.portal-text {
+  position: absolute;
+  top: max(24px, calc(env(safe-area-inset-top) + 18px));
+  left: 50%;
+  z-index: 20;
+  width: min(86%, 760px);
+  margin: 0;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+.brand {
+  margin: 0 0 8px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: clamp(11px, 1.4vw, 14px);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.portal-text h1 {
+  margin: 0;
+  font-size: clamp(24px, 4.1vw, 52px);
+  line-height: 1.08;
+  font-weight: 760;
+  letter-spacing: 0;
+  text-shadow: 0 14px 36px rgba(2, 20, 55, 0.34);
+}
+
+.portal-text h1 span {
+  display: block;
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: clamp(14px, 2vw, 25px);
+  font-weight: 600;
+}
+
+.portal-zone {
+  position: absolute;
+  z-index: 21;
+  padding: 0;
+  background: transparent;
+  pointer-events: auto;
+  touch-action: manipulation;
+}
+
+.portal-zone:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.86);
+  outline-offset: 4px;
+}
+
+.portal-zone-earth {
+  z-index: 24;
+  left: 26%;
+  top: 28%;
+  width: 45%;
+  height: 34%;
+  border-radius: 50%;
+}
+
+.portal-zone-bowl {
+  z-index: 20;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+
+.portal-zone::before {
+  content: "";
+  position: absolute;
+  inset: -8%;
+  border-radius: inherit;
+  background: radial-gradient(circle at var(--pointer-x) var(--pointer-y), rgba(255, 255, 255, 0.2), transparent 44%);
+  opacity: 0;
+  transition: opacity 220ms ease;
+}
+
+.portal-zone.is-aimed::before {
+  opacity: 1;
+}
+
+.hint {
+  position: absolute;
+  left: 50%;
+  bottom: max(18px, env(safe-area-inset-bottom));
+  z-index: 23;
+  width: min(88vw, 34rem);
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: clamp(12px, 2.7vw, 14px);
+  text-align: center;
+  text-shadow: 0 10px 28px rgba(20, 56, 90, 0.36);
+  transform: translateX(-50%);
+}
+
+.hint span {
+  display: block;
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 0.92em;
+}
+
+.warp {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  pointer-events: none;
+  opacity: 0;
+  background:
+    radial-gradient(circle at 50% 50%, transparent 0 8%, rgba(255, 255, 255, 0.24) 8.5% 9%, transparent 9.5%),
+    radial-gradient(circle at 50% 50%, rgba(115, 211, 255, 0.36), transparent 42%),
+    rgba(255, 255, 255, 0);
+  transform: scale(0.7);
+  transition: opacity 600ms ease, transform 780ms var(--rush);
+}
+
+.portal.has-layer-error .portal-fallback {
+  opacity: 1;
+}
+
+.portal.has-layer-error .portal-bg,
+.portal.has-layer-error .portal-layer-wrap,
+.portal.has-layer-error .portal-sparkles,
+.portal.has-layer-error .portal-trails {
+  opacity: 0;
+}
+
+.portal-stage.is-aiming-earth .portal-earth {
+  animation: portalEarthBreath 1.45s ease-in-out infinite;
+  filter: saturate(1.08) drop-shadow(0 18px 30px rgba(20, 56, 90, 0.14));
+}
+
+.portal-stage.is-intro-earth-pop .portal-earth {
+  animation: portalIntroEarthTap 540ms var(--rush) both;
+  filter:
+    saturate(1.16)
+    drop-shadow(0 0 18px rgba(255, 255, 255, 0.5))
+    drop-shadow(0 18px 30px rgba(20, 56, 90, 0.14));
+}
+
+.portal-stage.is-aiming-bowl .portal-bg {
+  transform:
+    perspective(1200px)
+    rotateX(calc(var(--tilt-y) * -1.4deg))
+    rotateY(calc(var(--tilt-x) * 1.8deg))
+    translate3d(calc(var(--tilt-x) * -0.55%), calc(var(--tilt-y) * -0.45%), 0)
+    scale(1.018);
+  filter: saturate(1.04) brightness(1.025);
+}
+
+.portal-stage.is-aiming-earth .portal-right-hand-wrap,
+.portal-stage.is-aiming-bowl .portal-right-hand-wrap {
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.42));
+}
+
+.portal.is-intro-cue .portal-right-hand-wrap {
+  filter:
+    drop-shadow(0 0 14px rgba(255, 255, 255, 0.5))
+    drop-shadow(0 14px 24px rgba(20, 56, 90, 0.18));
+}
+
+.portal.is-descending .portal-hero {
+  filter: saturate(1.2);
+}
+
+.portal.is-descending .portal-bg {
+  transform-origin: var(--zoom-origin-x, 50%) var(--zoom-origin-y, 50%);
+  transform: scale(20);
+  opacity: 0;
+  transition:
+    transform 0.7s cubic-bezier(0.645, 0.045, 0.355, 1),
+    opacity 0.6s ease-out;
+}
+
+.portal.is-descending .portal-left-hand-earth,
+.portal.is-descending .portal-right-hand-wrap,
+.portal.is-descending .portal-sparkles,
+.portal.is-descending .portal-trails,
+.portal.is-descending .portal-text,
+.portal.is-descending .hint {
+  opacity: 0;
+  transition: opacity 220ms ease;
+}
+
+.portal.is-descending .warp {
+  opacity: 0;
+  transform: scale(0.7);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body,
+  button {
+    cursor: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@keyframes portalBowlSway {
+  0%, 100% { transform: translateY(0) rotate(0deg) scale(1); }
+  45% { transform: translateY(-1.2%) rotate(-2deg) scale(1.01); }
+  70% { transform: translateY(-0.5%) rotate(1.4deg) scale(1.004); }
+}
+
+@keyframes portalEarthPop {
+  0% { transform: translateY(0) rotate(0deg) scale(1); }
+  42% { transform: translateY(-2.3%) rotate(-4deg) scale(1.025); }
+  72% { transform: translateY(0.6%) rotate(3deg) scale(0.992); }
+  100% { transform: translateY(0) rotate(0deg) scale(1); }
+}
+
+@keyframes portalEarthBreath {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-0.8%) scale(1.028);
+  }
+}
+
+@keyframes portalIntroEarthTap {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  38% {
+    transform: translateY(-1.1%) scale(1.042);
+  }
+  68% {
+    transform: translateY(0.35%) scale(0.99);
+  }
+  100% {
+    transform: translateY(0) scale(1.012);
+  }
+}
+
+@keyframes portalChopsticks {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  38% { transform: translate(-0.8%, 0.8%) rotate(-1.6deg); }
+  58% { transform: translate(-0.35%, 0.35%) rotate(1deg) scaleY(0.996); }
+}
+
+@keyframes portalChopstickBreath {
+  0%, 100% { translate: 0 0; }
+  50% { translate: -0.25% 0.25%; }
+}
+
+@keyframes portalTwinkle {
+  from { opacity: 0.12; }
+  to { opacity: 0.28; }
+}
+
+@keyframes portalTrailGroup {
+  0%, 100% { transform: rotate(-1deg) scale(0.99); }
+  50% { transform: rotate(2deg) scale(1.01); }
+}
+
+@keyframes portalTrailPulse {
+  0%, 100% {
+    opacity: 0;
+    transform: rotate(-12deg) scale(0.9);
+  }
+  38% {
+    opacity: 0.62;
+    transform: rotate(4deg) scale(1.02);
+  }
+  76% {
+    opacity: 0.18;
+    transform: rotate(12deg) scale(1.06);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(0.9); }
+  50% { transform: scale(1.25); }
+}
+
+@keyframes ring {
+  from {
+    transform: scale(0.76);
+    opacity: 0.9;
+  }
+  to {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
