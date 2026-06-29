@@ -1,0 +1,896 @@
+    :root {
+      --yellow: #ffc72c;
+      --amber: #ff9f1c;
+      --screen: #000;
+      --night: #111;
+      --line: rgba(255, 255, 255, 0.11);
+      --text: #f8f8f2;
+      --muted: #a6adb4;
+      --blue: #1266f1;
+      --deep-blue: #073b8e;
+      --green: #00885a;
+      --red: #c1121f;
+      --gold: #ffd166;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      min-height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      overflow-x: hidden;
+      background:
+        radial-gradient(circle at 50% -10%, rgba(255, 199, 44, 0.12), transparent 34rem),
+        linear-gradient(145deg, #070707, var(--night) 48%, #050505);
+      color: var(--text);
+      font-family: "Roboto Mono", "JetBrains Mono", Monaco, "Courier New", monospace;
+      padding: clamp(10px, 2.4vw, 28px);
+    }
+
+    .board-shell {
+      width: min(1180px, 100%);
+      min-height: min(780px, calc(100vh - 20px));
+      display: flex;
+      flex-direction: column;
+      border: 2px solid #272727;
+      background: #050505;
+      box-shadow:
+        0 30px 90px rgba(0, 0, 0, 0.78),
+        0 0 0 8px rgba(255, 255, 255, 0.025),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+    }
+
+    .top-banner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 92px;
+      padding: 18px clamp(18px, 3vw, 34px);
+      background: var(--yellow);
+      color: #050505;
+      border-bottom: 6px solid #1a1a1a;
+    }
+
+    .title-group {
+      min-width: 0;
+    }
+
+    .title-group h1 {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: clamp(30px, 5.6vw, 66px);
+      line-height: 0.96;
+      letter-spacing: 0;
+      font-weight: 900;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .title-group p {
+      margin: 7px 0 0;
+      font-size: clamp(13px, 1.5vw, 18px);
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    .terminal-group {
+      display: grid;
+      justify-items: end;
+      gap: 6px;
+      flex: 0 0 auto;
+    }
+
+    .back-link {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: clamp(15px, 1.7vw, 22px);
+      font-weight: 900;
+      color: #050505;
+      text-decoration: none;
+      line-height: 1;
+      border-bottom: 3px solid transparent;
+      transition: border-color 160ms ease, transform 160ms ease;
+    }
+
+    .back-link:hover,
+    .back-link:focus-visible {
+      outline: none;
+      border-color: #050505;
+      transform: translateY(-1px);
+    }
+
+    .terminal-mark {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 14px;
+      flex: 0 0 auto;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 900;
+      font-size: clamp(16px, 2.1vw, 26px);
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .plane-icon {
+      width: clamp(34px, 5vw, 58px);
+      height: clamp(34px, 5vw, 58px);
+      display: grid;
+      place-items: center;
+      border: 3px solid #050505;
+      border-radius: 50%;
+      color: #050505;
+      text-decoration: none;
+      transition: transform 160ms ease, background-color 160ms ease, box-shadow 160ms ease;
+    }
+
+    .plane-icon:hover,
+    .plane-icon:focus-visible {
+      outline: none;
+      background: rgba(255, 255, 255, 0.26);
+      box-shadow: 0 0 0 4px rgba(5, 5, 5, 0.12);
+      transform: translateY(-1px) scale(1.04);
+    }
+
+    .plane-icon svg {
+      width: 70%;
+      height: 70%;
+      fill: #050505;
+      transform: rotate(-12deg);
+    }
+
+    .board-screen {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background:
+        repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.025) 0 1px, transparent 1px 9px),
+        var(--screen);
+      border: 10px solid #070707;
+      overflow: hidden;
+    }
+
+    .column-head,
+    .flight-row {
+      display: grid;
+      grid-template-columns: minmax(70px, 0.78fr) minmax(170px, 2.35fr) minmax(90px, 1.05fr) minmax(70px, 0.72fr) minmax(132px, 1.5fr);
+      align-items: center;
+      column-gap: clamp(8px, 1.8vw, 22px);
+      padding-inline: clamp(12px, 2.4vw, 28px);
+    }
+
+    .column-head {
+      min-height: 48px;
+      color: var(--yellow);
+      background: #090909;
+      border-bottom: 2px solid var(--line);
+      font-size: clamp(11px, 1.5vw, 17px);
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .flights-list {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .flight-row {
+      position: relative;
+      flex: 1 1 0;
+      min-height: 54px;
+      color: var(--text);
+      border-bottom: 1px solid var(--line);
+      text-decoration: none;
+      transition: background-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .flight-row:last-child {
+      border-bottom: 0;
+    }
+
+    .flight-row:hover,
+    .flight-row:focus-visible {
+      background: #171717;
+      box-shadow: inset 5px 0 0 var(--yellow);
+    }
+
+    .flight-row:active {
+      transform: scale(0.998);
+    }
+
+    .time,
+    .flight-no,
+    .city {
+      font-size: clamp(16px, 2.25vw, 30px);
+      font-weight: 800;
+      letter-spacing: 0;
+      line-height: 1.05;
+    }
+
+    .city {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .flight-no {
+      color: #f1f1f1;
+    }
+
+    .gate-badge,
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      min-width: 58px;
+      min-height: 32px;
+      padding: 5px 10px;
+      border-radius: 3px;
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: 0;
+      white-space: nowrap;
+      box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.22);
+    }
+
+    .gate-badge {
+      background: var(--amber);
+      color: #050505;
+      font-size: clamp(15px, 2vw, 25px);
+    }
+
+    .status-badge {
+      min-width: 120px;
+      font-size: clamp(11px, 1.45vw, 18px);
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    .status-closing {
+      background: var(--red);
+    }
+
+    .status-boarding {
+      background: var(--blue);
+    }
+
+    .status-open {
+      background: var(--green);
+    }
+
+    .status-scheduled {
+      background: var(--deep-blue);
+    }
+
+    .refreshing .city,
+    .refreshing .status-badge {
+      animation: split-flap 420ms steps(2, end);
+    }
+
+    .flight-row.is-active {
+      box-shadow:
+        inset 0 0 0 2px var(--gold),
+        0 0 22px rgba(255, 209, 102, 0.28);
+      animation: active-pulse 1.7s ease-in-out infinite;
+      z-index: 1;
+    }
+
+    .flight-row.is-active::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 7px;
+      background: var(--gold);
+    }
+
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: clamp(20px, 5vw, 44px);
+      z-index: 20;
+      transform: translate(-50%, 16px);
+      max-width: min(90vw, 480px);
+      padding: 14px 18px;
+      border: 1px solid rgba(255, 199, 44, 0.7);
+      background: rgba(10, 10, 10, 0.94);
+      color: var(--yellow);
+      box-shadow: 0 18px 42px rgba(0, 0, 0, 0.45);
+      font: 800 15px/1.35 "Roboto Mono", "JetBrains Mono", Monaco, "Courier New", monospace;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 220ms ease, transform 220ms ease;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+
+    .luggage-toggle {
+      position: fixed;
+      right: clamp(16px, 3vw, 34px);
+      bottom: clamp(16px, 3vw, 34px);
+      z-index: 35;
+      display: grid;
+      place-items: center;
+      width: 58px;
+      height: 58px;
+      border: 1px solid rgba(95, 95, 95, 0.72);
+      border-radius: 50%;
+      background: rgba(30, 30, 30, 0.6);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow:
+        0 14px 36px rgba(0, 0, 0, 0.42),
+        inset 0 1px 0 rgba(255, 255, 255, 0.12);
+      color: #fff;
+      font-size: 1.55rem;
+      cursor: pointer;
+      transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
+    }
+
+    .luggage-toggle:hover,
+    .luggage-toggle:focus-visible {
+      background: rgba(42, 42, 42, 0.72);
+      border-color: rgba(255, 199, 44, 0.66);
+      transform: translateY(-2px);
+      outline: none;
+    }
+
+    .luggage-badge {
+      position: absolute;
+      top: -4px;
+      right: -4px;
+      display: grid;
+      place-items: center;
+      min-width: 23px;
+      height: 23px;
+      padding: 0 6px;
+      border: 2px solid #111;
+      border-radius: 999px;
+      background: #ef3e32;
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 950;
+      line-height: 1;
+      box-shadow: 0 8px 16px rgba(239, 62, 50, 0.25);
+    }
+
+    .close-btn {
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      width: 36px;
+      height: 36px;
+      border: 1px solid rgba(33, 49, 58, 0.12);
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.58);
+      color: #243740;
+      font-size: 1.4rem;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    .luggage-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 50;
+      display: grid;
+      place-items: center;
+      padding: 18px;
+      background: rgba(23, 37, 43, 0.24);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 180ms ease;
+    }
+
+    .luggage-modal.is-open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .luggage-panel {
+      width: min(430px, 100%);
+      border: 1px solid rgba(255, 255, 255, 0.78);
+      border-radius: 8px;
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.76), rgba(255, 250, 232, 0.6)),
+        rgba(255, 255, 255, 0.58);
+      backdrop-filter: blur(24px) saturate(1.28);
+      -webkit-backdrop-filter: blur(24px) saturate(1.28);
+      box-shadow: 0 26px 70px rgba(33, 49, 58, 0.22);
+      overflow: hidden;
+      transform: translateY(12px) scale(0.98);
+      transition: transform 220ms ease;
+    }
+
+    .luggage-modal.is-open .luggage-panel {
+      transform: translateY(0) scale(1);
+    }
+
+    .luggage-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 22px 22px 12px;
+    }
+
+    .luggage-eyebrow {
+      margin: 0 0 5px;
+      color: #e25039;
+      font-size: 0.78rem;
+      font-weight: 950;
+    }
+
+    .luggage-title {
+      margin: 0;
+      color: #21313a;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: clamp(1.55rem, 5vw, 2.35rem);
+      line-height: 1.05;
+    }
+
+    .shopping-note {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      width: calc(100% - 44px);
+      margin: 0 22px 10px;
+      padding: 10px 12px;
+      border: 1px dashed rgba(255, 199, 44, 0.72);
+      border-radius: 10px;
+      background: rgba(255, 249, 223, 0.78);
+      color: #3a2a12;
+      font-family: "Avenir Next", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .shopping-note-icon {
+      font-size: 1.2rem;
+    }
+
+    .shopping-note strong {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 950;
+    }
+
+    .shopping-note p {
+      margin: 2px 0 0;
+      font-size: 0.78rem;
+      line-height: 1.35;
+    }
+
+    .shopping-note-copy {
+      display: grid;
+      gap: 2px;
+    }
+
+    .shopping-note-copy span {
+      font-size: 0.78rem;
+      line-height: 1.35;
+    }
+
+    .shopping-note-detail {
+      margin: -4px 22px 12px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      background: rgba(255, 253, 244, 0.72);
+      border: 1px solid rgba(255, 199, 44, 0.38);
+    }
+
+    .shopping-note-detail[hidden] {
+      display: none;
+    }
+
+    .shopping-note-detail ul {
+      display: grid;
+      gap: 7px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .shopping-detail-heading {
+      margin-top: 4px;
+      color: #8a5d10;
+      font-weight: 950;
+      font-size: 0.78rem;
+    }
+
+    .shopping-detail-item {
+      display: grid;
+      gap: 2px;
+      padding: 7px 9px;
+      border-radius: 8px;
+      font-weight: 850;
+    }
+
+    .shopping-detail-item span {
+      font-size: 0.74rem;
+      opacity: 0.78;
+    }
+
+    .shopping-detail-item.is-needed {
+      background: rgba(255, 225, 213, 0.7);
+      color: #a53a2b;
+    }
+
+    .shopping-detail-item.is-collected {
+      background: rgba(255, 245, 200, 0.78);
+      color: #7a5410;
+    }
+
+    .luggage-list {
+      display: grid;
+      gap: 9px;
+      max-height: min(330px, 46vh);
+      margin: 0;
+      padding: 10px 22px 20px;
+      overflow: auto;
+      list-style: none;
+    }
+
+    .luggage-item,
+    .luggage-empty {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      min-height: 42px;
+      padding: 10px 12px;
+      border: 1px solid rgba(33, 49, 58, 0.1);
+      border-radius: 7px;
+      background: rgba(255, 255, 255, 0.48);
+      color: #2d424b;
+      font-family: "Avenir Next", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+      font-weight: 850;
+    }
+
+    .luggage-item.is-shopping-target {
+      border-color: rgba(255, 199, 44, 0.78);
+      background:
+        linear-gradient(135deg, rgba(255, 249, 223, 0.96), rgba(255, 235, 170, 0.72)),
+        rgba(255, 255, 255, 0.48);
+      box-shadow: 0 0 0 3px rgba(255, 199, 44, 0.16);
+    }
+
+    .luggage-empty {
+      justify-content: center;
+      color: #62727c;
+      text-align: center;
+      line-height: 1.45;
+    }
+
+    .luggage-id {
+      color: rgba(45, 66, 75, 0.58);
+      font-size: 0.78rem;
+      font-weight: 800;
+    }
+
+    .luggage-item-main {
+      min-width: 0;
+      display: grid;
+      gap: 3px;
+    }
+
+    .luggage-name {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .shopping-target-badge {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      min-height: 22px;
+      margin-top: 4px;
+      padding: 3px 7px;
+      border-radius: 999px;
+      background: rgba(255, 199, 44, 0.92);
+      color: #35240c;
+      font-size: 0.68rem;
+      font-weight: 950;
+    }
+
+    .eat-btn {
+      flex: 0 0 auto;
+      min-height: 32px;
+      padding: 7px 10px;
+      border: 1px solid rgba(226, 80, 57, 0.24);
+      border-radius: 999px;
+      background: rgba(255, 242, 230, 0.72);
+      color: #c6422e;
+      font-size: 0.78rem;
+      font-weight: 950;
+      cursor: pointer;
+      transition: transform 160ms ease, background 160ms ease;
+    }
+
+    .eat-btn:hover,
+    .eat-btn:focus-visible {
+      background: rgba(255, 225, 213, 0.94);
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    .luggage-bulk-row {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 0 22px 8px;
+      min-height: 42px;
+    }
+
+    .eat-all-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      padding: 8px 16px;
+      border: 1px solid rgba(226, 80, 57, 0.28);
+      border-radius: 999px;
+      color: #a53a2b;
+      background: rgba(255, 242, 230, 0.82);
+      box-shadow: 0 10px 20px rgba(226, 80, 57, 0.12);
+      font-family: "Avenir Next", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+      font-size: 0.88rem;
+      font-weight: 950;
+      cursor: pointer;
+      transition: transform 160ms ease, background 160ms ease, opacity 160ms ease;
+    }
+
+    .eat-all-btn:hover,
+    .eat-all-btn:focus-visible {
+      background: rgba(255, 225, 213, 0.94);
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    .eat-all-btn:disabled,
+    .eat-all-btn[aria-disabled="true"] {
+      opacity: 0.42;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .luggage-actions {
+      padding: 0 22px 22px;
+    }
+
+    .luggage-toggle.is-shopping-hit {
+      animation: shoppingHit 900ms ease-in-out both;
+    }
+
+    @keyframes shoppingHit {
+      0%,
+      100% {
+        transform: translateY(0) scale(1);
+        box-shadow: 0 14px 36px rgba(0, 0, 0, 0.42);
+      }
+      35% {
+        transform: translateY(-4px) scale(1.08);
+        box-shadow: 0 0 0 8px rgba(255, 199, 44, 0.22), 0 18px 38px rgba(0, 0, 0, 0.35);
+      }
+      68% {
+        transform: translateY(0) scale(1.03);
+      }
+    }
+
+    .return-kitchen-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 48px;
+      border: 0;
+      border-radius: 6px;
+      color: #2d1d09;
+      background: linear-gradient(135deg, #ffd76a, #ff925f);
+      box-shadow: 0 16px 26px rgba(255, 111, 77, 0.22);
+      font-family: "Avenir Next", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+      font-weight: 950;
+      cursor: pointer;
+      transition: transform 160ms ease, filter 160ms ease;
+    }
+
+    .return-kitchen-btn:hover,
+    .return-kitchen-btn:focus-visible {
+      filter: brightness(1.04);
+      transform: translateY(-2px);
+      outline: none;
+    }
+
+    @keyframes split-flap {
+      0% {
+        opacity: 1;
+        filter: brightness(1);
+      }
+
+      35% {
+        opacity: 0.28;
+        filter: brightness(1.8);
+      }
+
+      65% {
+        opacity: 0.82;
+        filter: brightness(0.68);
+      }
+
+      100% {
+        opacity: 1;
+        filter: brightness(1);
+      }
+    }
+
+    @keyframes active-pulse {
+      0%,
+      100% {
+        background: rgba(255, 209, 102, 0.08);
+      }
+
+      50% {
+        background: rgba(255, 209, 102, 0.18);
+      }
+    }
+
+    @media (max-width: 760px) {
+      body {
+        padding: 0;
+      }
+
+      .board-shell {
+        width: 100%;
+        min-height: 100vh;
+        border-width: 0;
+      }
+
+      .top-banner {
+        min-height: 76px;
+        padding: 14px 14px;
+        gap: 10px;
+      }
+
+      .title-group h1 {
+        white-space: normal;
+        font-size: clamp(28px, 9vw, 44px);
+      }
+
+      .title-group p {
+        display: none;
+      }
+
+      .terminal-mark {
+        gap: 8px;
+        font-size: 15px;
+      }
+
+      .terminal-group {
+        gap: 5px;
+      }
+
+      .back-link {
+        font-size: 14px;
+      }
+
+      .plane-icon {
+        width: 36px;
+        height: 36px;
+        border-width: 2px;
+      }
+
+      .board-screen {
+        border-width: 5px;
+      }
+
+      .column-head,
+      .flight-row {
+        grid-template-columns: 58px minmax(92px, 1.5fr) 72px 52px minmax(82px, 0.95fr);
+        column-gap: 7px;
+        padding-inline: 8px;
+      }
+
+      .column-head {
+        min-height: 38px;
+        font-size: 10px;
+      }
+
+      .flight-row {
+        min-height: 56px;
+      }
+
+      .time,
+      .flight-no,
+      .city {
+        font-size: clamp(13px, 3.8vw, 17px);
+      }
+
+      .gate-badge {
+        min-width: 42px;
+        min-height: 26px;
+        padding: 4px 6px;
+        font-size: 13px;
+      }
+
+      .status-badge {
+        min-width: 76px;
+        min-height: 26px;
+        padding: 4px 6px;
+        font-size: 9px;
+      }
+
+      .luggage-toggle {
+        width: 50px;
+        height: 50px;
+        right: 14px;
+        bottom: 14px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .column-head,
+      .flight-row {
+        grid-template-columns: 48px minmax(80px, 1.45fr) 60px 44px minmax(68px, 0.9fr);
+        column-gap: 5px;
+      }
+
+      .flight-no {
+        font-size: 12px;
+      }
+
+      .status-badge {
+        min-width: 64px;
+        font-size: 8px;
+      }
+    }
+
+    .luggage-panel {
+      max-height: min(86vh, 760px);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .luggage-list {
+      flex: 1 1 auto;
+      min-height: 0;
+      overflow: auto;
+    }
+
+    .shopping-note {
+      flex: 0 0 auto;
+    }
+
+    .shopping-note-detail {
+      flex: 0 0 auto;
+      max-height: min(220px, 28vh);
+      overflow-y: auto;
+    }
+
+    .shopping-note-detail::-webkit-scrollbar,
+    .luggage-list::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .shopping-note-detail::-webkit-scrollbar-thumb,
+    .luggage-list::-webkit-scrollbar-thumb {
+      border-radius: 999px;
+      background: rgba(123, 87, 64, 0.22);
+    }

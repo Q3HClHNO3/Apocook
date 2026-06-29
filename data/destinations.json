@@ -1,0 +1,490 @@
+{
+  "generatedAt": "2026-06-29",
+  "source": "data/destinations.json",
+  "destinations": [
+    {
+      "id": "guangzhou",
+      "cityId": "guangzhou",
+      "cityMapId": "guangzhou",
+      "cityRouteId": "guangzhou",
+      "city": "Guangzhou",
+      "label": "广州",
+      "code": "CAN",
+      "flight": "珠江晨光航线",
+      "flightInfo": {
+        "time": "11:25",
+        "flightNumber": "CZ352",
+        "gate": "E15",
+        "status": {
+          "en": "Gate Open",
+          "zh": "登机口开"
+        },
+        "statusType": "open"
+      },
+      "background": "radial-gradient(circle at 22% 18%, rgba(255,255,255,0.74), transparent 25rem), radial-gradient(circle at 86% 12%, rgba(111,184,219,0.22), transparent 22rem), linear-gradient(135deg, #dceff7 0%, #f7dce4 48%, #fff2d5 100%)",
+      "photos": [
+        "https://images.unsplash.com/photo-1558717640-bcb5f5f06419?auto=format&fit=crop&w=1400&q=82",
+        "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=1400&q=82",
+        "https://images.unsplash.com/photo-1524454359720-4b652027bf6b?auto=format&fit=crop&w=1400&q=82"
+      ],
+      "guide": [
+        "从西关街市开始找家常香气",
+        "午后去一德路补海味和干货",
+        "傍晚沿珠江把食材故事带回行李箱"
+      ],
+      "ingredientIds": [
+        "ginger",
+        "scallion",
+        "dried_shrimp"
+      ],
+      "highlightStopIds": [
+        "gz_landmark_xiguan_01",
+        "gz_landmark_qingping_market_01",
+        "gz_landmark_old_teahouse_01",
+        "gz_landmark_shamian_01",
+        "gz_landmark_canton_tower_01",
+        "gz_landmark_opera_house_haixinsha_01"
+      ],
+      "landmarkIds": [
+        "xiguan",
+        "qingping_market",
+        "old_teahouse",
+        "shamian",
+        "canton_tower",
+        "opera_house_haixinsha"
+      ],
+      "flavorTags": [
+        "cantonese_market",
+        "river_morning",
+        "white_pepper",
+        "xiguan",
+        "morning_tea",
+        "pearl_river",
+        "lingnan_arcade"
+      ],
+      "displayTags": [
+        "CZ352",
+        "Gate E15",
+        "Gate Open"
+      ],
+      "decision": "点击舷窗进入广州城市地图，继续追踪广府食材路线。"
+    },
+    {
+      "id": "hongkong",
+      "cityId": "hongkong",
+      "cityMapId": "hongkong",
+      "cityRouteId": "hongkong",
+      "city": "HongKong",
+      "label": "香港",
+      "code": "HKG",
+      "flight": "维港夜色航线",
+      "flightInfo": {
+        "time": "11:00",
+        "flightNumber": "CX365",
+        "gate": "B7",
+        "status": {
+          "en": "Boarding",
+          "zh": "正在登机"
+        },
+        "statusType": "boarding"
+      },
+      "background": "radial-gradient(circle at 24% 16%, rgba(255,255,255,0.76), transparent 25rem), radial-gradient(circle at 82% 10%, rgba(246,191,211,0.2), transparent 22rem), linear-gradient(135deg, #d7f0f7 0%, #e9edf1 50%, #f8dce8 100%)",
+      "photos": [
+        "https://images.unsplash.com/photo-1536599018102-9f803c140fc1?auto=format&fit=crop&w=1400&q=82",
+        "https://images.unsplash.com/photo-1506970845246-18f21d533b20?auto=format&fit=crop&w=1400&q=82",
+        "https://images.unsplash.com/photo-1518599807935-37015b9cefcb?auto=format&fit=crop&w=1400&q=82"
+      ],
+      "guide": [
+        "清晨到中上环街市看摊档开市",
+        "下午把干货铺和茶餐厅连成一条散步线",
+        "夜晚让维港灯线收尾这段采购航程"
+      ],
+      "ingredientIds": [
+        "dried_scallop",
+        "light_soy_sauce",
+        "white_pepper"
+      ],
+      "flavorTags": [
+        "soy_sauce",
+        "harbor_night",
+        "tea_cafe"
+      ],
+      "displayTags": [
+        "CX365",
+        "Gate B7",
+        "Boarding"
+      ],
+      "decision": "点击舷窗进入香港城市地图，切换到港式食材采购路线。"
+    },
+    {
+      "id": "singapore",
+      "cityId": "singapore",
+      "cityMapId": "singapore",
+      "cityRouteId": "singapore",
+      "city": "Singapore",
+      "label": "新加坡",
+      "code": "SIN",
+      "flight": "南洋椰香航线",
+      "flightInfo": {
+        "time": "14:20",
+        "flightNumber": "SQ851",
+        "gate": "C12",
+        "status": {
+          "en": "Boarding Soon",
+          "zh": "即将登机"
+        },
+        "statusType": "boarding"
+      },
+      "background": "radial-gradient(circle at 18% 18%, rgba(255,255,255,0.74), transparent 24rem), radial-gradient(circle at 82% 12%, rgba(108,190,154,0.24), transparent 22rem), linear-gradient(135deg, #dff3ea 0%, #f7e4d2 50%, #fff4d8 100%)",
+      "photos": [
+        "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1400&q=82",
+        "https://images.unsplash.com/photo-1508964942454-1a56651d54ac?auto=format&fit=crop&w=1400&q=82",
+        "https://images.unsplash.com/photo-1565967511849-76a60a516170?auto=format&fit=crop&w=1400&q=82"
+      ],
+      "guide": [
+        "清晨去小印度找咖喱叶和香料铺",
+        "午后在武吉士附近记住椰香甜品的味道",
+        "把南洋香气带回广府厨房做一顿温柔融合菜"
+      ],
+      "ingredientIds": [
+        "curry_leaf",
+        "coconut",
+        "ginger"
+      ],
+      "flavorTags": [
+        "southeast_asia",
+        "coconut_milk",
+        "wet_market"
+      ],
+      "displayTags": [
+        "SQ851",
+        "Gate C12",
+        "Boarding Soon"
+      ],
+      "decision": "点击舷窗进入新加坡城市地图，把咖喱叶和椰香带回阿婆厨房。"
+    },
+    {
+      "id": "london",
+      "cityId": "london",
+      "cityMapId": "london",
+      "cityRouteId": "london",
+      "city": "London",
+      "label": "伦敦",
+      "code": "LHR",
+      "flight": "泰晤士芝士航线",
+      "flightInfo": {
+        "time": "18:45",
+        "flightNumber": "BA028",
+        "gate": "A9",
+        "status": {
+          "en": "Gate Open",
+          "zh": "登机口开"
+        },
+        "statusType": "open"
+      },
+      "background": "radial-gradient(circle at 22% 16%, rgba(255,255,255,0.78), transparent 24rem), radial-gradient(circle at 84% 14%, rgba(243,200,75,0.2), transparent 20rem), linear-gradient(135deg, #e8edf1 0%, #f6e7c9 54%, #dce8f4 100%)",
+      "photos": [
+        "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1400&q=82",
+        "https://images.unsplash.com/photo-1517394834181-95ed159986c7?auto=format&fit=crop&w=1400&q=82",
+        "https://images.unsplash.com/photo-1486299267070-83823f5448dd?auto=format&fit=crop&w=1400&q=82"
+      ],
+      "guide": [
+        "午后到 Borough Market 试一角切达",
+        "沿泰晤士河把乳酪、烤香和街市声装进行李",
+        "回家后把芝士轻轻放进叉烧、多士和蒸蛋里"
+      ],
+      "ingredientIds": [
+        "cheddar",
+        "pork_collar",
+        "free_range_egg"
+      ],
+      "flavorTags": [
+        "cheese_market",
+        "river_walk",
+        "western_cantonese"
+      ],
+      "displayTags": [
+        "BA028",
+        "Gate A9",
+        "Gate Open"
+      ],
+      "decision": "点击舷窗进入伦敦城市地图，收集切达芝士并解锁西式旅行改造菜。"
+    },
+    {
+      "id": "amsterdam",
+      "cityId": "amsterdam",
+      "cityMapId": "amsterdam",
+      "cityRouteId": "amsterdam",
+      "city": "Amsterdam",
+      "label": "阿姆斯特丹",
+      "code": "AMS",
+      "flight": "运河乳酪航线",
+      "flightInfo": {
+        "time": "09:05",
+        "flightNumber": "KL896",
+        "gate": "B20",
+        "status": {
+          "en": "Boarding",
+          "zh": "正在登机"
+        },
+        "statusType": "boarding"
+      },
+      "background": "radial-gradient(circle at 20% 16%, rgba(255,255,255,0.76), transparent 24rem), radial-gradient(circle at 82% 12%, rgba(242,184,104,0.2), transparent 22rem), linear-gradient(135deg, #dcecf2 0%, #f3e5c8 52%, #e7eef0 100%)",
+      "photos": [
+        "https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?auto=format&fit=crop&w=1400&q=82",
+        "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?auto=format&fit=crop&w=1400&q=82",
+        "https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1400&q=82"
+      ],
+      "guide": [
+        "沿运河找一块咸香乳酪",
+        "把腌渍鱼市的海风记成调味灵感",
+        "回到厨房时，只带轻轻一点旅行味"
+      ],
+      "ingredientIds": [
+        "cheddar",
+        "salt"
+      ],
+      "flavorTags": [
+        "cheese",
+        "herring",
+        "canal_market"
+      ],
+      "displayTags": [
+        "KL896",
+        "Gate B20",
+        "Boarding"
+      ],
+      "decision": "点击舷窗进入阿姆斯特丹城市地图，把运河边的咸香记进旅行食材册。"
+    },
+    {
+      "id": "sydney",
+      "cityId": "sydney",
+      "cityMapId": "sydney",
+      "cityRouteId": "sydney",
+      "city": "Sydney",
+      "label": "悉尼",
+      "code": "SYD",
+      "flight": "海港清风航线",
+      "flightInfo": {
+        "time": "09:45",
+        "flightNumber": "QF130",
+        "gate": "C8",
+        "status": {
+          "en": "Gate Open",
+          "zh": "登机口开"
+        },
+        "statusType": "open"
+      },
+      "background": "radial-gradient(circle at 24% 18%, rgba(255,255,255,0.78), transparent 24rem), radial-gradient(circle at 84% 14%, rgba(112,185,218,0.24), transparent 22rem), linear-gradient(135deg, #d9edf5 0%, #f6e9d7 50%, #e4f4f1 100%)",
+      "photos": [
+        "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=1400&q=82",
+        "https://images.unsplash.com/photo-1524293581917-878a6d017c71?auto=format&fit=crop&w=1400&q=82",
+        "https://images.unsplash.com/photo-1549180030-48bf079fb38a?auto=format&fit=crop&w=1400&q=82"
+      ],
+      "guide": [
+        "清晨在海港边想一条鱼该怎样清蒸",
+        "把海盐和柠檬的明亮感收进味觉标签",
+        "回家后让广式蒸鱼多一点海风"
+      ],
+      "ingredientIds": [
+        "salt",
+        "fresh_bream"
+      ],
+      "flavorTags": [
+        "sea_salt",
+        "lemon",
+        "harbor_air"
+      ],
+      "displayTags": [
+        "QF130",
+        "Gate C8",
+        "Gate Open"
+      ],
+      "decision": "点击舷窗进入悉尼城市地图，收集海港边的鲜味线索。"
+    },
+    {
+      "id": "paris",
+      "cityId": "paris",
+      "cityMapId": "paris",
+      "cityRouteId": "paris",
+      "city": "Paris",
+      "label": "巴黎",
+      "code": "CDG",
+      "flight": "塞纳甜香航线",
+      "flightInfo": {
+        "time": "10:10",
+        "flightNumber": "AF111",
+        "gate": "A12",
+        "status": {
+          "en": "Boarding",
+          "zh": "正在登机"
+        },
+        "statusType": "boarding"
+      },
+      "background": "radial-gradient(circle at 20% 18%, rgba(255,255,255,0.78), transparent 24rem), radial-gradient(circle at 80% 12%, rgba(230,177,190,0.2), transparent 22rem), linear-gradient(135deg, #efe8df 0%, #f6dfe6 52%, #e3eef4 100%)",
+      "photos": [
+        "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1400&q=82",
+        "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=1400&q=82",
+        "https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?auto=format&fit=crop&w=1400&q=82"
+      ],
+      "guide": [
+        "在面包房门口记住奶香和蜂蜜光泽",
+        "把 butter 和 cream 当作氛围标签，不硬塞进食材库",
+        "让阿婆厨房用现有食材轻轻接住巴黎甜香"
+      ],
+      "ingredientIds": [
+        "honey",
+        "free_range_egg"
+      ],
+      "flavorTags": [
+        "butter",
+        "cream",
+        "bakery_window"
+      ],
+      "displayTags": [
+        "AF111",
+        "Gate A12",
+        "Boarding"
+      ],
+      "decision": "点击舷窗进入巴黎城市地图，把甜香和慢火耐心带回厨房。"
+    },
+    {
+      "id": "milan",
+      "cityId": "milan",
+      "cityMapId": "milan",
+      "cityRouteId": "milan",
+      "city": "Milan",
+      "label": "米兰",
+      "code": "MXP",
+      "flight": "番茄街角航线",
+      "flightInfo": {
+        "time": "10:35",
+        "flightNumber": "AZ759",
+        "gate": "D6",
+        "status": {
+          "en": "Gate Open",
+          "zh": "登机口开"
+        },
+        "statusType": "open"
+      },
+      "background": "radial-gradient(circle at 22% 16%, rgba(255,255,255,0.78), transparent 24rem), radial-gradient(circle at 84% 14%, rgba(203,73,62,0.18), transparent 22rem), linear-gradient(135deg, #efe7db 0%, #f4d9cf 50%, #e5efe2 100%)",
+      "photos": [
+        "https://images.unsplash.com/photo-1513581166391-887a96ddeafd?auto=format&fit=crop&w=1400&q=82",
+        "https://images.unsplash.com/photo-1520175480921-4edfa2983e0f?auto=format&fit=crop&w=1400&q=82",
+        "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1400&q=82"
+      ],
+      "guide": [
+        "在街角市场找番茄的红和蒜香的底",
+        "把 basil 留作风味标签，先复用现有食材",
+        "让广式番茄蛋多一点旅行旁白"
+      ],
+      "ingredientIds": [
+        "tomato",
+        "garlic"
+      ],
+      "flavorTags": [
+        "basil",
+        "tomato",
+        "market_corner"
+      ],
+      "displayTags": [
+        "AZ759",
+        "Gate D6",
+        "Gate Open"
+      ],
+      "decision": "点击舷窗进入米兰城市地图，收集番茄和街角市场的颜色。"
+    },
+    {
+      "id": "tokyo",
+      "cityId": "tokyo",
+      "cityMapId": "tokyo",
+      "cityRouteId": "tokyo",
+      "city": "Tokyo",
+      "label": "东京",
+      "code": "HND",
+      "flight": "清晨味噌航线",
+      "flightInfo": {
+        "time": "12:05",
+        "flightNumber": "JL026",
+        "gate": "C18",
+        "status": {
+          "en": "Scheduled",
+          "zh": "计划中"
+        },
+        "statusType": "scheduled"
+      },
+      "background": "radial-gradient(circle at 20% 18%, rgba(255,255,255,0.78), transparent 24rem), radial-gradient(circle at 82% 12%, rgba(238,167,183,0.18), transparent 22rem), linear-gradient(135deg, #e7eef3 0%, #f6e4e9 52%, #e8f1df 100%)",
+      "photos": [
+        "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1400&q=82",
+        "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=1400&q=82",
+        "https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?auto=format&fit=crop&w=1400&q=82"
+      ],
+      "guide": [
+        "在市场和小巷里记住清淡鲜味",
+        "把 miso 和 wasabi 放入氛围标签，不新增食材负担",
+        "回到阿婆厨房时，用姜和生抽接住那点鲜"
+      ],
+      "ingredientIds": [
+        "ginger",
+        "light_soy_sauce"
+      ],
+      "flavorTags": [
+        "miso",
+        "wasabi",
+        "morning_market"
+      ],
+      "displayTags": [
+        "JL026",
+        "Gate C18",
+        "Scheduled"
+      ],
+      "decision": "点击舷窗进入东京城市地图，把清晨市场的鲜味带回广府厨房。"
+    },
+    {
+      "id": "newyork",
+      "cityId": "newyork",
+      "cityMapId": "newyork",
+      "cityRouteId": "newyork",
+      "city": "New York",
+      "label": "纽约",
+      "code": "JFK",
+      "flight": "街角咖啡航线",
+      "flightInfo": {
+        "time": "13:30",
+        "flightNumber": "UA087",
+        "gate": "F4",
+        "status": {
+          "en": "Gate Closing",
+          "zh": "登机将关"
+        },
+        "statusType": "closing"
+      },
+      "background": "radial-gradient(circle at 22% 16%, rgba(255,255,255,0.78), transparent 24rem), radial-gradient(circle at 84% 14%, rgba(121,154,196,0.22), transparent 22rem), linear-gradient(135deg, #e2e7ee 0%, #f0dfc9 52%, #dbe8f0 100%)",
+      "photos": [
+        "https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?auto=format&fit=crop&w=1400&q=82",
+        "https://images.unsplash.com/photo-1490644658840-3f2e3f8c5625?auto=format&fit=crop&w=1400&q=82",
+        "https://images.unsplash.com/photo-1522083165195-3424ed129620?auto=format&fit=crop&w=1400&q=82"
+      ],
+      "guide": [
+        "在街角咖啡和熟食店之间找一点城市速度",
+        "maple 和 coffee 先作为旧航班风味标签保留",
+        "回家后用蜂蜜和芝士给小食一点纽约节奏"
+      ],
+      "ingredientIds": [
+        "honey",
+        "cheddar"
+      ],
+      "flavorTags": [
+        "maple",
+        "coffee",
+        "deli_counter"
+      ],
+      "displayTags": [
+        "UA087",
+        "Gate F4",
+        "Gate Closing"
+      ],
+      "decision": "点击舷窗进入纽约城市地图，把街角速度收成一口小食灵感。"
+    }
+  ]
+}

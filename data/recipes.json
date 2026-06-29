@@ -1,0 +1,955 @@
+[
+  {
+    "id": "cantonese_steamed_fish",
+    "name": "广式清蒸鱼",
+    "cityId": "Guangzhou",
+    "category": "home_cooking",
+    "method": "蒸",
+    "tool": "铁镬+蒸架",
+    "description": "在广州吃鱼，最紧要是买活鱼。阿婆教你，清蒸最能吃出鱼的鲜味，火候差一秒都不行，蒸鱼豉油和花生油也一定要靓。",
+    "ingredients": [
+      {
+        "ingredientId": "fresh_bream",
+        "amount": "1条"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "scallion",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "red_shallot",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "seasoned_soy_sauce_for_seafood",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "peanut_oil",
+        "amount": "2大勺"
+      }
+    ],
+    "steps": [
+      "鱼清洗干净，用厨房纸吸干水分，在鱼身两面各划几刀。",
+      "盘底和鱼肚子放几片姜和红葱头，大火烧开水，把鱼放进去猛火蒸7-8分钟，熄火后虚蒸2分钟。",
+      "倒掉盘子里的蒸鱼水，去掉旧姜葱。",
+      "铺上新的细姜丝、红葱丝和葱尾丝，烧热两大勺花生油，滚烫时淋在葱丝上激发香味，最后沿盘子边淋入蒸鱼豉油。"
+    ],
+    "story": "阿婆常说，后生仔在外面工作辛苦，多吃点清蒸鱼，聪明又明目。看一条鱼蒸得好不好，就看鱼肉有没有刚好脱骨，那层花生油香配上豉油，用来捞饭阿婆能吃两碗。"
+  },
+  {
+    "id": "garlic_wok_fried_choi_sum",
+    "name": "蒜蓉炒本地菜心",
+    "cityId": "Guangzhou",
+    "category": "quick_meal",
+    "method": "炒/煎/炸",
+    "tool": "铁镬",
+    "description": "广州人的饭桌上，最后一定要有一碟清清亮亮的本地青菜。用拍碎的土蒜头猛火生炒，菜心外表要亮晶晶的，咬下去有汁水、带点天然清甜，最能解腻。",
+    "ingredients": [
+      {
+        "ingredientId": "choi_sum",
+        "amount": "1把"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": "数瓣"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "peanut_oil",
+        "amount": "适量"
+      }
+    ],
+    "steps": [
+      "菜心洗净，完全沥干水分。蒜瓣用刀猛力拍碎。",
+      "烧热炒锅，倒入花生油，下拍蒜慢慢煸炒到表面金黄、蒜香四溢。",
+      "转最大火，把菜心一口气倒进锅里，听到“哧啦”一声后快速翻炒。",
+      "炒到菜心变软、呈深绿色时，加入适量盐和一丁点白糖，炒匀立刻出锅。"
+    ],
+    "story": "阿婆经常唠叨你吃青菜，炒青菜啊，讲究的是“镬气”。手脚够快、火候够猛，炒出来的蒜香菜心才是全家的抢手货。"
+  },
+  {
+    "id": "steamed_egg_with_dried_scallop",
+    "name": "瑶柱蒸水蛋",
+    "cityId": "Guangzhou",
+    "category": "quick_meal",
+    "method": "蒸",
+    "tool": "铁镬+蒸架",
+    "description": "今天阿婆给你蒸个蛋，加了江门买的好瑶柱。这水蛋蒸出来啊，要像豆腐花一样滑溜溜的，表面光溜得像镜子，用匙羹一舀还会晃动，不能有一丝丝蜂窝。",
+    "ingredients": [
+      {
+        "ingredientId": "free_range_egg",
+        "amount": "2-3个"
+      },
+      {
+        "ingredientId": "dried_scallop",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "light_soy_sauce",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "peanut_oil",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "scallion",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": "少许"
+      }
+    ],
+    "steps": [
+      "干瑶柱提前用温水泡发，上锅蒸15分钟，撕成细丝，泡瑶柱的水留着备用。",
+      "鸡蛋打散，加入少许盐，倒入泡瑶柱的水和温水，蛋液和水的比例约为1:1.5，彻底打匀。",
+      "用密漏把蛋液过滤一遍，撇去表面所有气泡。",
+      "盖上保鲜膜或扣个盘子，大火水开后入锅，转中火蒸8分钟，开盖撒上瑶柱丝和葱花，再闷2分钟。出锅淋一圈生抽和熟花生油。"
+    ],
+    "story": "你小的时候没胃口，阿婆最喜欢做这道菜。瑶柱的鲜味全融进滑嫩的蛋里，拿来拌饭，小孩子能乖乖吃完一大碗，最是养脾胃。"
+  },
+  {
+    "id": "cantonese_soy_sauce_chicken",
+    "name": "广式豉油鸡",
+    "cityId": "Guangzhou",
+    "category": "home_cooking",
+    "method": "煲/炖",
+    "tool": "铁镬",
+    "description": "做豉油鸡，鸡肉一定要滑，鸡皮要脆。阿婆不用烤箱也不用大锅炸，就用一碗靓生抽、几片姜和冰糖，在锅里慢慢“浸”熟它，做出来色泽红亮，连骨头都有味道。",
+    "ingredients": [
+      {
+        "ingredientId": "three_yellow_chicken",
+        "amount": "1只"
+      },
+      {
+        "ingredientId": "red_shallot",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "light_soy_sauce",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "dark_soy_sauce",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "peanut_oil",
+        "amount": "适量"
+      }
+    ],
+    "steps": [
+      "鸡洗净，掏空内脏，用厨房纸彻底吸干内外水分。",
+      "锅里多倒些花生油，下大量红葱头和姜片爆香，然后倒入生抽、老抽、料酒和适量冰糖，加少量水煮开做成豉油卤汁。",
+      "把鸡整只放进去，用匙羹不停把滚烫的豉油淋在鸡身各处，让鸡皮定型上色。",
+      "盖上锅盖，转最小火慢火焖煮。每隔5-8分钟把鸡翻身并继续淋汁。约20-25分钟后，用筷子扎鸡大腿，没有血水流出就关火，在卤汁里浸10分钟再斩件。"
+    ],
+    "story": "广州人过年过节总说“无鸡不成宴”。在屋企做豉油鸡，香气能飘到整条走廊。那个豉油皇酱汁千万别倒，留着第二天拌面或者炒大白菜，香到入骨。"
+  },
+  {
+    "id": "shunde_pan_fried_stuffed_tofu",
+    "name": "顺德煎酿豆腐",
+    "cityId": "Guangzhou",
+    "category": "home_cooking",
+    "method": "炒/煎/炸",
+    "tool": "铁镬",
+    "description": "今天阿婆在市场买了特别嫩的水豆腐，给你做个酿豆腐。把新鲜剁好的肉馅酿在豆腐中间，小火煎到两面金黄，咬一口满嘴都是肉汁和豆香。",
+    "ingredients": [
+      {
+        "ingredientId": "firm_tofu",
+        "amount": "数块"
+      },
+      {
+        "ingredientId": "pork_shoulder",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "dried_shrimp",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "light_soy_sauce",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "cornstarch",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "scallion",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "peanut_oil",
+        "amount": "适量"
+      }
+    ],
+    "steps": [
+      "猪肉剁成细腻肉糜，加入虾米碎、少许生抽、生粉和水，顺着一个方向搅拌至上劲。",
+      "豆腐切成厚方块，用小匙在中间轻轻挖一个凹槽，撒上一点点生粉。",
+      "把肉馅揉成小团，填入豆腐凹槽里，抹平表面。",
+      "平底锅放油，肉面朝下，中小火慢煎到肉馅金黄熟透，再小心翻面把豆腐底煎到微黄。淋入用生抽、蚝油、生粉和水调好的芡汁，小火焖2分钟，撒葱花收汁。"
+    ],
+    "story": "做酿豆腐要像照顾小婴儿一样有耐心，豆腐容易烂，翻面的时候要轻手轻脚。阿婆常说，做人做事也是这样，心急吃不了热豆腐，定下心来，煎出来的豆腐才漂亮。"
+  },
+  {
+    "id": "cantonese_sweet_sour_tomato_egg",
+    "name": "酸甜番茄炒蛋（广式微甜版）",
+    "cityId": "Guangzhou",
+    "category": "quick_meal",
+    "method": "炒/煎/炸",
+    "tool": "铁镬",
+    "description": "阿婆知道你喜欢吃酸甜的，今天炒个番茄蛋。咱们广州人炒这个，蛋要滑，番茄要炒出红油酸汤，还要加一点点白糖提鲜，用来拌饭最开胃。",
+    "ingredients": [
+      {
+        "ingredientId": "tomato",
+        "amount": "2个"
+      },
+      {
+        "ingredientId": "free_range_egg",
+        "amount": "2-3个"
+      },
+      {
+        "ingredientId": "scallion",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "peanut_oil",
+        "amount": "适量"
+      }
+    ],
+    "steps": [
+      "鸡蛋加少许盐和几滴水，打散。热锅热油，倒入蛋液，用筷子快速划散，刚凝固就马上盛出。",
+      "锅里再加一点油，下番茄块，中火慢慢翻炒，用铲子压一压，炒出浓郁番茄沙和红汁。",
+      "加入一小勺白糖和一点点盐调味，平衡酸度。",
+      "倒入炒好的鸡蛋，快速翻炒均匀，让鸡蛋吸满番茄汁，撒上葱花立刻关火装盘。"
+    ],
+    "story": "你小的时候上学调皮、胃口不好，阿婆就做这道菜。每次你一看到那盘金黄嫩红的番茄蛋，就会乖乖拿着勺子，把汤汁浇在米饭上，大口大口地吃完，阿婆看着心里最受用。"
+  },
+  {
+    "id": "dried_night_blooming_cereus_pork_bone_soup",
+    "name": "霸王花猪骨汤",
+    "cityId": "Guangzhou",
+    "category": "soup",
+    "method": "煲/炖",
+    "tool": "瓦煲",
+    "description": "广州的天气总是湿热，阿婆今天给你煲霸王花猪骨汤，最适合清热润肺、除痰理气。阿婆煲的汤，从来不加乱七八糟的调料，一锅清水、一星火候就够了。",
+    "ingredients": [
+      {
+        "ingredientId": "pork_bone",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "dried_night_blooming_cereus",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "candied_date",
+        "amount": "2颗"
+      },
+      {
+        "ingredientId": "chenpi",
+        "amount": "1小片"
+      },
+      {
+        "ingredientId": "apricot_kernel",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": "数片"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": "少许"
+      }
+    ],
+    "steps": [
+      "干霸王花用温水泡发，洗净并剪开；陈皮泡软后用刀刮去内囊白络。",
+      "猪骨冷水下锅焯水，煮出浮沫后捞出，用温水冲洗干净。",
+      "瓦煲里一次性加足清水，放入猪骨、姜片、陈皮、蜜枣和南北杏，大火烧开。",
+      "烧开后倒入霸王花，转小火慢煲1.5到2小时，出锅前5分钟撒少许盐提味。"
+    ],
+    "story": "你们年轻人总爱喝奶茶，那些不健康。在广州，做家人的只要一看到天气变了，厨房里就一定会响起瓦煲“噗噗”的汤沸声。一碗老火靓汤喝下去，整个人都温润了。"
+  },
+  {
+    "id": "lotus_root_peanut_pork_bone_soup",
+    "name": "莲藕花生猪骨汤",
+    "cityId": "Guangzhou",
+    "category": "soup",
+    "method": "煲/炖",
+    "tool": "瓦煲",
+    "description": "入秋或者天气干燥的时候，阿婆最喜欢煲这个汤。一定要选七孔的老莲藕，煲出来才会粉粉糯糯的，汤色微微发红，带有花生的植物油脂香，最是养人。",
+    "ingredients": [
+      {
+        "ingredientId": "lotus_root",
+        "amount": "1节"
+      },
+      {
+        "ingredientId": "peanut",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "pork_bone",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "candied_date",
+        "amount": "2颗"
+      },
+      {
+        "ingredientId": "chenpi",
+        "amount": "1小片"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": "数片"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": "少许"
+      }
+    ],
+    "steps": [
+      "红衣花生提前泡水1小时；陈皮泡软刮掉内囊白络。莲藕去皮，切成大块滚刀块。",
+      "猪骨冷水下锅，加两片姜焯水，煮出浮沫后捞出用温水洗干净。",
+      "瓦煲里一次性加足清水，放入焯好水的猪骨、姜片、陈皮、蜜枣和泡好的花生，大火烧开。",
+      "烧开后倒入莲藕，大火滚15分钟，转小火慢煲2小时，出锅前撒少许盐。"
+    ],
+    "story": "阿婆常说，老靓汤要用瓦煲慢火熬，急不得。这道汤里的莲藕煲到最后，软糯得像山药一样，花生也一抿就化。喝完一碗，整个人心里都定当了。"
+  },
+  {
+    "id": "watercress_preserved_duck_gizzard_pork_bone_soup",
+    "name": "西洋菜陈肾猪骨汤",
+    "cityId": "Guangzhou",
+    "category": "soup",
+    "method": "煲/炖",
+    "tool": "瓦煲",
+    "description": "广州天热燥火大，容易喉咙痛。阿婆今天在街市买了新鲜的西洋菜和上好的腊鸭肾（陈肾）。这个汤是出了名的清热下火、润肺燥，喝下去喉咙舒服得不得了。",
+    "ingredients": [
+      {
+        "ingredientId": "watercress",
+        "amount": "1把"
+      },
+      {
+        "ingredientId": "preserved_duck_gizzard",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "pork_ribs",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "apricot_kernel",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "candied_date",
+        "amount": "2颗"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": "数片"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": "少许"
+      }
+    ],
+    "steps": [
+      "陈肾用温水浸泡软，切厚片，上面划几刀方便出味。西洋菜反复清洗干净，沥干。",
+      "猪骨焯水洗净。瓦煲里加水，放入猪骨、陈肾、生姜、南北杏和蜜枣，大火烧开。",
+      "一定要等瓦煲里的水大滚时，再把西洋菜一把一把抓进去。",
+      "再次烧开后，转小火慢煲1.5到2小时，西洋菜煲到软烂变黄。出锅前尝咸淡再加盐。"
+    ],
+    "story": "你们后生仔熬夜、吃煎炸外卖，最容易长口疮。每到这时候，阿婆就会默默去买西洋菜和陈肾。虽然西洋菜煲完样子不好看，但那碗汤清甜带点腊香。"
+  },
+  {
+    "id": "cantonese_turnip_cake",
+    "name": "广式腊味萝卜糕",
+    "cityId": "Guangzhou",
+    "category": "dim_sum",
+    "method": "蒸",
+    "tool": "蒸笼+铁镬",
+    "description": "每到过年或者周末，阿婆就想蒸一盘萝卜糕。广州人的萝卜糕啊，不能全是粉，一定要有清甜的本地萝卜丝，再配上炒得香喷喷的广式腊肠和金钩虾米。",
+    "ingredients": [
+      {
+        "ingredientId": "daikon_radish",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "rice_flour",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "cantonese_sausage",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "preserved_pork_belly",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "dried_shrimp",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "peanut_oil",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": "少许"
+      }
+    ],
+    "steps": [
+      "白萝卜去皮，三分之二擦成细丝，三分之一切成粗条。腊肠、腊肉和虾米切成细丁。",
+      "锅里不用放油，下腊味丁和虾米丁炒出油脂和香味，盛出。",
+      "萝卜丝带水下锅煮软，加入炒好的腊味、盐和胡椒粉调味。关火，趁热分次倒入粘米粉，搅拌成浓稠的半熟糊状。",
+      "盘子刷一层花生油，倒入萝卜糕糊，抹平表面。大火足水，上锅猛火蒸45-50分钟。放凉后切块，用平底锅两面煎到金黄微焦。"
+    ],
+    "story": "阿婆做萝卜糕是出了名舍得放料的。刚蒸出来热乎乎的可以直接舀着吃，但我知道你最喜欢吃第二天用油煎过的，外皮焦脆，里面又软又甜，还带着腊味的油润香。"
+  },
+  {
+    "id": "cantonese_poached_chicken",
+    "name": "经典白切鸡",
+    "cityId": "Guangzhou",
+    "category": "quick_meal",
+    "method": "凉拌/白灼",
+    "tool": "瓦煲",
+    "description": "乖孙，在广州吃白切鸡，讲究的是“鸡有鸡味”。阿婆教你，白切鸡绝对不是“煮”熟的，是用微开的虾眼水“浸”熟的。骨髓里带一点点血丝，这时候的肉最嫩、最滑。",
+    "ingredients": [
+      {
+        "ingredientId": "qingyuan_chicken",
+        "amount": "1只"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "scallion",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "red_shallot",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "peanut_oil",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": "适量"
+      }
+    ],
+    "steps": [
+      "准备一锅大水，加入姜片和葱结。大火烧开后转小火，保持水面冒微小虾眼泡。",
+      "提起鸡头，把鸡身浸入热水里烫5秒，提起沥水，重复三次。",
+      "把整只鸡完全浸入水中，盖上盖子，保持微沸状态慢火浸煮20-25分钟。",
+      "捞出后立刻投入冰水中浸泡10分钟。捞出沥干，抹一层熟花生油，斩件。用红葱头碎、姜蓉、盐和滚烫花生油调成蘸料。"
+    ],
+    "story": "外面酒楼的白切鸡再贵，都比不上街市里挑的本地走地鸡。阿婆调的葱油蘸料是灵魂，热油一泼，红葱头的香气全爆出来。扯个大鸡腿给你，吃得满嘴油才是福气。"
+  },
+  {
+    "id": "honey_char_siu",
+    "name": "蜜汁叉烧",
+    "cityId": "Guangzhou",
+    "category": "home_cooking",
+    "method": "烤",
+    "tool": "烤箱",
+    "description": "想吃叉烧不用去排队斩料，阿婆在家里也能做。选最靓的梅头肉，带点肥油，做出来软嫩多汁，外焦里嫩，酱汁黏稠，甜丝丝的特别下饭。",
+    "ingredients": [
+      {
+        "ingredientId": "pork_collar",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "honey",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "char_siu_sauce",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "light_soy_sauce",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "red_shallot",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "huangjiu",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "maltose",
+        "amount": "2大勺"
+      },
+      {
+        "ingredientId": "peanut_oil",
+        "amount": "少许"
+      }
+    ],
+    "steps": [
+      "梅头肉切成长条大块，加入叉烧酱、生抽、黄酒、姜片和红葱头，用手抓揉按摩5分钟，放冰箱腌制一个晚上。",
+      "平底锅烧热放少许油，把腌好的肉放进去，腌汁留着，中小火慢慢煎，把两面煎到变色、微微焦黄。",
+      "倒入剩下的腌肉汁和半碗清水，盖上锅盖，小火焖煮20-25分钟，中途翻面，直到肉熟透。",
+      "揭开锅盖转大火收汁，放入两大勺麦芽糖，不停给肉翻面浇汁，直到酱汁黏稠、出现亮晶晶的焦糖色。稍微放凉后切片。"
+    ],
+    "story": "以前你读书拿了好成绩，阿婆就会去市场称二两梅头肉。看你吃得满嘴都是蜜汁、笑嘻嘻的样子，阿婆就觉得，花大半天时间在厨房里守着这口锅，太值得了。"
+  },
+  {
+    "id": "cantonese_crispy_roast_pork",
+    "name": "广式脆皮烧肉",
+    "cityId": "Guangzhou",
+    "category": "home_cooking",
+    "method": "烤",
+    "tool": "烤箱",
+    "description": "街市烧腊档的烧肉总是太咸，阿婆用烤箱给你做个家庭版的。最紧要是选五层分明的上等五花肉，皮要烤到像蜂窝一样爆开，咬下去“咔哧咔哧”响，里面的肉还要嫩得流汁。",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": "1块"
+      },
+      {
+        "ingredientId": "five_spice_powder",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "white_vinegar",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "baking_soda",
+        "amount": "一丁点"
+      }
+    ],
+    "steps": [
+      "五花肉冷水下锅，皮朝下焯水10分钟至半熟，捞出洗净。",
+      "用松肉针或竹签，在猪皮上密密麻麻扎孔，注意不要扎到肥肉层。",
+      "翻过来，在肉的一面划几刀，不切断皮，抹上五香粉、盐和糖调成的料包。猪皮上抹一层白醋和一丁点小苏打，用锡纸包裹，只露出猪皮，放冰箱冷藏风干一夜。",
+      "烤箱预热230度，先烤30分钟。取出刮掉猪皮表面油污，转上火250度再烤15分钟，直到猪皮像蜂窝一样爆裂。稍微放凉后斩件。"
+    ],
+    "story": "做脆皮烧肉啊，那个猪皮扎孔最考眼力和手劲，阿婆手关节不好，但也愿意为你扎得密密实实。斩好了，记得蘸点白砂糖吃，那是咱们广州人最正宗、最解腻的吃法。"
+  },
+  {
+    "id": "xiguan_beef_brisket_rice_noodles",
+    "name": "西关路边牛腩粉",
+    "cityId": "Guangzhou",
+    "category": "home_cooking",
+    "method": "煲/炖",
+    "tool": "砂锅",
+    "description": "以前西关路边的牛腩粉最香了。阿婆今天用浓浓的柱侯酱、南乳和八角，把牛腩牛筋焖得软烂入味。那个汤汁浓得发亮，浇在刚出锅的沙河粉上，再加上几块吸饱汁的酸萝卜，绝了！",
+    "ingredients": [
+      {
+        "ingredientId": "beef_brisket",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "beef_tendon",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "shahe_rice_noodles",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "chu_hou_paste",
+        "amount": "2勺"
+      },
+      {
+        "ingredientId": "red_fermented_bean_curd",
+        "amount": "1块"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": "数片"
+      },
+      {
+        "ingredientId": "star_anise",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "cinnamon",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "scallion",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "pickled_daikon",
+        "amount": "少许"
+      }
+    ],
+    "steps": [
+      "牛腩和牛筋切大块，冷水下锅加料酒焯水，洗净沥干。",
+      "热锅下油爆香姜片，下牛腩牛筋猛火翻炒到表面微黄，倒入两勺柱侯酱和一整块红南乳炒匀上色。",
+      "注入满满开水，放入八角、桂皮和几粒冰糖，大火烧开转小火，砂锅慢火焖煮1.5到2小时，直到牛腩软烂、牛筋黏糯。",
+      "临出锅前把沙河粉在滚水里烫10秒捞出装碗，铺上牛腩，浇上一大勺牛腩原汤，撒上大把葱花。"
+    ],
+    "story": "以前你放学，总爱在路边摊买牛腩粉吃，阿婆总嫌外面的死油不健康。阿婆自己焖的牛腩，汤底浓郁到可以黏嘴唇，那是真材实料熬出来的胶原蛋白。"
+  },
+  {
+    "id": "mung_bean_lily_chenpi_sweet_soup",
+    "name": "百合陈皮绿豆沙",
+    "cityId": "Guangzhou",
+    "category": "soup",
+    "method": "煮饭/一锅出",
+    "tool": "电饭煲",
+    "description": "夏天外面热得像蒸笼，阿婆给你煲绿豆沙。我们广州人喝绿豆沙，可不是普通的绿豆汤。要把绿豆煮到完全脱壳，把豆沙熬得绵绵密密的，里面还要放一瓣上了年头的老陈皮，那才叫清香。",
+    "ingredients": [
+      {
+        "ingredientId": "mung_bean",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "dried_lily_bulb",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "chenpi",
+        "amount": "1小片"
+      },
+      {
+        "ingredientId": "slab_sugar",
+        "amount": "适量"
+      }
+    ],
+    "steps": [
+      "绿豆提前泡水2小时。陈皮泡软，用刀彻底刮掉内囊白络，洗净。",
+      "锅里加足量水，放入陈皮和百合，大火烧开，倒入绿豆。",
+      "大火猛滚20分钟，中途用漏网把漂浮在水面上的绿豆壳全部捞出来。",
+      "转小火继续熬煮40分钟，直到绿豆完全化成沙、汤汁浓稠。最后加入黄片糖，煮至融化即可，冰镇后更好喝。"
+    ],
+    "story": "外面的甜品店为了图快，用料理机打碎，那是不对的。阿婆用慢火熬出来的绿豆沙，带有陈皮淡淡的药香和片糖的清甜，夏天喝一碗，整个人从里到外都清凉了。"
+  },
+  {
+    "id": "singapore_coconut_curry_leaf_chicken",
+    "name": "椰香咖喱叶滑鸡",
+    "cityId": "singapore",
+    "category": "fusion",
+    "method": "煲/炖",
+    "tool": "砂锅",
+    "description": "把新加坡带回来的椰香和咖喱叶，放进阿婆最熟手的滑鸡做法里。味道温柔，有一点远方香气，但下饭这件事还是很广府。",
+    "ingredients": [
+      {
+        "ingredientId": "qingyuan_chicken",
+        "amount": "半只"
+      },
+      {
+        "ingredientId": "coconut",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "curry_leaf",
+        "amount": "一小把"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": "数片"
+      },
+      {
+        "ingredientId": "light_soy_sauce",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "peanut_oil",
+        "amount": "适量"
+      }
+    ],
+    "steps": [
+      "鸡斩小块，用生抽、盐和少许花生油抓匀，腌15分钟。",
+      "砂锅烧热下油，爆香姜片和咖喱叶，闻到坚果香后放入鸡块翻匀。",
+      "加入椰子和少量热水，盖上盖子小火焖12分钟。",
+      "开盖转中火收汁，让椰香裹住鸡块，试味后即可上桌。"
+    ],
+    "story": "阿婆说旅行食材不用抢戏，能陪一只好鸡煮得滑滑嫩嫩，就算真正带回了风景。",
+    "tips": [
+      "咖喱叶先过热油，香气会更圆。"
+    ]
+  },
+  {
+    "id": "coconut_lotus_root_pork_bone_soup",
+    "name": "椰香莲藕猪骨汤",
+    "cityId": "singapore",
+    "category": "fusion",
+    "method": "煲/炖",
+    "tool": "瓦煲",
+    "description": "广府汤底里加一点椰子，汤色仍然清润，入口多了淡淡奶香。阿婆会说这不是乱来，是把旅途煲成一锅暖汤。",
+    "ingredients": [
+      {
+        "ingredientId": "pork_bone",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "lotus_root",
+        "amount": "1节"
+      },
+      {
+        "ingredientId": "coconut",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "candied_date",
+        "amount": "2粒"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": "2片"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": "适量"
+      }
+    ],
+    "steps": [
+      "猪骨冷水下锅飞水，洗净浮沫。",
+      "莲藕去皮切厚块，椰子切小块备用。",
+      "瓦煲加足水，放入猪骨、莲藕、椰子、蜜枣和姜片，大火煮开。",
+      "转小火煲1.5小时，最后用盐调味。"
+    ],
+    "story": "阿婆端汤时会先给你一块莲藕，再舀一勺带椰香的汤，说远方的味道也要慢慢喝，急不得。"
+  },
+  {
+    "id": "curry_leaf_shrimp_choi_sum",
+    "name": "咖喱叶虾米炒菜心",
+    "cityId": "singapore",
+    "category": "fusion",
+    "method": "炒/煎/炸",
+    "tool": "铁镬",
+    "description": "菜心仍旧要猛火快炒，只是在蒜香和虾米香之外，加一把新加坡带回来的咖喱叶，青菜也像坐过一趟短途航班。",
+    "ingredients": [
+      {
+        "ingredientId": "choi_sum",
+        "amount": "1把"
+      },
+      {
+        "ingredientId": "curry_leaf",
+        "amount": "一小把"
+      },
+      {
+        "ingredientId": "dried_shrimp",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": "数瓣"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "peanut_oil",
+        "amount": "适量"
+      }
+    ],
+    "steps": [
+      "菜心洗净沥干，虾米略泡后切碎，蒜拍碎。",
+      "铁镬烧热下油，先爆香蒜、虾米和咖喱叶。",
+      "转最大火倒入菜心，快速翻炒到菜梗变亮。",
+      "撒少许盐调味，马上出锅。"
+    ],
+    "story": "阿婆最怕青菜炒老，所以一边翻锅一边催你拿碟。咖喱叶香气一冒出来，她又笑，说这碟菜心今天有点醒神。"
+  },
+  {
+    "id": "cheddar_char_siu_toast",
+    "name": "切达叉烧多士",
+    "cityId": "london",
+    "category": "fusion",
+    "method": "烤",
+    "tool": "烤箱",
+    "description": "伦敦带回来的切达芝士，夹住蜜汁叉烧和葱香，烤到边角微脆。阿婆嘴上说太西式，手却会再给你切一角。",
+    "ingredients": [
+      {
+        "ingredientId": "cheddar",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "pork_collar",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "char_siu_sauce",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "honey",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "scallion",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "peanut_oil",
+        "amount": "少许"
+      }
+    ],
+    "steps": [
+      "梅头肉切薄片，用叉烧酱和蜂蜜拌匀，煎到微焦。",
+      "把切达芝士和叉烧片叠在面包或薄饼上，撒葱花。",
+      "送入烤箱烤到芝士融化、边角微脆。",
+      "趁热切开，淋少许熟花生油提香。"
+    ],
+    "story": "阿婆说好吃的东西不怕换件外衣，叉烧还是叉烧，有芝士陪着也一样会让人想添茶。"
+  },
+  {
+    "id": "cheddar_steamed_egg",
+    "name": "切达芝士蒸水蛋",
+    "cityId": "london",
+    "category": "fusion",
+    "method": "蒸",
+    "tool": "铁镬+蒸架",
+    "description": "蒸水蛋还是要滑，切达只放一点点，让蛋香里多一层咸奶香。阿婆会提醒你，旅行味道要轻轻放，才不会盖住家味。",
+    "ingredients": [
+      {
+        "ingredientId": "free_range_egg",
+        "amount": "2个"
+      },
+      {
+        "ingredientId": "cheddar",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "light_soy_sauce",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "scallion",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": "一小撮"
+      },
+      {
+        "ingredientId": "peanut_oil",
+        "amount": "少许"
+      }
+    ],
+    "steps": [
+      "鸡蛋打散，加入温水和一小撮盐，过滤一次。",
+      "切达芝士切成细碎，留一半拌入蛋液。",
+      "盖上盘子，中火蒸8分钟，开盖撒上剩余芝士再闷2分钟。",
+      "出锅后淋少许生抽和熟花生油，撒葱花。"
+    ],
+    "story": "这碗蒸蛋有一点伦敦味，但匙羹舀下去还是软软颤颤的。阿婆看你吃得安静，就知道这点新意思没有放错。"
+  },
+  {
+    "id": "cheddar_beef_brisket_rice_noodle_bake",
+    "name": "切达牛腩焗沙河粉",
+    "cityId": "london",
+    "category": "fusion",
+    "method": "烤",
+    "tool": "烤箱",
+    "description": "把西关牛腩粉的浓汁收得稠一点，铺上沙河粉和切达芝士焗香。叉起一口，有牛腩的胶香，也有旅途中带回来的咸香。",
+    "ingredients": [
+      {
+        "ingredientId": "beef_brisket",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "shahe_rice_noodles",
+        "amount": "1份"
+      },
+      {
+        "ingredientId": "cheddar",
+        "amount": "适量"
+      },
+      {
+        "ingredientId": "chu_hou_paste",
+        "amount": "1勺"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": "数片"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": "少许"
+      },
+      {
+        "ingredientId": "scallion",
+        "amount": "少许"
+      }
+    ],
+    "steps": [
+      "牛腩切块焯水，和姜片、柱侯酱、冰糖一起焖到软烂。",
+      "把牛腩汁收浓，沙河粉烫软后铺入烤盘。",
+      "浇上牛腩和浓汁，撒切达芝士。",
+      "烤到芝士融化微焦，出炉撒葱花。"
+    ],
+    "story": "阿婆说这道菜像把茶餐厅和伦敦小酒馆放在同一张饭桌上，热热闹闹，最适合分着吃。"
+  }
+]
