@@ -1,0 +1,56 @@
+{
+  "generatedAt": "mock",
+  "source": "FlightGallery local cityData.json",
+  "destinations": [
+    {
+      "id": "guangzhou",
+      "city": "Guangzhou",
+      "cityMapId": "Guangzhou",
+      "label": "广州",
+      "code": "CAN",
+      "flight": "珠江晨光航线",
+      "background": "radial-gradient(circle at 22% 18%, rgba(255,255,255,0.74), transparent 25rem), radial-gradient(circle at 86% 12%, rgba(111,184,219,0.22), transparent 22rem), linear-gradient(135deg, #dceff7 0%, #f7dce4 48%, #fff2d5 100%)",
+      "photos": [
+        "https://images.unsplash.com/photo-1558717640-bcb5f5f06419?auto=format&fit=crop&w=1400&q=82",
+        "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=1400&q=82",
+        "https://images.unsplash.com/photo-1524454359720-4b652027bf6b?auto=format&fit=crop&w=1400&q=82"
+      ],
+      "guide": [
+        "从西关街市开始找家常香气",
+        "午后去一德路补海味和干货",
+        "傍晚沿珠江把食材故事带回行李箱"
+      ],
+      "ingredientIds": [
+        "ginger",
+        "scallion",
+        "dried_shrimp"
+      ],
+      "decision": "点击舷窗进入广州城市地图，继续追踪广府食材路线。"
+    },
+    {
+      "id": "hongkong",
+      "city": "HongKong",
+      "cityMapId": "HongKong",
+      "label": "香港",
+      "code": "HKG",
+      "flight": "维港夜色航线",
+      "background": "radial-gradient(circle at 24% 16%, rgba(255,255,255,0.76), transparent 25rem), radial-gradient(circle at 82% 10%, rgba(246,191,211,0.2), transparent 22rem), linear-gradient(135deg, #d7f0f7 0%, #e9edf1 50%, #f8dce8 100%)",
+      "photos": [
+        "https://images.unsplash.com/photo-1536599018102-9f803c140fc1?auto=format&fit=crop&w=1400&q=82",
+        "https://images.unsplash.com/photo-1506970845246-18f21d533b20?auto=format&fit=crop&w=1400&q=82",
+        "https://images.unsplash.com/photo-1518599807935-37015b9cefcb?auto=format&fit=crop&w=1400&q=82"
+      ],
+      "guide": [
+        "清晨到中上环街市看摊档开市",
+        "下午把干货铺和茶餐厅连成一条散步线",
+        "夜晚让维港灯线收尾这段采购航程"
+      ],
+      "ingredientIds": [
+        "dried_scallop",
+        "light_soy_sauce",
+        "white_pepper"
+      ],
+      "decision": "点击舷窗进入香港城市地图，切换到港式食材采购路线。"
+    }
+  ]
+}

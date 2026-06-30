@@ -1,0 +1,20 @@
+[
+  {
+    "id": "aying",
+    "name": "阿颖",
+    "displayName": "阿颖的厨房",
+    "city": "广州",
+    "relationship": "朋友",
+    "avatar": "",
+    "bio": "擅长家常粤菜，喜欢用简单调味做出很鲜的味道。"
+  },
+  {
+    "id": "momo",
+    "name": "Momo",
+    "displayName": "Momo 的留学厨房",
+    "city": "London",
+    "relationship": "朋友",
+    "avatar": "",
+    "bio": "擅长一人食、快手菜和冰箱剩菜再创造。"
+  }
+]

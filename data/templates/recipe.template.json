@@ -1,0 +1,25 @@
+{
+  "id": "example_recipe_id",
+  "name": "示例菜名",
+  "cityId": "guangzhou",
+  "category": "home_cooking",
+  "method": "蒸",
+  "tool": "铁镬+蒸架",
+  "description": "这道菜的口味、场景和核心做法简介。",
+  "ingredients": [
+    {
+      "ingredientId": "example_ingredient_id",
+      "amount": "适量"
+    },
+    {
+      "ingredientId": "ginger",
+      "amount": "几片"
+    }
+  ],
+  "steps": [
+    "第一步处理食材。",
+    "第二步完成主要烹饪。",
+    "第三步调味并装盘。"
+  ],
+  "story": "阿婆为什么会做这道菜，它和城市、家庭或时令有什么关系。"
+}

@@ -1,0 +1,1261 @@
+{
+  "cities": {
+    "guangzhou": {
+      "cityId": "guangzhou",
+      "displayName": "Guangzhou",
+      "title": "Guangzhou 行星聚焦漫游",
+      "center": [
+        23.1291,
+        113.2644
+      ],
+      "zoom": 13,
+      "stops": [
+        {
+          "id": "gz_ginger_01",
+          "kind": "ingredient",
+          "ingredientId": "ginger",
+          "lat": 23.11555,
+          "lng": 113.2389,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "荔湾西关街市片区，广州老城区家常食材与烧味风味集中地"
+        },
+        {
+          "id": "gz_scallion_01",
+          "kind": "ingredient",
+          "ingredientId": "scallion",
+          "lat": 23.1231,
+          "lng": 113.28337,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "越秀东川路市场片区，老城区居民日常买菜场景"
+        },
+        {
+          "id": "gz_red_shallot_01",
+          "kind": "ingredient",
+          "ingredientId": "red_shallot",
+          "lat": 23.111271,
+          "lng": 113.249824,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "清平市场与清平药材市场，西关一带传统农副产品、汤料和药材集散地"
+        },
+        {
+          "id": "gz_seasoned_soy_sauce_for_seafood_01",
+          "kind": "ingredient",
+          "ingredientId": "seasoned_soy_sauce_for_seafood",
+          "lat": 23.120659,
+          "lng": 113.265731,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "一德路海味干货街，广州传统海味、干货和调料采购地"
+        },
+        {
+          "id": "gz_peanut_oil_01",
+          "kind": "ingredient",
+          "ingredientId": "peanut_oil",
+          "lat": 23.118035,
+          "lng": 113.263107,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "一德路海味干货街，广州传统海味、干货和调料采购地"
+        },
+        {
+          "id": "gz_pork_bone_01",
+          "kind": "ingredient",
+          "ingredientId": "pork_bone",
+          "lat": 23.118165,
+          "lng": 113.240344,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "荔湾西关街市片区，广州老城区家常食材与烧味风味集中地"
+        },
+        {
+          "id": "gz_dried_night_blooming_cereus_01",
+          "kind": "ingredient",
+          "ingredientId": "dried_night_blooming_cereus",
+          "lat": 23.112676,
+          "lng": 113.245605,
+          "appearTime": "afternoon",
+          "coordinateStatus": "real",
+          "locationHint": "清平市场与清平药材市场，西关一带传统农副产品、汤料和药材集散地"
+        },
+        {
+          "id": "gz_candied_date_01",
+          "kind": "ingredient",
+          "ingredientId": "candied_date",
+          "lat": 23.113406,
+          "lng": 113.245681,
+          "appearTime": "afternoon",
+          "coordinateStatus": "real",
+          "locationHint": "清平市场与清平药材市场，西关一带传统农副产品、汤料和药材集散地"
+        },
+        {
+          "id": "gz_chenpi_01",
+          "kind": "ingredient",
+          "ingredientId": "chenpi",
+          "lat": 22.528018,
+          "lng": 113.036573,
+          "appearTime": "afternoon",
+          "coordinateStatus": "real",
+          "locationHint": "江门新会陈皮产地，广府汤水和糖水常用陈皮来源"
+        },
+        {
+          "id": "gz_apricot_kernel_01",
+          "kind": "ingredient",
+          "ingredientId": "apricot_kernel",
+          "lat": 23.111352,
+          "lng": 113.249672,
+          "appearTime": "afternoon",
+          "coordinateStatus": "real",
+          "locationHint": "清平市场与清平药材市场，西关一带传统农副产品、汤料和药材集散地"
+        },
+        {
+          "id": "gz_salt_01",
+          "kind": "ingredient",
+          "ingredientId": "salt",
+          "lat": 23.114748,
+          "lng": 113.248476,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "清平市场与清平药材市场，西关一带传统农副产品、汤料和药材集散地"
+        },
+        {
+          "id": "gz_light_soy_sauce_01",
+          "kind": "ingredient",
+          "ingredientId": "light_soy_sauce",
+          "lat": 23.121176,
+          "lng": 113.2654,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "一德路海味干货街，广州传统海味、干货和调料采购地"
+        },
+        {
+          "id": "gz_dark_soy_sauce_01",
+          "kind": "ingredient",
+          "ingredientId": "dark_soy_sauce",
+          "lat": 23.117111,
+          "lng": 113.262184,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "一德路海味干货街，广州传统海味、干货和调料采购地"
+        },
+        {
+          "id": "gz_sugar_01",
+          "kind": "ingredient",
+          "ingredientId": "sugar",
+          "lat": 23.115509,
+          "lng": 113.248113,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "清平市场与清平药材市场，西关一带传统农副产品、汤料和药材集散地"
+        },
+        {
+          "id": "gz_choi_sum_01",
+          "kind": "ingredient",
+          "ingredientId": "choi_sum",
+          "lat": 23.126728,
+          "lng": 113.286907,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "越秀东川路市场片区，老城区居民日常买菜场景"
+        },
+        {
+          "id": "gz_tomato_01",
+          "kind": "ingredient",
+          "ingredientId": "tomato",
+          "lat": 23.129408,
+          "lng": 113.32873,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "天河南市场片区，天河居民日常蔬菜、肉类和家常食材采购场景"
+        },
+        {
+          "id": "gz_free_range_egg_01",
+          "kind": "ingredient",
+          "ingredientId": "free_range_egg",
+          "lat": 23.122031,
+          "lng": 113.283099,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "越秀东川路市场片区，老城区居民日常买菜场景"
+        },
+        {
+          "id": "gz_garlic_01",
+          "kind": "ingredient",
+          "ingredientId": "garlic",
+          "lat": 23.09619,
+          "lng": 113.27526,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "海珠江南西街市片区，广州南部居民家常食材采购场景"
+        },
+        {
+          "id": "gz_firm_tofu_01",
+          "kind": "ingredient",
+          "ingredientId": "firm_tofu",
+          "lat": 23.115967,
+          "lng": 113.239273,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "荔湾西关街市片区，广州老城区家常食材与烧味风味集中地"
+        },
+        {
+          "id": "gz_pork_shoulder_01",
+          "kind": "ingredient",
+          "ingredientId": "pork_shoulder",
+          "lat": 23.115453,
+          "lng": 113.239227,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "荔湾西关街市片区，广州老城区家常食材与烧味风味集中地"
+        },
+        {
+          "id": "gz_dried_shrimp_01",
+          "kind": "ingredient",
+          "ingredientId": "dried_shrimp",
+          "lat": 23.120138,
+          "lng": 113.265956,
+          "appearTime": "afternoon",
+          "coordinateStatus": "real",
+          "locationHint": "一德路海味干货街，广州传统海味、干货和调料采购地"
+        },
+        {
+          "id": "gz_oyster_sauce_01",
+          "kind": "ingredient",
+          "ingredientId": "oyster_sauce",
+          "lat": 23.116394,
+          "lng": 113.266998,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "一德路海味干货街，广州传统海味、干货和调料采购地"
+        },
+        {
+          "id": "gz_cornstarch_01",
+          "kind": "ingredient",
+          "ingredientId": "cornstarch",
+          "lat": 23.117547,
+          "lng": 113.261822,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "一德路海味干货街，广州传统海味、干货和调料采购地"
+        },
+        {
+          "id": "gz_pork_collar_01",
+          "kind": "ingredient",
+          "ingredientId": "pork_collar",
+          "lat": 23.11615,
+          "lng": 113.247124,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "上下九与第十甫片区，西关烧味、茶楼和老广州饮食记忆集中地"
+        },
+        {
+          "id": "gz_char_siu_sauce_01",
+          "kind": "ingredient",
+          "ingredientId": "char_siu_sauce",
+          "lat": 23.11487,
+          "lng": 113.246224,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "上下九与第十甫片区，西关烧味、茶楼和老广州饮食记忆集中地"
+        },
+        {
+          "id": "gz_maltose_01",
+          "kind": "ingredient",
+          "ingredientId": "maltose",
+          "lat": 23.120646,
+          "lng": 113.266419,
+          "appearTime": "afternoon",
+          "coordinateStatus": "real",
+          "locationHint": "一德路海味干货街，广州传统海味、干货和调料采购地"
+        },
+        {
+          "id": "gz_honey_01",
+          "kind": "ingredient",
+          "ingredientId": "honey",
+          "lat": 23.111053,
+          "lng": 113.249329,
+          "appearTime": "afternoon",
+          "coordinateStatus": "real",
+          "locationHint": "清平市场与清平药材市场，西关一带传统农副产品、汤料和药材集散地"
+        },
+        {
+          "id": "gz_cooking_wine_01",
+          "kind": "ingredient",
+          "ingredientId": "cooking_wine",
+          "lat": 23.118985,
+          "lng": 113.263208,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "一德路海味干货街，广州传统海味、干货和调料采购地"
+        },
+        {
+          "id": "gz_pork_ribs_01",
+          "kind": "ingredient",
+          "ingredientId": "pork_ribs",
+          "lat": 23.096164,
+          "lng": 113.274716,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "海珠江南西街市片区，广州南部居民家常食材采购场景"
+        },
+        {
+          "id": "gz_white_pepper_01",
+          "kind": "ingredient",
+          "ingredientId": "white_pepper",
+          "lat": 23.116438,
+          "lng": 113.249506,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "清平市场与清平药材市场，西关一带传统农副产品、汤料和药材集散地"
+        },
+        {
+          "id": "gz_beef_brisket_01",
+          "kind": "ingredient",
+          "ingredientId": "beef_brisket",
+          "lat": 23.122276,
+          "lng": 113.253296,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "西华路小吃街片区，广州传统小吃、粉面和街头风味集中地"
+        },
+        {
+          "id": "gz_daikon_radish_01",
+          "kind": "ingredient",
+          "ingredientId": "daikon_radish",
+          "lat": 23.126473,
+          "lng": 113.2882,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "越秀东川路市场片区，老城区居民日常买菜场景"
+        },
+        {
+          "id": "gz_chu_hou_paste_01",
+          "kind": "ingredient",
+          "ingredientId": "chu_hou_paste",
+          "lat": 23.115999,
+          "lng": 113.238551,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "荔湾西关街市片区，广州老城区家常食材与烧味风味集中地"
+        },
+        {
+          "id": "gz_star_anise_01",
+          "kind": "ingredient",
+          "ingredientId": "star_anise",
+          "lat": 23.111749,
+          "lng": 113.244769,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "清平市场与清平药材市场，西关一带传统农副产品、汤料和药材集散地"
+        },
+        {
+          "id": "gz_rock_sugar_01",
+          "kind": "ingredient",
+          "ingredientId": "rock_sugar",
+          "lat": 23.113552,
+          "lng": 113.246525,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "清平市场与清平药材市场，西关一带传统农副产品、汤料和药材集散地"
+        },
+        {
+          "id": "gz_fresh_bream_01",
+          "kind": "ingredient",
+          "ingredientId": "fresh_bream",
+          "lat": 23.096097,
+          "lng": 113.227321,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "黄沙水产市场，珠江边重要的海鲜与鲜活水产交易地"
+        },
+        {
+          "id": "gz_dried_scallop_01",
+          "kind": "ingredient",
+          "ingredientId": "dried_scallop",
+          "lat": 22.577629,
+          "lng": 113.080931,
+          "appearTime": "afternoon",
+          "coordinateStatus": "real",
+          "locationHint": "江门海味干货线索，瑶柱等海味干货的旅行来源提示"
+        },
+        {
+          "id": "gz_three_yellow_chicken_01",
+          "kind": "ingredient",
+          "ingredientId": "three_yellow_chicken",
+          "lat": 23.129498,
+          "lng": 113.323522,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "天河南市场片区，天河居民日常蔬菜、肉类和家常食材采购场景"
+        },
+        {
+          "id": "gz_lotus_root_01",
+          "kind": "ingredient",
+          "ingredientId": "lotus_root",
+          "lat": 23.093408,
+          "lng": 113.273135,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "海珠江南西街市片区，广州南部居民家常食材采购场景"
+        },
+        {
+          "id": "gz_peanut_01",
+          "kind": "ingredient",
+          "ingredientId": "peanut",
+          "lat": 23.111315,
+          "lng": 113.244338,
+          "appearTime": "afternoon",
+          "coordinateStatus": "real",
+          "locationHint": "清平市场与清平药材市场，西关一带传统农副产品、汤料和药材集散地"
+        },
+        {
+          "id": "gz_watercress_01",
+          "kind": "ingredient",
+          "ingredientId": "watercress",
+          "lat": 23.134132,
+          "lng": 113.328438,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "天河南市场片区，天河居民日常蔬菜、肉类和家常食材采购场景"
+        },
+        {
+          "id": "gz_preserved_duck_gizzard_01",
+          "kind": "ingredient",
+          "ingredientId": "preserved_duck_gizzard",
+          "lat": 23.114171,
+          "lng": 113.245239,
+          "appearTime": "afternoon",
+          "coordinateStatus": "real",
+          "locationHint": "上下九与第十甫片区，西关烧味、茶楼和老广州饮食记忆集中地"
+        },
+        {
+          "id": "gz_rice_flour_01",
+          "kind": "ingredient",
+          "ingredientId": "rice_flour",
+          "lat": 23.124149,
+          "lng": 113.255219,
+          "appearTime": "afternoon",
+          "coordinateStatus": "real",
+          "locationHint": "西华路小吃街片区，广州传统小吃、粉面和街头风味集中地"
+        },
+        {
+          "id": "gz_cantonese_sausage_01",
+          "kind": "ingredient",
+          "ingredientId": "cantonese_sausage",
+          "lat": 23.118776,
+          "lng": 113.249753,
+          "appearTime": "afternoon",
+          "coordinateStatus": "real",
+          "locationHint": "上下九与第十甫片区，西关烧味、茶楼和老广州饮食记忆集中地"
+        },
+        {
+          "id": "gz_preserved_pork_belly_01",
+          "kind": "ingredient",
+          "ingredientId": "preserved_pork_belly",
+          "lat": 23.117695,
+          "lng": 113.248296,
+          "appearTime": "afternoon",
+          "coordinateStatus": "real",
+          "locationHint": "上下九与第十甫片区，西关烧味、茶楼和老广州饮食记忆集中地"
+        },
+        {
+          "id": "gz_qingyuan_chicken_01",
+          "kind": "ingredient",
+          "ingredientId": "qingyuan_chicken",
+          "lat": 23.682856,
+          "lng": 113.056456,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "清远鸡产地线索，白切鸡常用优质走地鸡来源"
+        },
+        {
+          "id": "gz_huangjiu_01",
+          "kind": "ingredient",
+          "ingredientId": "huangjiu",
+          "lat": 23.120074,
+          "lng": 113.264627,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "一德路海味干货街，广州传统海味、干货和调料采购地"
+        },
+        {
+          "id": "gz_pork_belly_01",
+          "kind": "ingredient",
+          "ingredientId": "pork_belly",
+          "lat": 23.113446,
+          "lng": 113.249716,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "上下九与第十甫片区，西关烧味、茶楼和老广州饮食记忆集中地"
+        },
+        {
+          "id": "gz_five_spice_powder_01",
+          "kind": "ingredient",
+          "ingredientId": "five_spice_powder",
+          "lat": 23.115091,
+          "lng": 113.248111,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "清平市场与清平药材市场，西关一带传统农副产品、汤料和药材集散地"
+        },
+        {
+          "id": "gz_white_vinegar_01",
+          "kind": "ingredient",
+          "ingredientId": "white_vinegar",
+          "lat": 23.117435,
+          "lng": 113.262509,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "一德路海味干货街，广州传统海味、干货和调料采购地"
+        },
+        {
+          "id": "gz_baking_soda_01",
+          "kind": "ingredient",
+          "ingredientId": "baking_soda",
+          "lat": 23.114569,
+          "lng": 113.247173,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "清平市场与清平药材市场，西关一带传统农副产品、汤料和药材集散地"
+        },
+        {
+          "id": "gz_beef_tendon_01",
+          "kind": "ingredient",
+          "ingredientId": "beef_tendon",
+          "lat": 23.123985,
+          "lng": 113.255005,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "西华路小吃街片区，广州传统小吃、粉面和街头风味集中地"
+        },
+        {
+          "id": "gz_shahe_rice_noodles_01",
+          "kind": "ingredient",
+          "ingredientId": "shahe_rice_noodles",
+          "lat": 23.12309,
+          "lng": 113.254063,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "西华路小吃街片区，广州传统小吃、粉面和街头风味集中地"
+        },
+        {
+          "id": "gz_red_fermented_bean_curd_01",
+          "kind": "ingredient",
+          "ingredientId": "red_fermented_bean_curd",
+          "lat": 23.117728,
+          "lng": 113.240329,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "荔湾西关街市片区，广州老城区家常食材与烧味风味集中地"
+        },
+        {
+          "id": "gz_cinnamon_01",
+          "kind": "ingredient",
+          "ingredientId": "cinnamon",
+          "lat": 23.112475,
+          "lng": 113.245031,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "清平市场与清平药材市场，西关一带传统农副产品、汤料和药材集散地"
+        },
+        {
+          "id": "gz_pickled_daikon_01",
+          "kind": "ingredient",
+          "ingredientId": "pickled_daikon",
+          "lat": 23.115263,
+          "lng": 113.238283,
+          "appearTime": "afternoon",
+          "coordinateStatus": "real",
+          "locationHint": "荔湾西关街市片区，广州老城区家常食材与烧味风味集中地"
+        },
+        {
+          "id": "gz_mung_bean_01",
+          "kind": "ingredient",
+          "ingredientId": "mung_bean",
+          "lat": 23.118156,
+          "lng": 113.262478,
+          "appearTime": "afternoon",
+          "coordinateStatus": "real",
+          "locationHint": "一德路海味干货街，广州传统海味、干货和调料采购地"
+        },
+        {
+          "id": "gz_dried_lily_bulb_01",
+          "kind": "ingredient",
+          "ingredientId": "dried_lily_bulb",
+          "lat": 23.116513,
+          "lng": 113.249065,
+          "appearTime": "afternoon",
+          "coordinateStatus": "real",
+          "locationHint": "清平市场与清平药材市场，西关一带传统农副产品、汤料和药材集散地"
+        },
+        {
+          "id": "gz_slab_sugar_01",
+          "kind": "ingredient",
+          "ingredientId": "slab_sugar",
+          "lat": 23.114091,
+          "lng": 113.247111,
+          "appearTime": "afternoon",
+          "coordinateStatus": "real",
+          "locationHint": "清平市场与清平药材市场，西关一带传统农副产品、汤料和药材集散地"
+        },
+        {
+          "id": "gz_landmark_xiguan_01",
+          "kind": "landmark",
+          "landmarkId": "xiguan",
+          "name": "西关老街",
+          "emoji": "🏘️",
+          "typeName": "老城街区",
+          "lat": 23.1166,
+          "lng": 113.2394,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "荔湾西关一带，骑楼、街市和老茶楼交织的广府生活腹地",
+          "desc": "西关的早晨不是景点开门，是街坊买菜、斩料、饮早茶的声音慢慢醒来。",
+          "story": "阿婆说一条街有没有人情味，要看档口老板认不认得你要几肥几瘦。西关留住的不是旧墙，是一碗艇仔粥旁边的闲话家常。"
+        },
+        {
+          "id": "gz_landmark_yongqingfang_01",
+          "kind": "landmark",
+          "landmarkId": "yongqingfang",
+          "name": "永庆坊",
+          "emoji": "🏮",
+          "typeName": "街区记忆",
+          "lat": 23.1142,
+          "lng": 113.2448,
+          "appearTime": "afternoon",
+          "coordinateStatus": "real",
+          "locationHint": "恩宁路永庆坊片区，老屋、粤剧声和新小店并排生长",
+          "desc": "这里把老西关修得有光，但巷口仍能闻到糖水和煎堆的甜香。",
+          "story": "阿婆走到永庆坊会放慢脚步，说旧房子也会换新衫。只要街边还有人端着碗吃双皮奶，老广州就没有走远。"
+        },
+        {
+          "id": "gz_landmark_shangxiajiu_01",
+          "kind": "landmark",
+          "landmarkId": "shangxiajiu",
+          "name": "上下九",
+          "emoji": "🥢",
+          "typeName": "骑楼商街",
+          "lat": 23.1177,
+          "lng": 113.2488,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "上下九与第十甫片区，烧味、茶楼和骑楼商铺密集",
+          "desc": "上下九的热闹总带着油光，烧鹅橱窗、腊味铺和茶楼蒸笼一层层叠起来。",
+          "story": "阿婆买叉烧会先看蜜汁挂得亮不亮，再问今日梅头靓不靓。她说热闹地方也要懂得挑，眼睛尖，饭桌才香。"
+        },
+        {
+          "id": "gz_landmark_beijing_road_01",
+          "kind": "landmark",
+          "landmarkId": "beijing_road",
+          "name": "北京路",
+          "emoji": "🧱",
+          "typeName": "千年街道",
+          "lat": 23.1241,
+          "lng": 113.2686,
+          "appearTime": "afternoon",
+          "coordinateStatus": "real",
+          "locationHint": "北京路步行街一带，古道遗址与现代商铺并置",
+          "desc": "北京路脚下有旧城的层层路面，路边却总有人捧着小吃边走边聊。",
+          "story": "阿婆说广州就是这样，旧砖在地下，新味在手上。买一包鸡仔饼慢慢走，才听得到这条路的脾气。"
+        },
+        {
+          "id": "gz_landmark_dongshankou_01",
+          "kind": "landmark",
+          "landmarkId": "dongshankou",
+          "name": "东山口",
+          "emoji": "🌳",
+          "typeName": "街区记忆",
+          "lat": 23.1239,
+          "lng": 113.2952,
+          "appearTime": "afternoon",
+          "coordinateStatus": "real",
+          "locationHint": "东山口新河浦一带，洋楼、树影和街坊小店交错",
+          "desc": "东山口的味道比较安静，像一碗不急着喝完的炖汤。",
+          "story": "阿婆会指着红砖小楼说，以前讲究人家也要会煲汤待客。街角咖啡香飘出来，她也不恼，只说年轻人的厨房换了个样。"
+        },
+        {
+          "id": "gz_landmark_chen_clan_ancestral_hall_01",
+          "kind": "landmark",
+          "landmarkId": "chen_clan_ancestral_hall",
+          "name": "陈家祠",
+          "emoji": "🏛️",
+          "typeName": "岭南文化地标",
+          "lat": 23.1293,
+          "lng": 113.2406,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "陈家祠与中山七路片区，木雕、灰塑和老城生活相邻",
+          "desc": "陈家祠的屋脊像一桌精细点心，层层雕花都藏着耐心。",
+          "story": "阿婆看木雕会想起做萝卜糕，刀工和火候都急不得。她说广府人的细致，不只在祠堂，也在一碟点心的褶边里。"
+        },
+        {
+          "id": "gz_landmark_shamian_01",
+          "kind": "landmark",
+          "landmarkId": "shamian",
+          "name": "沙面",
+          "emoji": "🌿",
+          "typeName": "珠江边街区",
+          "lat": 23.1097,
+          "lng": 113.2393,
+          "appearTime": "afternoon",
+          "coordinateStatus": "real",
+          "locationHint": "沙面岛，老建筑、树荫和珠江边风味记忆集中",
+          "desc": "沙面的风比较慢，适合把刚买的饼食放凉，也适合听老人讲旧时茶点。",
+          "story": "阿婆年轻时来沙面，会把纸包点心揣得很稳，怕油印到手袋。她说江风一吹，连叉烧酥都显得斯文一点。"
+        },
+        {
+          "id": "gz_landmark_cantonese_opera_museum_01",
+          "kind": "landmark",
+          "landmarkId": "cantonese_opera_museum",
+          "name": "粤剧艺术博物馆",
+          "emoji": "🎭",
+          "typeName": "粤剧文化",
+          "lat": 23.1139,
+          "lng": 113.2459,
+          "appearTime": "afternoon",
+          "coordinateStatus": "real",
+          "locationHint": "恩宁路粤剧艺术博物馆，西关水院与粤曲声腔相连",
+          "desc": "粤剧声从水院里转出来，像煲汤时慢慢升起的一缕香。",
+          "story": "阿婆听到锣鼓点会跟着点头，说老广做菜也讲起承转合。白切鸡上桌前那一下淋油，就像台上亮相，不能慌。"
+        },
+        {
+          "id": "gz_landmark_qingping_market_01",
+          "kind": "landmark",
+          "landmarkId": "qingping_market",
+          "name": "清平市场",
+          "emoji": "🧺",
+          "typeName": "饮食生活节点",
+          "lat": 23.1124,
+          "lng": 113.2489,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "清平市场与清平药材市场，汤料、香料和干货采购地",
+          "desc": "清平的气味很满，陈皮、药材、干货和街坊脚步都挤在一起。",
+          "story": "阿婆买汤料最爱在这里慢慢问，哪包霸王花新，哪片陈皮年份够。她说汤好不好，市场已经先告诉你一半。"
+        },
+        {
+          "id": "gz_landmark_yide_road_01",
+          "kind": "landmark",
+          "landmarkId": "yide_road",
+          "name": "一德路",
+          "emoji": "🦐",
+          "typeName": "海味干货街",
+          "lat": 23.1192,
+          "lng": 113.2645,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "一德路海味干货街，虾米、瑶柱和调味干货集中",
+          "desc": "一德路的海味香有点咸，有点甜，像一锅汤还没开火就先有了底味。",
+          "story": "阿婆挑瑶柱会捏一捏干身，再闻一闻鲜味。她说别小看一把虾米，炒菜心时就是那一点鲜把整碟菜托起来。"
+        },
+        {
+          "id": "gz_landmark_huangsha_seafood_market_01",
+          "kind": "landmark",
+          "landmarkId": "huangsha_seafood_market",
+          "name": "黄沙水产市场",
+          "emoji": "🐟",
+          "typeName": "水产市场",
+          "lat": 23.1109,
+          "lng": 113.2376,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "黄沙水产市场片区，鲜鱼鲜虾和酒楼采购记忆集中",
+          "desc": "黄沙的鱼虾还带着水声，最适合想一碟清蒸鱼该怎样上桌。",
+          "story": "阿婆买鱼一定看眼睛亮不亮、鱼鳃红不红。她说清蒸鱼不靠花巧，靠的是从市场开始就不偷懒。"
+        },
+        {
+          "id": "gz_landmark_old_teahouse_01",
+          "kind": "landmark",
+          "landmarkId": "old_teahouse",
+          "name": "老茶楼意象",
+          "emoji": "🍵",
+          "typeName": "早茶记忆",
+          "lat": 23.1172,
+          "lng": 113.2472,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "西关与上下九一带老茶楼意象，蒸笼、报纸和街坊问候组成的生活节点",
+          "desc": "老茶楼不是只为吃点心，是一家人坐下来，把一周的琐碎慢慢冲淡。",
+          "story": "阿婆饮茶要一盅两件，虾饺烧卖可以迟，热茶不能迟。她说早茶最要紧不是排场，是有人给你夹最后一件叉烧包。"
+        },
+        {
+          "id": "gz_landmark_canton_tower_01",
+          "kind": "landmark",
+          "landmarkId": "canton_tower",
+          "name": "广州塔",
+          "emoji": "🗼",
+          "typeName": "现代城市地标",
+          "lat": 23.1064,
+          "lng": 113.3215,
+          "appearTime": "evening",
+          "coordinateStatus": "real",
+          "locationHint": "广州塔与珠江南岸，夜景和城市新中轴线地标",
+          "desc": "广州塔亮起来的时候，像饭桌上最后那盏灯，提醒人该回家吃饭了。",
+          "story": "阿婆嘴上说塔太高看得头晕，还是会在江边给你拍照。她说城市长高了没关系，只要夜里还有一碗热汤等人回家。"
+        },
+        {
+          "id": "gz_landmark_opera_house_haixinsha_01",
+          "kind": "landmark",
+          "landmarkId": "opera_house_haixinsha",
+          "name": "广州大剧院、海心沙与珠江新城",
+          "emoji": "🌉",
+          "typeName": "珠江新轴线",
+          "lat": 23.1185,
+          "lng": 113.3243,
+          "appearTime": "evening",
+          "coordinateStatus": "real",
+          "locationHint": "广州大剧院、海心沙、花城广场与珠江新城一带，现代广州公共生活轴线",
+          "desc": "这里的晚风更开阔，适合把白天买菜的烟火气吹成城市夜色。",
+          "story": "阿婆经过花城广场，会说现在的广州真会打扮。可她还是惦记晚饭有没有菜心，说再漂亮的夜景，也要有人记得开镬。"
+        }
+      ],
+      "narrative": {
+        "theme": "从西关街市到珠江夜风的广府味觉漫游",
+        "intro": "广州地图不只收集食材，也收集街坊买菜、茶楼等位、江边散步和夜里回家吃饭的记忆。",
+        "routes": [
+          {
+            "id": "old_town_morning",
+            "title": "老城早市线",
+            "stopIds": [
+              "gz_landmark_xiguan_01",
+              "gz_landmark_qingping_market_01",
+              "gz_landmark_shangxiajiu_01",
+              "gz_landmark_old_teahouse_01"
+            ],
+            "description": "从西关街市的菜香出发，经过清平汤料、上下九烧味，最后坐进一间老茶楼。"
+          },
+          {
+            "id": "river_city_afternoon",
+            "title": "珠江午后线",
+            "stopIds": [
+              "gz_landmark_shamian_01",
+              "gz_landmark_yide_road_01",
+              "gz_landmark_huangsha_seafood_market_01",
+              "gz_landmark_canton_tower_01"
+            ],
+            "description": "沿江把沙面的慢风、一德路的海味和黄沙的鲜鱼串起来，傍晚望向广州塔。"
+          },
+          {
+            "id": "new_axis_evening",
+            "title": "新轴夜风线",
+            "stopIds": [
+              "gz_landmark_canton_tower_01",
+              "gz_landmark_opera_house_haixinsha_01"
+            ],
+            "description": "从广州塔到大剧院、海心沙和珠江新城，看现代广州怎样把晚饭时间点亮。"
+          },
+          {
+            "id": "neighborhood_memory",
+            "title": "街区记忆线",
+            "stopIds": [
+              "gz_landmark_dongshankou_01",
+              "gz_landmark_beijing_road_01",
+              "gz_landmark_yongqingfang_01",
+              "gz_landmark_cantonese_opera_museum_01",
+              "gz_landmark_chen_clan_ancestral_hall_01"
+            ],
+            "description": "从东山口的安静街角走回北京路、永庆坊和粤剧水院，听见城市旧味怎样留在厨房里。"
+          }
+        ]
+      }
+    },
+    "hongkong": {
+      "cityId": "hongkong",
+      "displayName": "HongKong",
+      "title": "HongKong 行星聚焦漫游",
+      "center": [
+        22.3193,
+        114.1694
+      ],
+      "zoom": 12,
+      "stops": [
+        {
+          "id": "hk_dried_scallop_01",
+          "kind": "ingredient",
+          "ingredientId": "dried_scallop",
+          "lat": 22.2867,
+          "lng": 114.1512,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "上环海味街一带，香港传统干货与海味采购地"
+        },
+        {
+          "id": "hk_light_soy_sauce_01",
+          "kind": "ingredient",
+          "ingredientId": "light_soy_sauce",
+          "lat": 22.3129,
+          "lng": 114.1708,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "油麻地街市与周边粮油杂货铺，港式家常调味采购场景"
+        },
+        {
+          "id": "hk_white_pepper_01",
+          "kind": "ingredient",
+          "ingredientId": "white_pepper",
+          "lat": 22.3193,
+          "lng": 114.1694,
+          "appearTime": "afternoon",
+          "coordinateStatus": "real",
+          "locationHint": "旺角街市片区，香料、粉面和茶餐厅风味集中地"
+        }
+      ]
+    },
+    "singapore": {
+      "cityId": "singapore",
+      "displayName": "Singapore",
+      "title": "Singapore 行星聚焦漫游",
+      "center": [
+        1.3521,
+        103.8198
+      ],
+      "zoom": 12,
+      "stops": [
+        {
+          "id": "sg_curry_leaf_01",
+          "kind": "ingredient",
+          "ingredientId": "curry_leaf",
+          "lat": 1.3066,
+          "lng": 103.8493,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "小印度实龙岗路一带，香料铺和湿巴刹里常见热带香草"
+        },
+        {
+          "id": "sg_coconut_01",
+          "kind": "ingredient",
+          "ingredientId": "coconut",
+          "lat": 1.3029,
+          "lng": 103.8604,
+          "appearTime": "afternoon",
+          "coordinateStatus": "real",
+          "locationHint": "甘榜格南与武吉士街市片区，椰香甜品和南洋食材采购场景"
+        }
+      ]
+    },
+    "london": {
+      "cityId": "london",
+      "displayName": "London",
+      "title": "London 行星聚焦漫游",
+      "center": [
+        51.5072,
+        -0.1276
+      ],
+      "zoom": 11,
+      "stops": [
+        {
+          "id": "ldn_cheddar_01",
+          "kind": "ingredient",
+          "ingredientId": "cheddar",
+          "lat": 51.5055,
+          "lng": -0.091,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "Borough Market 周边乳酪摊位，适合寻找英式切达和旅行小食灵感"
+        }
+      ]
+    },
+    "amsterdam": {
+      "cityId": "amsterdam",
+      "displayName": "Amsterdam",
+      "title": "Amsterdam 行星聚焦漫游",
+      "center": [
+        52.3676,
+        4.9041
+      ],
+      "zoom": 12,
+      "stops": [
+        {
+          "id": "ams_cheddar_01",
+          "kind": "ingredient",
+          "ingredientId": "cheddar",
+          "lat": 52.3728,
+          "lng": 4.8936,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "阿姆斯特丹运河市集与乳酪小店片区",
+          "desc": "这里先不新建荷兰乳酪食材，暂用现有切达承接旧航班里的 cheese 线索。",
+          "story": "阿婆说芝士再远，也要能落到热多士上才算带回家。运河边那点咸香，适合先放进行李箱里慢慢想。"
+        },
+        {
+          "id": "ams_salt_01",
+          "kind": "ingredient",
+          "ingredientId": "salt",
+          "lat": 52.3762,
+          "lng": 4.8952,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "临近运河的鱼市与熟食摊意象，保留 herring 的咸鲜记忆",
+          "desc": "旧航班的 herring 不强行变成食材，用盐留住一点腌渍海风。",
+          "story": "阿婆闻到咸香会先想到煲汤要不要收口。旅行味道可以新鲜，调味还是要稳。"
+        },
+        {
+          "id": "ams_landmark_canal_market_01",
+          "kind": "landmark",
+          "landmarkId": "canal_market",
+          "name": "运河市集",
+          "emoji": "🚲",
+          "typeName": "轻量目的地",
+          "lat": 52.3679,
+          "lng": 4.8999,
+          "coordinateStatus": "real",
+          "locationHint": "阿姆斯特丹运河和街角市集一带",
+          "desc": "运河边的市集不急，乳酪、鱼摊和单车铃声慢慢铺开。",
+          "story": "阿婆会把这里记成一条咸香路线，而不是旅游清单。她说带回家的不是整座城市，是能放进一口多士里的味道。"
+        }
+      ]
+    },
+    "sydney": {
+      "cityId": "sydney",
+      "displayName": "Sydney",
+      "title": "Sydney 行星聚焦漫游",
+      "center": [
+        -33.8688,
+        151.2093
+      ],
+      "zoom": 12,
+      "stops": [
+        {
+          "id": "syd_salt_01",
+          "kind": "ingredient",
+          "ingredientId": "salt",
+          "lat": -33.8587,
+          "lng": 151.214,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "悉尼海港边，承接旧航班 sea_salt 的海风线索",
+          "desc": "不新增 sea_salt 食材，先用现有盐记录海港边的清亮咸味。",
+          "story": "阿婆说海边的盐味不能太重，像蒸鱼最后那一点调味，刚好就好。"
+        },
+        {
+          "id": "syd_fresh_bream_01",
+          "kind": "ingredient",
+          "ingredientId": "fresh_bream",
+          "lat": -33.8708,
+          "lng": 151.1996,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "悉尼鱼市场意象，鲜鱼与清蒸鱼灵感相连",
+          "desc": "用现有鲜活鳊鱼承接悉尼海鲜记忆，让远方海港回到清蒸鱼的盘子里。",
+          "story": "阿婆挑鱼仍旧看眼睛和鱼鳃，不管市场在哪个城市。新鲜这件事，全世界厨房都讲得通。"
+        },
+        {
+          "id": "syd_landmark_harbor_01",
+          "kind": "landmark",
+          "landmarkId": "sydney_harbor",
+          "name": "悉尼海港",
+          "emoji": "🌊",
+          "typeName": "轻量目的地",
+          "lat": -33.8568,
+          "lng": 151.2153,
+          "coordinateStatus": "real",
+          "locationHint": "悉尼歌剧院与海港大桥周边",
+          "desc": "海港的风很亮，适合把鱼、盐和柠檬想成一顿清爽晚饭。",
+          "story": "阿婆站在海边会说，鱼好就不用太多花样。广州的蒸鱼豉油和悉尼的海风，原来也能在一张饭桌上碰头。"
+        }
+      ]
+    },
+    "paris": {
+      "cityId": "paris",
+      "displayName": "Paris",
+      "title": "Paris 行星聚焦漫游",
+      "center": [
+        48.8566,
+        2.3522
+      ],
+      "zoom": 12,
+      "stops": [
+        {
+          "id": "par_honey_01",
+          "kind": "ingredient",
+          "ingredientId": "honey",
+          "lat": 48.8584,
+          "lng": 2.2945,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "巴黎面包房与甜点橱窗意象，承接甜香旅行线索",
+          "desc": "旧航班的 butter 和 cream 先保留为标签，用蜂蜜承接甜点橱窗的光泽。",
+          "story": "阿婆说甜味要有分寸，蜂蜜一勺就够。旅行回来做叉烧或点心，都不能甜到盖住本味。"
+        },
+        {
+          "id": "par_free_range_egg_01",
+          "kind": "ingredient",
+          "ingredientId": "free_range_egg",
+          "lat": 48.861,
+          "lng": 2.3345,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "巴黎街角小店和早午餐意象，连接蒸水蛋与烘焙香气",
+          "desc": "用土鸡蛋接住巴黎早午餐的温柔，也不离开阿婆蒸水蛋的基础。",
+          "story": "阿婆不一定懂法式名字，但懂一只好蛋。她说滑、嫩、香，这三件事在哪里都一样重要。"
+        },
+        {
+          "id": "par_landmark_seine_bakery_01",
+          "kind": "landmark",
+          "landmarkId": "seine_bakery",
+          "name": "塞纳河边面包房",
+          "emoji": "🥐",
+          "typeName": "轻量目的地",
+          "lat": 48.8589,
+          "lng": 2.347,
+          "coordinateStatus": "real",
+          "locationHint": "塞纳河与巴黎街角面包房意象",
+          "desc": "这里不写旅游攻略，只记一扇橱窗里慢慢散出来的奶香。",
+          "story": "阿婆会把纸袋抱得很稳，像护着刚出炉的叉烧酥。她说好香气都怕冷，趁热吃才有福。"
+        }
+      ]
+    },
+    "milan": {
+      "cityId": "milan",
+      "displayName": "Milan",
+      "title": "Milan 行星聚焦漫游",
+      "center": [
+        45.4642,
+        9.19
+      ],
+      "zoom": 12,
+      "stops": [
+        {
+          "id": "mil_tomato_01",
+          "kind": "ingredient",
+          "ingredientId": "tomato",
+          "lat": 45.4641,
+          "lng": 9.1919,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "米兰街角市场意象，旧航班 tomato 可直接复用现有番茄食材",
+          "desc": "番茄是旧航班里少数已经存在的真实食材，适合直接进入轻量城市路线。",
+          "story": "阿婆说番茄要炒到出沙才算有诚意。米兰街角的红，也能回到广式番茄蛋里。"
+        },
+        {
+          "id": "mil_garlic_01",
+          "kind": "ingredient",
+          "ingredientId": "garlic",
+          "lat": 45.4703,
+          "lng": 9.1866,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "米兰街边小食与厨房香气意象，蒜香作为基础底味",
+          "desc": "不新增 basil 食材，先用蒜香和番茄搭起一条可回到家常菜的路线。",
+          "story": "阿婆听见蒜下锅的声音就安心。她说无论是意式街角还是广州厨房，热油一响，人就知道快有饭吃了。"
+        },
+        {
+          "id": "mil_landmark_duomo_market_01",
+          "kind": "landmark",
+          "landmarkId": "duomo_market",
+          "name": "米兰街角市场",
+          "emoji": "🍅",
+          "typeName": "轻量目的地",
+          "lat": 45.4642,
+          "lng": 9.1916,
+          "coordinateStatus": "real",
+          "locationHint": "米兰大教堂周边与街角市场意象",
+          "desc": "米兰这一站先记颜色：番茄红、橱窗亮、街角小店的热气。",
+          "story": "阿婆不会把它讲成时装城，她只会问番茄够不够熟。城市再漂亮，落到厨房还是要看一锅汁香不香。"
+        }
+      ]
+    },
+    "tokyo": {
+      "cityId": "tokyo",
+      "displayName": "Tokyo",
+      "title": "Tokyo 行星聚焦漫游",
+      "center": [
+        35.6762,
+        139.6503
+      ],
+      "zoom": 12,
+      "stops": [
+        {
+          "id": "tyo_ginger_01",
+          "kind": "ingredient",
+          "ingredientId": "ginger",
+          "lat": 35.6655,
+          "lng": 139.7707,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "东京市场与小食街意象，用姜承接清爽辛香",
+          "desc": "miso 和 wasabi 先作为旧航班标签保留，用姜连接两地厨房都懂的辛香。",
+          "story": "阿婆说姜最会过桥，鱼要它，鸡要它，远方味道也可以靠它落地。"
+        },
+        {
+          "id": "tyo_light_soy_sauce_01",
+          "kind": "ingredient",
+          "ingredientId": "light_soy_sauce",
+          "lat": 35.6804,
+          "lng": 139.769,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "东京车站与便当街意象，用生抽承接咸鲜底味",
+          "desc": "不新增日式酱料，先用现有生抽记录一条轻量咸鲜线索。",
+          "story": "阿婆说酱油名字可以不同，手势要准。多一滴就抢味，少一滴又不够精神。"
+        },
+        {
+          "id": "tyo_landmark_morning_market_01",
+          "kind": "landmark",
+          "landmarkId": "morning_market",
+          "name": "东京清晨市场",
+          "emoji": "🍱",
+          "typeName": "轻量目的地",
+          "lat": 35.665,
+          "lng": 139.7703,
+          "coordinateStatus": "real",
+          "locationHint": "东京市场与清晨小巷意象",
+          "desc": "东京这一站先收一口清晨鲜味，不急着扩成完整地图。",
+          "story": "阿婆看见整齐的便当会笑，说饭盒也能看出一个城市的耐心。她还是惦记热汤，觉得再精致也要有暖胃的一口。"
+        }
+      ]
+    },
+    "newyork": {
+      "cityId": "newyork",
+      "displayName": "New York",
+      "title": "New York 行星聚焦漫游",
+      "center": [
+        40.7128,
+        -74.006
+      ],
+      "zoom": 11,
+      "stops": [
+        {
+          "id": "nyc_honey_01",
+          "kind": "ingredient",
+          "ingredientId": "honey",
+          "lat": 40.758,
+          "lng": -73.9855,
+          "appearTime": "morning",
+          "coordinateStatus": "real",
+          "locationHint": "纽约街角早餐与甜味小食意象，承接 maple 的甜香标签",
+          "desc": "不新增 maple 食材，先用蜂蜜把纽约早餐的甜香接回现有食材系统。",
+          "story": "阿婆说赶路也要吃点暖的甜的。蜂蜜比城市节奏慢一点，刚好把人拉回饭桌。"
+        },
+        {
+          "id": "nyc_cheddar_01",
+          "kind": "ingredient",
+          "ingredientId": "cheddar",
+          "lat": 40.742,
+          "lng": -74.006,
+          "appearTime": "noon",
+          "coordinateStatus": "real",
+          "locationHint": "纽约熟食店与街角三明治意象，切达用于小食灵感",
+          "desc": "切达已经是旅行乳酪，可轻轻承接纽约熟食店和三明治记忆。",
+          "story": "阿婆说芝士夹进热面包里，年轻人就会开心。她不反对新意思，只要别忘了喝汤。"
+        },
+        {
+          "id": "nyc_landmark_deli_corner_01",
+          "kind": "landmark",
+          "landmarkId": "deli_corner",
+          "name": "街角熟食店",
+          "emoji": "🥯",
+          "typeName": "轻量目的地",
+          "lat": 40.7306,
+          "lng": -73.9866,
+          "coordinateStatus": "real",
+          "locationHint": "纽约街角熟食店与咖啡窗口意象",
+          "desc": "纽约先不做大地图，只记一个街角：咖啡、熟食柜和匆忙排队的人。",
+          "story": "阿婆看人边走边吃会皱眉，还是会偷偷多包一份给你。她说城市再快，吃东西也要有人惦记。"
+        }
+      ]
+    }
+  }
+}
